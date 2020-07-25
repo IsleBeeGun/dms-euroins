@@ -4,65 +4,79 @@
   margin: 0;
 }
 body {
-  background-color: purple;
+  background-color: white;
   color: lime;
 }
 .tblock {
   border: 2px solid red;
 }
 .t-1 {
+  background-color: red;
   height: 132px;
   border: 2px solid red;
 }
 .t-2 {
+  background-color: orange;
   height: 666px;
   border: 2px solid red;
 }
 .t-3 {
+  background-color: yellow;
   height: 790px;
   border: 2px solid red;
 }
 .t-4 {
+  background-color: greenyellow;
   height: 524px;
   border: 2px solid red;
 }
 .t-5 {
+  background-color: skyblue;
   height: 476px;
   border: 2px solid red;
 }
 .t-6 {
+  background-color: blue;
   height: 1080px;
   border: 2px solid red;
 }
 .t-7 {
+  background-color: purple;
   height: 648px;
   border: 2px solid red;
 }
 .t-8 {
+  background-color: red;
   height: 900px;
   border: 2px solid red;
 }
 .t-9 {
+  background-color: orange;
   height: 472px;
   border: 2px solid red;
 }
 .t-10 {
+  background-color: yellow;
   height: 860px;
   border: 2px solid red;
 }
 .t-11 {
+  background-color: greenyellow;
   height: 2730px;
   border: 2px solid red;
 }
 .t-12 {
+  background-color: skyblue;
   height: 680px;
   border: 2px solid red;
 }
 .t-13 {
+  background-color: blue;
   height: 620px;
   border: 2px solid red;
 }
 .t-14 {
+  background-color: purple;
   height: 266px;
   border: 2px solid red;
 }
