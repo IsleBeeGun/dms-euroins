@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: "./js/index.bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "dist",
+    publicPath: ".."
   },
   devServer: {
     contentBase: "./dist",
@@ -20,8 +20,36 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"],
       },
       {
-        test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
-        use: "url-loader",
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [`file-loader?name=/fonts/[name].[ext]`]
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          `file-loader?name=/img/[name].[ext]`,
+          {
+            loader: "image-webpack-loader",
+            options: {
+              mozjpeg: {
+                progressive: false,
+                quality: 100
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              webp: {
+                quality: 100
+              }
+            }
+          }
+        ]
       },
     ],
   },

@@ -1,18 +1,82 @@
-@color: white;
+// Импорты
+@import "fonts";
 
-* {
-  box-sizing: border-box;
+// Переменные и фоновые картинки
+@ff: Lato, sans-serif;
+@theme-color-1: rgba(39,36,116);
+@theme-color-2: rgba(224,11,108);
+@theme-color-3: rgba(242,248,248);
+@theme-color-4: rgba(0,0,0);
+@theme-color-5: rgba(255,255,255);
+.bg1 {
+  background: url('../img/bg/prosto.jpg') no-repeat;
+}
+
+@heading-regular-fs: 2.1rem;
+
+// Заголовки
+@heading-ff: @ff;
+@heading-1-fs: 2.6rem;
+@heading-1-margin: 2rem 0;
+@heading-2-fs: 1.875rem;
+@heading-2-margin: 1.5rem 0;
+@heading-3-fs: 1.5rem;
+@heading-3-margin: .8rem 0;
+@heading-4-fs: 1.25rem;
+@heading-4-margin: .8rem 0;
+@heading-cl: @theme-color-1;
+
+// Экраны
+@screen-xl: 1600px; // large laptop
+@screen-lg: 1200px; // laptop
+@screen-md: 800px;  // tablet
+@screen-sm: 529px;  // large mobile
+@screen-xs: 475px;  // mobile
+
+
+body {
   padding: 0;
   margin: 0;
 }
 
-body {
-  background-color: @color;
-  color: lime;
+.section {
+  font-family: @ff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2.6rem;
+  &--gray-bgcl {
+    background-color: @theme-color-3;
+  }
+  &__header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  &__title {
+    width: 100%;
+    text-align: center;
+    color: @heading-cl;
+    font-size: @heading-regular-fs;
+    font-weight: bold;
+    margin: 0;
+    &--black-cl {
+      color: @theme-color-4;
+    }
+  }
+  &__subtitle {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin: 0;
+    padding-top: 0.4rem;
+    text-align: center;
+    letter-spacing: 0.044rem;
+  }
 }
 
 .tblock {
-  border: 2px solid red;
+  border: 0px solid black;
 }
 
 .t-1 {
@@ -22,22 +86,20 @@ body {
 }
 .t-2 {
   background-color: orange;
-  height: 666px;
+  height: 650px;
   .tblock;
 }
 .t-3 {
   background-color: yellow;
-  height: 790px;
+  height: 808px;
   .tblock;
 }
 .t-4 {
-  background-color: greenyellow;
-  height: 524px;
+  height: 444px;
   .tblock;
 }
 .t-5 {
-  background-color: skyblue;
-  height: 476px;
+  height: 468px;
   .tblock;
 }
 .t-6 {

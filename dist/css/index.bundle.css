@@ -1,83 +1,139 @@
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Bold.woff2) format("woff2"), url(../fonts/Lato-Bold.woff) format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.woff2) format("woff2"), url(../fonts/Lato-Regular.woff) format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Light.woff2) format("woff2"), url(../fonts/Lato-Light.woff) format("woff");
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Italic.woff2) format("woff2"), url(../fonts/Lato-Italic.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+.bg1 {
+  background: url(../img/prosto.jpg) no-repeat;
+}
+body {
   padding: 0;
   margin: 0;
 }
-body {
-  background-color: white;
-  color: lime;
+.section {
+  font-family: Lato, sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2.6rem;
+}
+.section--gray-bgcl {
+  background-color: rgba(242, 248, 248);
+}
+.section__header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.section__title {
+  width: 100%;
+  text-align: center;
+  color: rgba(39, 36, 116);
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.section__title--black-cl {
+  color: rgba(0, 0, 0);
+}
+.section__subtitle {
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin: 0;
+  padding-top: 0.4rem;
+  text-align: center;
+  letter-spacing: 0.044rem;
 }
 .tblock {
-  border: 2px solid red;
+  border: 0px solid black;
 }
 .t-1 {
   background-color: red;
   height: 132px;
-  border: 2px solid red;
+  border: 0px solid black;
 }
 .t-2 {
   background-color: orange;
-  height: 666px;
-  border: 2px solid red;
+  height: 650px;
+  border: 0px solid black;
 }
 .t-3 {
   background-color: yellow;
-  height: 790px;
-  border: 2px solid red;
+  height: 808px;
+  border: 0px solid black;
 }
 .t-4 {
-  background-color: greenyellow;
-  height: 524px;
-  border: 2px solid red;
+  height: 444px;
+  border: 0px solid black;
 }
 .t-5 {
-  background-color: skyblue;
-  height: 476px;
-  border: 2px solid red;
+  height: 468px;
+  border: 0px solid black;
 }
 .t-6 {
   background-color: blue;
   height: 1080px;
-  border: 2px solid red;
+  border: 0px solid black;
 }
 .t-7 {
   background-color: purple;
   height: 648px;
-  border: 2px solid red;
+  border: 0px solid black;
 }
 .t-8 {
   background-color: red;
   height: 900px;
-  border: 2px solid red;
+  border: 0px solid black;
 }
 .t-9 {
   background-color: orange;
   height: 472px;
-  border: 2px solid red;
+  border: 0px solid black;
 }
 .t-10 {
   background-color: yellow;
   height: 860px;
-  border: 2px solid red;
+  border: 0px solid black;
 }
 .t-11 {
   background-color: greenyellow;
   height: 2730px;
-  border: 2px solid red;
+  border: 0px solid black;
 }
 .t-12 {
   background-color: skyblue;
   height: 680px;
-  border: 2px solid red;
+  border: 0px solid black;
 }
 .t-13 {
   background-color: blue;
   height: 620px;
-  border: 2px solid red;
+  border: 0px solid black;
 }
 .t-14 {
   background-color: purple;
   height: 266px;
-  border: 2px solid red;
+  border: 0px solid black;
 }
 
