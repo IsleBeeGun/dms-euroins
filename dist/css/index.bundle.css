@@ -132,6 +132,7 @@ body {
   background-color: #f2f8f8;
 }
 .section__buttons-container {
+  text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
