@@ -11,6 +11,7 @@
 @lighten-hover: 20%;
 @light-shadow: 4px 4px 6px hsl(0, 0%, 95%), -4px -4px 6px hsl(0, 0%, 95%),
   -4px 4px 6px hsl(0, 0%, 95%), 4px -4px 6px hsl(0, 0%, 95%);
+@transparent-shadow: 4px 4px 6px transparent;
 .bg-prosto {
   background: url("../img/bg/prosto.jpg") no-repeat;
 }
@@ -131,11 +132,20 @@ body {
     padding-top: 2.4rem;
     padding-left: 11%;
     padding-right: 11%;
+    &--large-text {
+      padding: 0;
+    }
+  }
+  &__textblock-container {
+    padding-top: 3rem;
+    display: flex;
+    flex-flow: row wrap;
   }
   &__calc {
-    height: 500px;
+    height: 400px;
     border-radius: 60px;
     margin-top: 24px;
+    margin-bottom: 72px;
     padding: 0px 57px 0px 57px;
     background-color: @theme-color-3;
     width: 79%;
@@ -150,14 +160,15 @@ body {
     width: 100%;
   }
   &__button {
+    display: inline-block;
     box-sizing: border-box;
     border-radius: 5px;
     color: @theme-color-5;
     font-weight: bold;
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 300px;
+    margin: 10px;
     padding: 14px 20px;
     transition: background-color 0.2s ease-in-out;
     &--pink-bgcl {
@@ -201,6 +212,10 @@ body {
   &--large-photo {
     padding-top: 2.2rem;
   }
+  &--large-text {
+    min-width: 200px;
+    width: 33%;
+  }
   &__icon-container {
     display: flex;
     flex-flow: row nowrap;
@@ -217,10 +232,27 @@ body {
       width: 200px;
       height: 200px;
     }
+    &--no-padding {
+      padding: 0;
+      padding-bottom: 3rem;
+      width: auto;
+      height: auto;
+    }
+    &--no-shadow {
+      box-shadow: @transparent-shadow;
+    }
   }
   &__icon {
     width: 70px;
     height: 70px;
+    &--text {
+      width: auto;
+      height: auto;
+      font-size: 3rem;
+      line-height: 2rem;
+      font-weight: bold;
+      color: @theme-color-2;
+    }
   }
   &__index {
     box-sizing: content-box;
@@ -252,52 +284,93 @@ body {
       position: static;
       font-style: italic;
     }
+    &--very-large {
+      padding-top: 1.3rem;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      min-width: 250px;
+      max-width: 250px;
+      position: static;
+    }
+    &--white-cl {
+      color: @theme-color-5;
+    }
   }
 }
 
-.t-1 {
+.textblock {
+  padding: 5rem;
+  display: inline-block;
+  background-color: @theme-color-5;
+  min-width: 600px;
+  max-width: 50%;
+  &--gray-bgcl {
+    background-color: @theme-color-3;
+  }
+  &__title {
+    color: @theme-color-1;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+    &--smaller {
+      color: @theme-color-4;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      padding-bottom: 1rem;
+    }
+  }
+  &__text {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    &--bold {
+      font-weight: bold;
+    }
+  }
+}
+
+.t-1 { // HEADER (EZ)
   background-color: red;
   height: 132px;
 }
-.t-2 {
+.t-2 { // INTRO (MED)
   background-color: orange;
   height: 650px;
 }
-.t-3 {
-  height: 806px;
+.t-3 {  // CALC (MED) + fix height & margin-bottom!
+  // height: 806px;
 }
-.t-4 {
-  min-height: 526px;
+.t-4 {  // PROSTO KUPIT (EZ) + fix height!!!
+  // min-height: 526px;
 }
-.t-5 {
+.t-5 {  // DROPDOWN (MED)
   height: 472px;
 }
-.t-6 {
+.t-6 {  // PHOTO TILES (MED)
   // height: 1068px;
 }
-.t-7 {
-  height: 656px;
+.t-7 {  // INFO ABOUT EUROINS (EZ)
+  // height: 656px;
 }
-.t-8 {
+.t-8 { // FORM (HARD)
   height: 906px;
 }
-.t-9 {
-  height: 472px;
+.t-9 {  // OTHER INSURANCE, PINK RIBBON (EZ) + add links & animation
+  // height: 472px;
 }
-.t-10 {
-  height: 890px;
+.t-10 {  // EXAMPLE (MED) + check semantics !!
+  // height: 902px;
 }
-.t-11 {
-  height: 2700px;
+.t-11 {  // HOW TO CHOOSE, MANY TEXTS (MED) + fix side paddings !!
+  // height: 2700px;
 }
-.t-12 {
+.t-12 { // CONTACTS (EZ)
   height: 680px;
 }
-.t-13 {
+.t-13 { // MAP (MED)
   background-color: blue;
   height: 620px;
 }
-.t-14 {
+.t-14 { // FOOTER (EZ)
   background-color: purple;
   height: 266px;
 }
