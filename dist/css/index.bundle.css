@@ -30,28 +30,28 @@
   background: url(../img/feedback.jpg) no-repeat;
 }
 .bg-1 {
-  background: url(../img/1.jpg) no-repeat;
+  background: url(../img/1.jpg) no-repeat !important;
 }
 .bg-2 {
-  background: url(../img/2.jpg) no-repeat;
+  background: url(../img/2.jpg) no-repeat !important;
 }
 .bg-3 {
-  background: url(../img/3.jpg) no-repeat;
+  background: url(../img/3.jpg) no-repeat !important;
 }
 .bg-4 {
-  background: url(../img/4.jpg) no-repeat;
+  background: url(../img/4.jpg) no-repeat !important;
 }
 .bg-5 {
-  background: url(../img/5.jpg) no-repeat;
+  background: url(../img/5.jpg) no-repeat !important;
 }
 .bg-6 {
-  background: url(../img/6.jpg) no-repeat;
+  background: url(../img/6.jpg) no-repeat !important;
 }
 .bg-7 {
-  background: url(../img/7.jpg) no-repeat;
+  background: url(../img/7.jpg) no-repeat !important;
 }
 .bg-8 {
-  background: url(../img/8.jpg) no-repeat;
+  background: url(../img/8.jpg) no-repeat !important;
 }
 body {
   padding: 0;
@@ -162,6 +162,9 @@ body {
   flex-flow: column nowrap;
   align-items: center;
 }
+.info--large-photo {
+  padding-top: 2.2rem;
+}
 .info__icon-container {
   display: flex;
   flex-flow: row nowrap;
@@ -206,8 +209,13 @@ body {
   bottom: 26px;
 }
 .info__text--large {
+  padding-top: 1.3rem;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  min-width: 300px;
+  max-width: 300px;
   position: static;
-  padding-top: 2rem;
+  font-style: italic;
 }
 .t-1 {
   background-color: red;
