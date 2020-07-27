@@ -21,42 +21,142 @@
       <section class="t-2">
         <header>T-2: Intro block is here (s)</header>
       </section>
-      <section class="t-3">
-        <header>T-3: Calculator block is here</header>
+      <section class="t-3 section">
+        <header class="section__header section__header--extra-padding">
+          <p class="section__title">Выбрать полис медицинского страхования</p>
+          <p class="section__subtitle">
+            Введите необходимые данные, выберите программу и оплатите полис ДМС
+          </p>
+        </header>
+        <div class="section__calc">
+          <div id="eu-health-standart"></div>
+          <script
+            src="https://euro-ins.ru/front/src/js/calc/health/standart/calculator.js"
+            defer
+          ></script>
+          <script>
+            (function () {
+              window.addEventListener("eCalcLoaded", function () {
+                new HealthStandartCalculator("eu-health-standart", {
+                  pid: "MTAwMTEwMDE1MDAwMDAw",
+                });
+              });
+            })();
+          </script>
+        </div>
       </section>
-      <section class="bg1 t-4 section">
+      <section class="t-4 bg1 section">
         <header class="section__header">
           <p class="section__title">Просто купить медицинский полис онлайн</p>
-          <p class="section__subtitle">Приобретите полис ДМС онлайн или оставьте заявку на сайте</p>
+          <p class="section__subtitle">
+            Приобретите полис ДМС онлайн или оставьте заявку на сайте
+          </p>
         </header>
+        <div class="section__info-container">
+          <div class="info">
+            <div class="info__icon-container"><img class="info__icon" src="./img/svg/programms_choice.svg"/></div>
+            <span class="info__index">1</span>
+            <p class="info__text">asdfasdf</p>
+          </div>
+          <div class="info">
+            <div class="info__icon-container"><img class="info__icon" src="./img/svg/epolis_choice.svg"/></div> 
+            <span class="info__index">2</span>
+            <p class="info__text">asdfasdf</p>
+          </div>
+          <div class="info">
+            <div class="info__icon-container"><img class="info__icon" src="./img/svg/about_choice.svg"/></div>
+            <span class="info__index"></span>3</span>
+            <p class="info__text">asdfasdf</p>
+          </div>
+        </div>
       </section>
       <section class="t-5 section section--gray-bgcl">
-        <header class="section__header">
-          <p class="section__title section__title--black-cl">Медицинские центры, с которыми сотрудничает ЕВРОИНС</p>
-          <p class="section__subtitle">В этом разделе Вы можете посмотреть список медицинских центров и учреждений,<br> с которыми ЕВРОИНС сотрудничает по медицинскому страхованию</p>
+        <header class="section__header section__header--extra-padding">
+          <p class="section__title section__title--black-cl">
+            Медицинские центры, с которыми сотрудничает ЕВРОИНС
+          </p>
+          <p class="section__subtitle">
+            В этом разделе Вы можете посмотреть список медицинских центров и
+            учреждений,<br />
+            с которыми ЕВРОИНС сотрудничает по медицинскому страхованию
+          </p>
         </header>
       </section>
-      <section class="t-6">
-        <header>T-6: WHY US block it is here</header>
+      <section class="t-6 section">
+        <header class="section__header section__header--extra-padding">
+          <p class="section__title">Почему лучше страховаться в ЕВРОИНС?</p>
+          <p class="section__subtitle">
+            Приведём несколько причин, по которым наши клиенты рекомендуют
+            оформлять медицинский полис в ЕВРОИНС
+          </p>
+        </header>
       </section>
-      <section class="t-7">
-        <header>T-7: ABOUT US block it is here</header>
+      <section class="t-7 section">
+        <header class="section__header">
+          <p class="section__title">Информация о страховой компании ЕВРОИНС</p>
+        </header>
       </section>
-      <section class="t-8"><header>T-8: Form block it is here</header></section>
-      <section class="t-9">
-        <header>T-9: Other insurance types block it is here</header>
+      <section class="t-8 bg2 section">
+        <header class="section__header section__header--extra-padding">
+          <p class="section__title">
+            Заполнить и отправить заявку на медицинское страхование
+          </p>
+          <p class="section__subtitle">
+            * звёздочкой обозначены обязательные для заполнения поля
+          </p>
+        </header>
       </section>
-      <section class="t-10">
-        <header>T-10: Example block it is here</header>
+      <section class="t-9 section section--pink-bgcl">
+        <header class="section__header">
+          <p class="section__title section__title--white-cl">
+            Другие виды страховой защиты ЕВРОИНС
+          </p>
+          <p class="section__subtitle section__subtitle--white-cl">
+            Для оформления дополнительной защиты онлайн кликните иконку
+            интересующего вида страхования
+          </p>
+        </header>
       </section>
-      <section class="t-11">
-        <header>T-11: HOW TO CHOOSE AND BUY block it is here</header>
+      <section class="t-10 section">
+        <header class="section__header section__header--extra-padding">
+          <p class="section__title">
+            Образец программы медицинского страхования
+          </p>
+          <p class="section__subtitle">
+            На примере программы добровольного медицинского страхования от ООО
+            "Астери"
+          </p>
+        </header>
+        <!-- <div style="background-color: aquamarine; height: 594px;">test</div> -->
+        <div>
+          <a href="#" class="section__button section__button--pink-bgcl"
+            >ОТПРАВИТЬ ЗАЯВКУ</a
+          >
+          <a href="#" class="section__button section__button--blue-bgcl"
+            >ВЫБРАТЬ ПРОГРАММУ</a
+          >
+        </div>
       </section>
-      <section class="t-12">
-        <header>T-12: CALL US block it is here</header>
+      <section class="t-11 section">
+        <header class="section__header">
+          <p class="section__title">
+            Как выбрать и купить медицинский полис онлайн?
+          </p>
+          <p class="section__subtitle">
+            Ответы на самые популярные вопросы наших клиентов при выборе и
+            офрмлении страхового полиса ДМС
+          </p>
+        </header>
       </section>
-      <section class="t-13">
-        <header>T-13: Map block it is here</header>
+      <section class="t-12 section">
+        <header class="section__header">
+          <p class="section__title">Как связаться с ЕВРОИНС</p>
+        </header>
+      </section>
+      <section class="t-13 section">
+        <header class="section__header">
+          <p class="section__title">Схема проезда</p>
+        </header>
       </section>
     </main>
     <footer class="t-14">T-14: Footer is here</footer>
