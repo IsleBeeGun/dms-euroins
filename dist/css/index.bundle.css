@@ -30,28 +30,28 @@
   background: url(../img/feedback.jpg) no-repeat;
 }
 .bg-1 {
-  background: url(../img/1.jpg) no-repeat !important;
+  background: url(../img/1.jpg) no-repeat -120px 0px !important;
 }
 .bg-2 {
-  background: url(../img/2.jpg) no-repeat !important;
+  background: url(../img/2.jpg) no-repeat -60px 0px !important;
 }
 .bg-3 {
   background: url(../img/3.jpg) no-repeat !important;
 }
 .bg-4 {
-  background: url(../img/4.jpg) no-repeat !important;
+  background: url(../img/4.jpg) no-repeat -120px 0px !important;
 }
 .bg-5 {
-  background: url(../img/5.jpg) no-repeat !important;
+  background: url(../img/5.jpg) no-repeat -50px 0px !important;
 }
 .bg-6 {
-  background: url(../img/6.jpg) no-repeat !important;
+  background: url(../img/6.jpg) no-repeat -140px 0px !important;
 }
 .bg-7 {
-  background: url(../img/7.jpg) no-repeat !important;
+  background: url(../img/7.jpg) no-repeat -90px 0px !important;
 }
 .bg-8 {
-  background: url(../img/8.jpg) no-repeat !important;
+  background: url(../img/8.jpg) no-repeat -20px 0px !important;
 }
 body {
   padding: 0;
@@ -131,6 +131,11 @@ body {
 .section__calc .calc-check {
   background-color: #f2f8f8;
 }
+.section__buttons-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
 .section__button {
   box-sizing: border-box;
   border-radius: 5px;
@@ -150,12 +155,28 @@ body {
   color: #ffffff;
   background-color: #f75aa2;
 }
+.section__button--pink-bgcl:active {
+  color: #ffffff;
+  background-color: #7f063d;
+}
 .section__button--blue-bgcl {
   background-color: #272474;
 }
 .section__button--blue-bgcl:hover {
   color: #ffffff;
   background-color: #413cc2;
+}
+.section__button--blue-bgcl:active {
+  color: #ffffff;
+  background-color: #0d0c26;
+}
+.section__subinfo {
+  width: 100%;
+  padding-top: 2.4rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
 }
 .info {
   display: flex;
