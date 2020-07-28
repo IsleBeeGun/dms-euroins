@@ -326,16 +326,37 @@ body {
 }
 .formblock__row {
   width: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 .formblock__row--half {
   width: 50%;
 }
-.formblock__choice {
+.formblock__choice-name {
+  display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
 }
+.formblock__choice-name--fixed-size {
+  min-width: 200px;
+  max-width: 200px;
+}
 .formblock__label {
+  display: inline-block;
   font-size: 1.2rem;
+  max-width: 1000px;
+}
+.formblock__label--fixed-size {
+  min-width: 200px;
+  max-width: 200px;
+}
+.formblock__checkbox {
+  margin-right: 1rem;
+}
+.formblock__input-field {
+  min-width: 400px;
+  max-width: 400px;
 }
 .t-1 {
   background-color: red;

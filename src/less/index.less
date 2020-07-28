@@ -9,8 +9,9 @@
 @theme-color-4: rgb(0, 0, 0);
 @theme-color-5: rgb(255, 255, 255);
 @lighten-hover: 20%;
-@light-shadow: 4px 4px 6px hsla(0, 0%, 95%, 0.8), -4px -4px 6px hsla(0, 0%, 95%, 0.8),
-  -4px 4px 6px hsla(0, 0%, 95%, 0.8), 4px -4px 6px hsla(0, 0%, 95%, 0.8);
+@light-shadow: 4px 4px 6px hsla(0, 0%, 95%, 0.8),
+  -4px -4px 6px hsla(0, 0%, 95%, 0.8), -4px 4px 6px hsla(0, 0%, 95%, 0.8),
+  4px -4px 6px hsla(0, 0%, 95%, 0.8);
 @transparent-shadow: 4px 4px 6px transparent;
 .bg-main {
   background: url("../img/bg/main_banner1.jpg") no-repeat;
@@ -343,63 +344,99 @@ body {
   padding: 5rem;
   display: flex;
   flex-flow: row wrap;
+
   &__row {
     width: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
     &--half {
       width: 50%;
     }
   }
-  &__choice {
+  &__choice-name {
+    display: inline-block;
     font-size: 1.2rem;
     font-weight: bold;
+    &--fixed-size {
+      min-width: 200px;
+      max-width: 200px;
+    }
   }
   &__label {
+    display: inline-block;
     font-size: 1.2rem;
+    max-width: 1000px;
+    &--fixed-size {
+      min-width: 200px;
+      max-width: 200px;
+    }
+  }
+  &__checkbox {
+    margin-right: 1rem;
+  }
+  &__input-field {
+    min-width: 400px;
+    max-width: 400px;
   }
 }
 
-.t-1 { // HEADER (EZ)
+.t-1 {
+  // HEADER (EZ)
   background-color: red;
   height: 132px;
 }
-.t-2 { // INTRO (MED)
+.t-2 {
+  // INTRO (MED)
   height: 650px;
 }
-.t-3 {  // CALC (MED) + fix height & margin-bottom!
+.t-3 {
+  // CALC (MED) + fix height & margin-bottom!
   // height: 806px;
 }
-.t-4 {  // PROSTO KUPIT (EZ) + fix height!!!
+.t-4 {
+  // PROSTO KUPIT (EZ) + fix height!!!
   // min-height: 526px;
 }
-.t-5 {  // DROPDOWN (MED)
+.t-5 {
+  // DROPDOWN (MED)
   height: 472px;
 }
-.t-6 {  // PHOTO TILES (MED)
+.t-6 {
+  // PHOTO TILES (MED)
   // height: 1068px;
 }
-.t-7 {  // INFO ABOUT EUROINS (EZ)
+.t-7 {
+  // INFO ABOUT EUROINS (EZ)
   // height: 656px;
 }
-.t-8 { // FORM (HARD)
+.t-8 {
+  // FORM (HARD)
   height: 906px;
 }
-.t-9 {  // OTHER INSURANCE, PINK RIBBON (EZ) + add links & animation
+.t-9 {
+  // OTHER INSURANCE, PINK RIBBON (EZ) + add links & animation
   // height: 472px;
 }
-.t-10 {  // EXAMPLE (MED) + check semantics !!
+.t-10 {
+  // EXAMPLE (MED) + check semantics !!
   // height: 902px;
 }
-.t-11 {  // HOW TO CHOOSE, MANY TEXTS (MED) + fix side paddings !!
+.t-11 {
+  // HOW TO CHOOSE, MANY TEXTS (MED) + fix side paddings !!
   // height: 2700px;
 }
-.t-12 { // CONTACTS (EZ)
+.t-12 {
+  // CONTACTS (EZ)
   height: 680px;
 }
-.t-13 { // MAP (MED)
+.t-13 {
+  // MAP (MED)
   background-color: blue;
   height: 620px;
 }
-.t-14 { // FOOTER (EZ)
+.t-14 {
+  // FOOTER (EZ)
   background-color: purple;
   height: 266px;
 }
