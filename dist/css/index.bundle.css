@@ -334,6 +334,9 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.formblock__label {
+  font-size: 1.2rem;
+}
 .t-1 {
   background-color: red;
   height: 132px;
