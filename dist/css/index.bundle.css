@@ -303,7 +303,7 @@ body {
   color: #272474;
   font-size: 1.8rem;
   line-height: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 .textblock__title--smaller {
   color: #000000;
@@ -314,9 +314,15 @@ body {
 .textblock__text {
   font-size: 1.1rem;
   line-height: 1.2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
 }
 .textblock__text--bold {
   font-weight: bold;
+}
+.textblock__text--larger {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
 }
 .formblock {
   width: 100%;
@@ -370,9 +376,6 @@ body {
 }
 .t-8 {
   height: 906px;
-}
-.t-12 {
-  height: 680px;
 }
 .t-13 {
   background-color: blue;
