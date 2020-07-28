@@ -23,6 +23,9 @@
   font-style: italic;
   font-display: swap;
 }
+.bg-main {
+  background: url(../img/main_banner1.jpg) no-repeat;
+}
 .bg-prosto {
   background: url(../img/prosto.jpg) no-repeat;
 }
@@ -56,6 +59,12 @@
 body {
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.navigationblock {
+  min-width: 200px;
 }
 .section {
   font-family: Lato, sans-serif;
@@ -129,11 +138,10 @@ body {
   flex-flow: row wrap;
 }
 .section__calc {
-  height: 400px;
   border-radius: 60px;
-  margin-top: 24px;
+  margin-top: 28px;
   margin-bottom: 72px;
-  padding: 0px 57px 0px 57px;
+  padding: 0px 57px 20px 57px;
   background-color: #f2f8f8;
   width: 79%;
 }
@@ -212,7 +220,7 @@ body {
   border-radius: 50%;
   overflow: visible;
   background: #ffffff;
-  box-shadow: 4px 4px 6px hsl(0, 0%, 95%), -4px -4px 6px hsl(0, 0%, 95%), -4px 4px 6px hsl(0, 0%, 95%), 4px -4px 6px hsl(0, 0%, 95%);
+  box-shadow: 4px 4px 6px hsla(0, 0%, 95%, 0.8), -4px -4px 6px hsla(0, 0%, 95%, 0.8), -4px 4px 6px hsla(0, 0%, 95%, 0.8), 4px -4px 6px hsla(0, 0%, 95%, 0.8);
 }
 .info__icon-container--large-photo {
   width: 200px;
@@ -250,7 +258,7 @@ body {
   border-radius: 50%;
   text-align: center;
   background: #ffffff;
-  box-shadow: 4px 4px 6px hsl(0, 0%, 95%), -4px -4px 6px hsl(0, 0%, 95%), -4px 4px 6px hsl(0, 0%, 95%), 4px -4px 6px hsl(0, 0%, 95%);
+  box-shadow: 4px 4px 6px hsla(0, 0%, 95%, 0.8), -4px -4px 6px hsla(0, 0%, 95%, 0.8), -4px 4px 6px hsla(0, 0%, 95%, 0.8), 4px -4px 6px hsla(0, 0%, 95%, 0.8);
   color: #e00b6c;
   font-weight: bold;
   font-size: 1.7rem;
@@ -310,12 +318,27 @@ body {
 .textblock__text--bold {
   font-weight: bold;
 }
+.formblock {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.formblock__row {
+  width: 100%;
+}
+.formblock__row--half {
+  width: 50%;
+}
+.formblock__choice {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 .t-1 {
   background-color: red;
   height: 132px;
 }
 .t-2 {
-  background-color: orange;
   height: 650px;
 }
 .t-5 {

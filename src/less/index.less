@@ -9,9 +9,12 @@
 @theme-color-4: rgb(0, 0, 0);
 @theme-color-5: rgb(255, 255, 255);
 @lighten-hover: 20%;
-@light-shadow: 4px 4px 6px hsl(0, 0%, 95%), -4px -4px 6px hsl(0, 0%, 95%),
-  -4px 4px 6px hsl(0, 0%, 95%), 4px -4px 6px hsl(0, 0%, 95%);
+@light-shadow: 4px 4px 6px hsla(0, 0%, 95%, 0.8), -4px -4px 6px hsla(0, 0%, 95%, 0.8),
+  -4px 4px 6px hsla(0, 0%, 95%, 0.8), 4px -4px 6px hsla(0, 0%, 95%, 0.8);
 @transparent-shadow: 4px 4px 6px transparent;
+.bg-main {
+  background: url("../img/bg/main_banner1.jpg") no-repeat;
+}
 .bg-prosto {
   background: url("../img/bg/prosto.jpg") no-repeat;
 }
@@ -67,6 +70,13 @@
 body {
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.navigationblock {
+  min-width: 200px;
 }
 
 .section {
@@ -142,11 +152,11 @@ body {
     flex-flow: row wrap;
   }
   &__calc {
-    height: 400px;
+    // height: 400px;
     border-radius: 60px;
-    margin-top: 24px;
+    margin-top: 28px;
     margin-bottom: 72px;
-    padding: 0px 57px 0px 57px;
+    padding: 0px 57px 20px 57px;
     background-color: @theme-color-3;
     width: 79%;
     & .calc-check {
@@ -328,12 +338,28 @@ body {
   }
 }
 
+.formblock {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-flow: row wrap;
+  &__row {
+    width: 100%;
+    &--half {
+      width: 50%;
+    }
+  }
+  &__choice {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
 .t-1 { // HEADER (EZ)
   background-color: red;
   height: 132px;
 }
 .t-2 { // INTRO (MED)
-  background-color: orange;
   height: 650px;
 }
 .t-3 {  // CALC (MED) + fix height & margin-bottom!
