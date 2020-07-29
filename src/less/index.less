@@ -13,6 +13,81 @@
   -4px -4px 6px hsla(0, 0%, 95%, 0.8), -4px 4px 6px hsla(0, 0%, 95%, 0.8),
   4px -4px 6px hsla(0, 0%, 95%, 0.8);
 @transparent-shadow: 4px 4px 6px transparent;
+
+@fs-sm: 1rem;
+@fs-md: 1.3rem;
+@fs-lg: 2.1rem;
+@fs-xl: 3.2rem;
+
+.text {
+  &_ta { //_____________Text Align
+    &-center {
+      text-align: center !important;
+    }
+    &-left {
+      text-align: left !important;
+    }
+    &-right {
+      text-align: right !important;
+    }
+  }
+  &_cl { //_____________Color
+    &-black {
+      color: @theme-color-4 !important;
+    }
+    &-white {
+      color: @theme-color-5 !important;
+    }
+    &-pink {
+      color: @theme-color-2 !important;
+    }
+    &-blue {
+      color: @theme-color-1 !important;
+    }
+    &-gray {
+      color: @theme-color-3 !important;
+    }
+  }
+  &_ff { //_____________Font Face
+    &-regular {
+      font-family: @ff !important;
+    }
+  }
+  &_fs { //_____________Font Size
+    &-xl {
+      font-size: @fs-xl !important;
+      line-height: @fs-xl + @fs-xl/10 !important;
+    }
+    &-lg {
+      font-size: @fs-lg !important;
+      line-height: @fs-lg + @fs-lg/10 !important;
+    }
+    &-md {
+      font-size: @fs-md !important;
+      line-height: @fs-md + @fs-md/10 !important;
+    }
+    &-sm {
+      font-size: @fs-sm !important;
+      line-height: @fs-sm + @fs-md/10 !important;
+    }
+  }
+  &_fw { //_____________Font Weight
+    &-light {
+      font-weight: 200 !important;
+    }
+    &-normal {
+      font-weight: normal !important;
+    }
+    &-bold {
+      font-weight: bold !important;
+    }
+  }
+  &_italic { //_____________Style Italic
+    font-style: italic !important;
+  }
+}
+
+
 .bg-main {
   background: url("../img/bg/main_banner1.jpg") no-repeat;
 }
@@ -48,6 +123,9 @@
 }
 
 @heading-regular-fs: 2.1rem;
+
+
+
 
 // Заголовки
 @heading-ff: @ff;
@@ -86,52 +164,50 @@ body {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  &--gray-bgcl {
+  margin-bottom: 5rem;
+  &_gray-bgcl {
     background-color: @theme-color-3;
   }
-  &--pink-bgcl {
+  &_pink-bgcl {
     background-color: @theme-color-2;
   }
   &__header {
     padding-top: 2.8rem;
     display: flex;
+    width: 100%;
     flex-flow: row wrap;
-    justify-content: center;
-    &--extra-padding {
+    &_extra-padding {
       padding-top: 4.2rem;
     }
   }
   &__title {
     width: 100%;
-    padding-left: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
-    line-height: @heading-regular-fs;
-    text-align: center;
-    color: @heading-cl;
-    font-size: @heading-regular-fs;
-    font-weight: bold;
     margin: 0;
-    &--black-cl {
-      color: @theme-color-4;
-    }
-    &--white-cl {
-      color: @theme-color-5;
-    }
+    // Default (can be overriden with .text)
+    font-size: @fs-lg;
+    line-height: @fs-lg + @fs-lg/10;
+    color: @theme-color-1;
+    text-align: center;
+    font-family: @ff;
+    font-weight: bold
+
   }
   &__subtitle {
     width: 100%;
-    padding-left: 1rem;
-    line-height: 1.6rem;
-    font-size: 1.3rem;
-    // font-weight: 200;
-    font-weight: normal;
+    padding-left: 5rem;
+    padding-right: 5rem;
     margin: 0;
+    // Default (can be overriden with .text)
+    font-size: @fs-md;
+    line-height: @fs-md + @fs-md/10;
+    color: @theme-color-4;
     text-align: center;
-    letter-spacing: 0.044rem;
-    &--white-cl {
-      color: @theme-color-5;
-    }
+    font-family: @ff;
+    font-weight: normal
   }
   &__info-container {
     // background-color: lightblue;
@@ -143,7 +219,7 @@ body {
     padding-top: 2.4rem;
     padding-left: 11%;
     padding-right: 11%;
-    &--large-text {
+    &_large-text {
       padding: 0;
     }
   }
@@ -182,7 +258,7 @@ body {
     margin: 10px;
     padding: 14px 20px;
     transition: background-color 0.2s ease-in-out;
-    &--pink-bgcl {
+    &_pink-bgcl {
       background-color: @theme-color-2;
       &:hover {
         color: @theme-color-5;
@@ -193,7 +269,7 @@ body {
         background-color: darken((@theme-color-2), @lighten-hover);
       }
     }
-    &--blue-bgcl {
+    &_blue-bgcl {
       background-color: @theme-color-1;
       &:hover {
         color: @theme-color-5;
@@ -220,10 +296,10 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   // background-color: lightcoral;
-  &--large-photo {
+  &_large-photo {
     padding-top: 2.2rem;
   }
-  &--large-text {
+  &_large-text {
     min-width: 200px;
     width: 33%;
   }
@@ -239,24 +315,24 @@ body {
     overflow: visible;
     background: @theme-color-5;
     box-shadow: @light-shadow;
-    &--large-photo {
+    &_large-photo {
       width: 200px;
       height: 200px;
     }
-    &--no-padding {
+    &_no-padding {
       padding: 0;
       padding-bottom: 3rem;
       width: auto;
       height: auto;
     }
-    &--no-shadow {
+    &_no-shadow {
       box-shadow: @transparent-shadow;
     }
   }
   &__icon {
     width: 70px;
     height: 70px;
-    &--text {
+    &_text {
       width: auto;
       height: auto;
       font-size: 3rem;
@@ -286,7 +362,7 @@ body {
     font-size: 1rem;
     position: relative;
     bottom: 26px;
-    &--large {
+    &_large {
       padding-top: 1.3rem;
       font-size: 1.3rem;
       line-height: 1.6rem;
@@ -295,7 +371,7 @@ body {
       position: static;
       font-style: italic;
     }
-    &--very-large {
+    &_very-large {
       padding-top: 1.3rem;
       font-size: 2rem;
       line-height: 2.4rem;
@@ -303,7 +379,7 @@ body {
       max-width: 250px;
       position: static;
     }
-    &--white-cl {
+    &_cl-white {
       color: @theme-color-5;
     }
   }
@@ -315,7 +391,7 @@ body {
   background-color: @theme-color-5;
   min-width: 600px;
   max-width: 50%;
-  &--gray-bgcl {
+  &_gray-bgcl {
     background-color: @theme-color-3;
   }
   &__title {
@@ -323,7 +399,7 @@ body {
     font-size: 1.8rem;
     line-height: 2rem;
     padding-bottom: 2rem;
-    &--smaller {
+    &_smaller {
       color: @theme-color-4;
       font-size: 1.4rem;
       line-height: 1.6rem;
@@ -335,10 +411,10 @@ body {
     line-height: 1.2rem;
     padding-bottom: 2rem;
     margin-bottom: 0;
-    &--bold {
+    &_bold {
       font-weight: bold;
     }
-    &--larger {
+    &_larger {
       font-size: 1.4rem;
       line-height: 1.7rem;
     }
@@ -356,7 +432,7 @@ body {
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    &--half {
+    &_half {
       width: 50%;
     }
   }
@@ -364,7 +440,7 @@ body {
     display: inline-block;
     font-size: 1.2rem;
     font-weight: bold;
-    &--fixed-size {
+    &_fixed-size {
       min-width: 200px;
       max-width: 200px;
     }
@@ -373,7 +449,7 @@ body {
     display: inline-block;
     font-size: 1.2rem;
     max-width: 1000px;
-    &--fixed-size {
+    &_fixed-size {
       min-width: 200px;
       max-width: 200px;
     }

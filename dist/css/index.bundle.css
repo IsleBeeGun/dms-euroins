@@ -23,6 +23,61 @@
   font-style: italic;
   font-display: swap;
 }
+.text_ta-center {
+  text-align: center !important;
+}
+.text_ta-left {
+  text-align: left !important;
+}
+.text_ta-right {
+  text-align: right !important;
+}
+.text_cl-black {
+  color: #000000 !important;
+}
+.text_cl-white {
+  color: #ffffff !important;
+}
+.text_cl-pink {
+  color: #e00b6c !important;
+}
+.text_cl-blue {
+  color: #272474 !important;
+}
+.text_cl-gray {
+  color: #f2f8f8 !important;
+}
+.text_ff-regular {
+  font-family: Lato, sans-serif !important;
+}
+.text_fs-xl {
+  font-size: 3.2rem !important;
+  line-height: 3.52rem !important;
+}
+.text_fs-lg {
+  font-size: 2.1rem !important;
+  line-height: 2.31rem !important;
+}
+.text_fs-md {
+  font-size: 1.3rem !important;
+  line-height: 1.43rem !important;
+}
+.text_fs-sm {
+  font-size: 1rem !important;
+  line-height: 1.13rem !important;
+}
+.text_fw-light {
+  font-weight: 200 !important;
+}
+.text_fw-normal {
+  font-weight: normal !important;
+}
+.text_fw-bold {
+  font-weight: bold !important;
+}
+.text_italic {
+  font-style: italic !important;
+}
 .bg-main {
   background: url(../img/main_banner1.jpg) no-repeat;
 }
@@ -72,52 +127,48 @@ body {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 5rem;
 }
-.section--gray-bgcl {
+.section_gray-bgcl {
   background-color: #f2f8f8;
 }
-.section--pink-bgcl {
+.section_pink-bgcl {
   background-color: #e00b6c;
 }
 .section__header {
   padding-top: 2.8rem;
   display: flex;
+  width: 100%;
   flex-flow: row wrap;
-  justify-content: center;
 }
-.section__header--extra-padding {
+.section__header_extra-padding {
   padding-top: 4.2rem;
 }
 .section__title {
   width: 100%;
-  padding-left: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  line-height: 2.1rem;
-  text-align: center;
-  color: #272474;
-  font-size: 2.1rem;
-  font-weight: bold;
   margin: 0;
-}
-.section__title--black-cl {
-  color: #000000;
-}
-.section__title--white-cl {
-  color: #ffffff;
+  font-size: 2.1rem;
+  line-height: 2.31rem;
+  color: #272474;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
 }
 .section__subtitle {
   width: 100%;
-  padding-left: 1rem;
-  line-height: 1.6rem;
-  font-size: 1.3rem;
-  font-weight: normal;
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.43rem;
+  color: #000000;
   text-align: center;
-  letter-spacing: 0.044rem;
-}
-.section__subtitle--white-cl {
-  color: #ffffff;
+  font-family: Lato, sans-serif;
+  font-weight: normal;
 }
 .section__info-container {
   width: 100%;
@@ -129,7 +180,7 @@ body {
   padding-left: 11%;
   padding-right: 11%;
 }
-.section__info-container--large-text {
+.section__info-container_large-text {
   padding: 0;
 }
 .section__textblock-container {
@@ -167,25 +218,25 @@ body {
   padding: 14px 20px;
   transition: background-color 0.2s ease-in-out;
 }
-.section__button--pink-bgcl {
+.section__button_pink-bgcl {
   background-color: #e00b6c;
 }
-.section__button--pink-bgcl:hover {
+.section__button_pink-bgcl:hover {
   color: #ffffff;
   background-color: #f75aa2;
 }
-.section__button--pink-bgcl:active {
+.section__button_pink-bgcl:active {
   color: #ffffff;
   background-color: #7f063d;
 }
-.section__button--blue-bgcl {
+.section__button_blue-bgcl {
   background-color: #272474;
 }
-.section__button--blue-bgcl:hover {
+.section__button_blue-bgcl:hover {
   color: #ffffff;
   background-color: #413cc2;
 }
-.section__button--blue-bgcl:active {
+.section__button_blue-bgcl:active {
   color: #ffffff;
   background-color: #0d0c26;
 }
@@ -202,10 +253,10 @@ body {
   flex-flow: column nowrap;
   align-items: center;
 }
-.info--large-photo {
+.info_large-photo {
   padding-top: 2.2rem;
 }
-.info--large-text {
+.info_large-text {
   min-width: 200px;
   width: 33%;
 }
@@ -222,24 +273,24 @@ body {
   background: #ffffff;
   box-shadow: 4px 4px 6px hsla(0, 0%, 95%, 0.8), -4px -4px 6px hsla(0, 0%, 95%, 0.8), -4px 4px 6px hsla(0, 0%, 95%, 0.8), 4px -4px 6px hsla(0, 0%, 95%, 0.8);
 }
-.info__icon-container--large-photo {
+.info__icon-container_large-photo {
   width: 200px;
   height: 200px;
 }
-.info__icon-container--no-padding {
+.info__icon-container_no-padding {
   padding: 0;
   padding-bottom: 3rem;
   width: auto;
   height: auto;
 }
-.info__icon-container--no-shadow {
+.info__icon-container_no-shadow {
   box-shadow: 4px 4px 6px transparent;
 }
 .info__icon {
   width: 70px;
   height: 70px;
 }
-.info__icon--text {
+.info__icon_text {
   width: auto;
   height: auto;
   font-size: 3rem;
@@ -269,7 +320,7 @@ body {
   position: relative;
   bottom: 26px;
 }
-.info__text--large {
+.info__text_large {
   padding-top: 1.3rem;
   font-size: 1.3rem;
   line-height: 1.6rem;
@@ -278,7 +329,7 @@ body {
   position: static;
   font-style: italic;
 }
-.info__text--very-large {
+.info__text_very-large {
   padding-top: 1.3rem;
   font-size: 2rem;
   line-height: 2.4rem;
@@ -286,7 +337,7 @@ body {
   max-width: 250px;
   position: static;
 }
-.info__text--white-cl {
+.info__text_cl-white {
   color: #ffffff;
 }
 .textblock {
@@ -296,7 +347,7 @@ body {
   min-width: 600px;
   max-width: 50%;
 }
-.textblock--gray-bgcl {
+.textblock_gray-bgcl {
   background-color: #f2f8f8;
 }
 .textblock__title {
@@ -305,7 +356,7 @@ body {
   line-height: 2rem;
   padding-bottom: 2rem;
 }
-.textblock__title--smaller {
+.textblock__title_smaller {
   color: #000000;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -317,10 +368,10 @@ body {
   padding-bottom: 2rem;
   margin-bottom: 0;
 }
-.textblock__text--bold {
+.textblock__text_bold {
   font-weight: bold;
 }
-.textblock__text--larger {
+.textblock__text_larger {
   font-size: 1.4rem;
   line-height: 1.7rem;
 }
@@ -336,7 +387,7 @@ body {
   flex-flow: row wrap;
   justify-content: flex-start;
 }
-.formblock__row--half {
+.formblock__row_half {
   width: 50%;
 }
 .formblock__choice-name {
@@ -344,7 +395,7 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
 }
-.formblock__choice-name--fixed-size {
+.formblock__choice-name_fixed-size {
   min-width: 200px;
   max-width: 200px;
 }
@@ -353,7 +404,7 @@ body {
   font-size: 1.2rem;
   max-width: 1000px;
 }
-.formblock__label--fixed-size {
+.formblock__label_fixed-size {
   min-width: 200px;
   max-width: 200px;
 }
