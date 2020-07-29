@@ -1,5 +1,13 @@
 // Импорты
-@import "fonts";
+@import "./fonts.less";
+@import "./backgrounds.less";
+@import "./utilities/u-text.less";
+@import "./utilities/u-container.less";
+@import "./blocks/b-section.less";
+@import "./blocks/b-text.less";
+@import "./blocks/b-piccard.less";
+@import "./blocks/b-form.less";
+@import "./blocks/b-calc.less";
 
 // Переменные и фоновые картинки
 @ff: Lato, sans-serif;
@@ -19,110 +27,7 @@
 @fs-lg: 2.1rem;
 @fs-xl: 3.2rem;
 
-.text {
-  &_ta { //_____________Text Align
-    &-center {
-      text-align: center !important;
-    }
-    &-left {
-      text-align: left !important;
-    }
-    &-right {
-      text-align: right !important;
-    }
-  }
-  &_cl { //_____________Color
-    &-black {
-      color: @theme-color-4 !important;
-    }
-    &-white {
-      color: @theme-color-5 !important;
-    }
-    &-pink {
-      color: @theme-color-2 !important;
-    }
-    &-blue {
-      color: @theme-color-1 !important;
-    }
-    &-gray {
-      color: @theme-color-3 !important;
-    }
-  }
-  &_ff { //_____________Font Face
-    &-regular {
-      font-family: @ff !important;
-    }
-  }
-  &_fs { //_____________Font Size
-    &-xl {
-      font-size: @fs-xl !important;
-      line-height: @fs-xl + @fs-xl/10 !important;
-      letter-spacing: 0rem !important;
-    }
-    &-lg {
-      font-size: @fs-lg !important;
-      line-height: @fs-lg + @fs-lg/10 !important;
-      letter-spacing: 0rem !important;
-    }
-    &-md {
-      font-size: @fs-md !important;
-      line-height: @fs-md + @fs-md/10 !important;
-      letter-spacing: @fs-md/32;
-    }
-    &-sm {
-      font-size: @fs-sm !important;
-      line-height: @fs-sm + @fs-md/10 !important;
-    }
-  }
-  &_fw { //_____________Font Weight
-    &-light {
-      font-weight: 200 !important;
-    }
-    &-normal {
-      font-weight: normal !important;
-    }
-    &-bold {
-      font-weight: bold !important;
-    }
-  }
-  &_italic { //_____________Style Italic
-    font-style: italic !important;
-  }
-}
 
-.bg-main {
-  background: url("../img/bg/main_banner1.jpg") no-repeat;
-}
-.bg-prosto {
-  background: url("../img/bg/prosto.jpg") no-repeat;
-}
-.bg-feedback {
-  background: url("../img/bg/feedback.jpg") no-repeat;
-}
-.bg-1 {
-  background: url("../img/1.jpg") no-repeat -120px 0px !important;
-}
-.bg-2 {
-  background: url("../img/2.jpg") no-repeat -60px 0px !important;
-}
-.bg-3 {
-  background: url("../img/3.jpg") no-repeat !important;
-}
-.bg-4 {
-  background: url("../img/4.jpg") no-repeat -120px 0px !important;
-}
-.bg-5 {
-  background: url("../img/5.jpg") no-repeat -50px 0px !important;
-}
-.bg-6 {
-  background: url("../img/6.jpg") no-repeat -140px 0px !important;
-}
-.bg-7 {
-  background: url("../img/7.jpg") no-repeat -90px 0px !important;
-}
-.bg-8 {
-  background: url("../img/8.jpg") no-repeat -20px 0px !important;
-}
 
 @heading-regular-fs: 2.1rem;
 
@@ -157,11 +62,11 @@ body {
   justify-content: flex-start;
 }
 
-.navigationblock {
+.b-nav {
   min-width: 200px;
 }
 
-.section {
+.b-section {
   font-family: @ff;
   display: flex;
   flex-flow: column nowrap;
@@ -296,7 +201,7 @@ body {
   }
 }
 
-.info {
+.b-piccard {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -384,7 +289,7 @@ body {
   }
 }
 
-.textblock {
+.b-text {
   padding: 5rem;
   display: inline-block;
   background-color: @theme-color-5;
@@ -420,7 +325,7 @@ body {
   }
 }
 
-.formblock {
+.b-form {
   width: 100%;
   padding: 5rem;
   display: flex;
