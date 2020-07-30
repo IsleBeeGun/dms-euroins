@@ -4,6 +4,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  text-align: center;
   &_large-photo {
     padding-top: 2.2rem;
   }
@@ -74,13 +75,15 @@
     font-size: @fs-sm;
     &_large {
       font-size: @fs-md;
-      line-height: 1.6rem;
+      line-height: @fs-md + @fs-md / 10;
+      letter-spacing: @fs-md / 32;
       min-width: 300px;
       max-width: 300px;
     }
     &_very-large {
-      font-size: 2rem;
-      line-height: 2.4rem;
+      font-size: @fs-lg;
+      line-height: @fs-lg + @fs-lg / 10;
+      letter-spacing: 0rem;
       min-width: 250px;
       max-width: 250px;
     }

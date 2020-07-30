@@ -1,0 +1,37 @@
+@import "../variables.less";
+
+.b-button {
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: @theme-color-5;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: @fs-sm;
+  line-height: @fs-sm + @fs-md / 10;
+  margin: @padding;
+  padding: @padding 2*@padding;
+  transition: background-color 0.2s ease-in-out;
+  &_pink {
+    background-color: @theme-color-2;
+    &:hover {
+      color: @theme-color-5;
+      background-color: lighten((@theme-color-2), @lighten-hover);
+    }
+    &:active {
+      color: @theme-color-5;
+      background-color: darken((@theme-color-2), @lighten-hover);
+    }
+  }
+  &_blue {
+    background-color: @theme-color-1;
+    &:hover {
+      color: @theme-color-5;
+      background-color: lighten((@theme-color-1), @lighten-hover);
+    }
+    &:active {
+      color: @theme-color-5;
+      background-color: darken((@theme-color-1), @lighten-hover);
+    }
+  }
+}

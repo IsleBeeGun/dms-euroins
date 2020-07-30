@@ -1,37 +1,40 @@
 @import "../variables.less";
 
 .b-text {
-  padding: 5rem;
+  padding: 5 * @padding;
   display: inline-block;
   background-color: @theme-color-5;
-  min-width: 600px;
+  min-width: 600px;         //////////// !!! ADJUST FOR MEDIA QUERRIES
   max-width: 50%;
   &_gray-bgcl {
     background-color: @theme-color-3;
   }
   &__title {
+    padding-top: @padding;
+    margin: 0;
     color: @theme-color-1;
-    font-size: 1.8rem;
-    line-height: 2rem;
-    padding-bottom: 2rem;
+    font-size: @fs-md;
+    line-height: @fs-md + @fs-md / 10;
+    letter-spacing: @fs-md / 32;
+    // font-size: 1.8rem;
+    // line-height: 2rem;
     &_smaller {
-      color: @theme-color-4;
-      font-size: 1.4rem;
-      line-height: 1.6rem;
-      padding-bottom: 1rem;
+      color: lime;
     }
   }
-  &__text {
-    font-size: 1.1rem;
-    line-height: 1.2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 0;
+  &__paragraph {
+    padding-top: @padding;
+    margin: 0;
+    font-size: @fs-sm;
+    line-height: @fs-sm + @fs-md / 10;
     &_bold {
-      font-weight: bold;
+      // font-weight: bold;
+      text-decoration: underline;
     }
     &_larger {
-      font-size: 1.4rem;
-      line-height: 1.7rem;
+      color: crimson;
+      // font-size: 1.4rem;
+      // line-height: 1.7rem;
     }
   }
 }
