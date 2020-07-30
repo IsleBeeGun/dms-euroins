@@ -114,15 +114,10 @@
 .u-text_italic {
   font-style: italic !important;
 }
-body {
-  padding: 0;
-  margin: 0;
+.b-page {
+  width: 100%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-}
-.b-nav {
-  min-width: 200px;
+  float: row wrap;
 }
 .b-section {
   font-family: Lato, sans-serif;
@@ -253,19 +248,29 @@ body {
   font-size: 1.1rem;
   line-height: 1.2rem;
 }
-.b-piccard {
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.b-nav {
+  min-width: 200px;
+}
+.b-notice {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-.b-piccard_large-photo {
+.b-notice_large-photo {
   padding-top: 2.2rem;
 }
-.b-piccard_large-text {
+.b-notice_large-text {
   min-width: 200px;
   width: 33%;
 }
-.b-piccard__icon-container {
+.b-notice__icon-container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -278,23 +283,23 @@ body {
   background: #ffffff;
   box-shadow: 4px 4px 6px hsla(0, 0%, 95%, 0.8), -4px -4px 6px hsla(0, 0%, 95%, 0.8), -4px 4px 6px hsla(0, 0%, 95%, 0.8), 4px -4px 6px hsla(0, 0%, 95%, 0.8);
 }
-.b-piccard__icon-container_large-photo {
+.b-notice__icon-container_large-photo {
   width: 200px;
   height: 200px;
 }
-.b-piccard__icon-container_no-padding {
+.b-notice__icon-container_no-padding {
   padding: 0;
   width: auto;
   height: auto;
 }
-.b-piccard__icon-container_no-shadow {
+.b-notice__icon-container_no-shadow {
   box-shadow: 4px 4px 6px transparent;
 }
-.b-piccard__icon {
+.b-notice__icon {
   width: 70px;
   height: 70px;
 }
-.b-piccard__icon_text {
+.b-notice__icon_text {
   width: auto;
   height: auto;
   font-size: 3rem;
@@ -302,7 +307,7 @@ body {
   font-weight: bold;
   color: #e00b6c;
 }
-.b-piccard__index {
+.b-notice__index {
   box-sizing: content-box;
   padding: 5px 14px 9px 14px;
   width: 1rem;
@@ -318,20 +323,20 @@ body {
   font-weight: bold;
   font-size: 1.7rem;
 }
-.b-piccard__text {
+.b-notice__text {
   margin: 0;
   padding-top: 1.3rem;
   padding-bottom: 1.3rem;
   max-width: 300px;
   font-size: 1rem;
 }
-.b-piccard__text_large {
+.b-notice__text_large {
   font-size: 1.3rem;
   line-height: 1.6rem;
   min-width: 300px;
   max-width: 300px;
 }
-.b-piccard__text_very-large {
+.b-notice__text_very-large {
   font-size: 2rem;
   line-height: 2.4rem;
   min-width: 250px;
