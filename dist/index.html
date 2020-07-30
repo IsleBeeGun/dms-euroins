@@ -35,7 +35,9 @@
               для жителей Москвы и Московской области
             </p>
           </header>
-          <div class="b-section__container">
+          <div
+            class="b-section__container u-container_justify-start u-container_padding-left"
+          >
             <a href="#" class="b-button b-button_pink">Отправить заявку</a>
             <a href="#" class="b-button b-button_blue">Выбрать программу</a>
           </div>
@@ -75,21 +77,23 @@
               ДМС
             </p>
           </header>
-          <div class="b-calc">
-            <div id="eu-health-standart"></div>
-            <script
-              src="https://euro-ins.ru/front/src/js/calc/health/standart/calculator.js"
-              defer
-            ></script>
-            <script>
-              (function () {
-                window.addEventListener("eCalcLoaded", function () {
-                  new HealthStandartCalculator("eu-health-standart", {
-                    pid: "MTAwMTEwMDE1MDAwMDAw",
+          <div class="b-section__container u-container_justify-center">
+            <div class="b-calc">
+              <div id="eu-health-standart"></div>
+              <script
+                src="https://euro-ins.ru/front/src/js/calc/health/standart/calculator.js"
+                defer
+              ></script>
+              <script>
+                (function () {
+                  window.addEventListener("eCalcLoaded", function () {
+                    new HealthStandartCalculator("eu-health-standart", {
+                      pid: "MTAwMTEwMDE1MDAwMDAw",
+                    });
                   });
-                });
-              })();
-            </script>
+                })();
+              </script>
+            </div>
           </div>
         </section>
 
@@ -370,140 +374,140 @@
               * звёздочкой обозначены обязательные для заполнения поля
             </p>
           </header>
-          <form class="formblock">
-            <div class="formblock__row">
+          <form class="b-form">
+            <div class="b-form__row">
               <span
-                class="formblock__choice-name formblock__choice-name_fixed-size"
+                class="b-form__choice-name b-form__choice-name_fixed-size"
                 >Вид программы:</span
               >
-              <label class="formblock__label formblock__label_fixed-size"
+              <label class="b-form__label b-form__label_fixed-size"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx01"
                 />Поликлиника</label
               >
-              <label class="formblock__label formblock__label_fixed-size"
+              <label class="b-form__label b-form__label_fixed-size"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx02"
                 />Помощь на дому</label
               >
-              <label class="formblock__label formblock__label_fixed-size"
+              <label class="b-form__label b-form__label_fixed-size"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx03"
                 />Стоматология</label
               >
-              <label class="formblock__label formblock__label_fixed-size"
+              <label class="b-form__label b-form__label_fixed-size"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx04"
                 />Скорая помощь</label
               >
             </div>
-            <div class="formblock__row">
+            <div class="b-form__row">
               <span
-                class="formblock__choice-name formblock__choice-name_fixed-size"
+                class="b-form__choice-name b-form__choice-name_fixed-size"
                 >Застрахованный:</span
               >
-              <label class="formblock__label formblock__label_fixed-size"
+              <label class="b-form__label b-form__label_fixed-size"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx05"
                 />Мужчина</label
               >
-              <label class="formblock__label formblock__label_fixed-size"
+              <label class="b-form__label b-form__label_fixed-size"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx06"
                 />Женщина</label
               >
-              <label class="formblock__label formblock__label_fixed-size"
+              <label class="b-form__label b-form__label_fixed-size"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx07"
                 />Ребёнок</label
               >
             </div>
-            <div class="formblock__row">
+            <div class="b-form__row">
               <span
-                class="formblock__choice-name formblock__choice-name_fixed-size"
+                class="b-form__choice-name b-form__choice-name_fixed-size"
                 >Желаемый уровень:</span
               >
-              <label class="formblock__label formblock__label_fixed-size"
+              <label class="b-form__label b-form__label_fixed-size"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx08"
                 />Эконом</label
               >
-              <label class="formblock__label formblock__label_fixed-size"
+              <label class="b-form__label b-form__label_fixed-size"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx09"
                 />Бизнес</label
               >
-              <label class="formblock__label"
+              <label class="b-form__label"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx10"
                 />VIP</label
               >
             </div>
-            <div class="formblock__row">
-              <div class="formblock__row_half">
-                <div class="formblock__row">
+            <div class="b-form__row">
+              <div class="b-form__row_half">
+                <div class="b-form__row">
                   <span
-                    class="formblock__choice-name formblock__choice-name_fixed-size"
+                    class="b-form__choice-name b-form__choice-name_fixed-size"
                     >Ваше имя*:</span
                   >
-                  <input class="formblock__input-field" type="text" />
+                  <input class="b-form__input-field" type="text" />
                 </div>
-                <div class="formblock__row">
+                <div class="b-form__row">
                   <span
-                    class="formblock__choice-name formblock__choice-name_fixed-size"
+                    class="b-form__choice-name b-form__choice-name_fixed-size"
                     >Телефон*:</span
                   >
-                  <input class="formblock__input-field" type="text" />
+                  <input class="b-form__input-field" type="text" />
                 </div>
-                <div class="formblock__row">
+                <div class="b-form__row">
                   <span
-                    class="formblock__choice-name formblock__choice-name_fixed-size"
+                    class="b-form__choice-name b-form__choice-name_fixed-size"
                     >E-mail*:</span
                   >
-                  <input class="formblock__input-field" type="text" />
+                  <input class="b-form__input-field" type="text" />
                 </div>
               </div>
-              <div class="formblock__row_half">
-                <div class="formblock__row">
-                  <span class="formblock__choice-name"
+              <div class="b-form__row_half">
+                <div class="b-form__row">
+                  <span class="b-form__choice-name"
                     >Дополнительная информация:</span
                   >
                 </div>
-                <div class="formblock__row">
+                <div class="b-form__row">
                   <textarea spellcheck style="resize: none;" rows="5" cols="33">
  sup </textarea
                   >
                 </div>
               </div>
             </div>
-            <div class="formblock__row">
+            <div class="b-form__row">
               <span
-                class="formblock__choice-name formblock__choice-name_fixed-size"
+                class="b-form__choice-name b-form__choice-name_fixed-size"
                 >&nbsp;</span
               >
-              <label class="formblock__label"
+              <label class="b-form__label"
                 ><input
-                  class="formblock__checkbox"
+                  class="b-form__checkbox"
                   type="checkbox"
                   name="chkbx11"
                 />C
