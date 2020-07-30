@@ -1,0 +1,37 @@
+@import "../variables.less";
+
+.b-text {
+  padding: 5rem;
+  display: inline-block;
+  background-color: @theme-color-5;
+  min-width: 600px;
+  max-width: 50%;
+  &_gray-bgcl {
+    background-color: @theme-color-3;
+  }
+  &__title {
+    color: @theme-color-1;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+    &_smaller {
+      color: @theme-color-4;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      padding-bottom: 1rem;
+    }
+  }
+  &__text {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+    &_bold {
+      font-weight: bold;
+    }
+    &_larger {
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+    }
+  }
+}

@@ -130,16 +130,15 @@
   background-color: #f2f8f8 !important;
 }
 .b-page {
-  width: 100%;
-  display: flex;
-  float: row wrap;
+  width: 90%;
+  display: inline-flex;
+  flex-flow: row wrap;
 }
 .b-section {
   width: 100%;
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: center;
   font-family: Lato, sans-serif;
 }
 .b-section__header {
@@ -247,9 +246,40 @@
   font-size: 1.1rem;
   line-height: 1.2rem;
 }
-.b-nav {
-  background-color: chocolate;
-  min-width: 200px;
+.b-text {
+  padding: 5rem;
+  display: inline-block;
+  background-color: #ffffff;
+  min-width: 600px;
+  max-width: 50%;
+}
+.b-text_gray-bgcl {
+  background-color: #f2f8f8;
+}
+.b-text__title {
+  color: #272474;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
+.b-text__title_smaller {
+  color: #000000;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  padding-bottom: 1rem;
+}
+.b-text__text {
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+}
+.b-text__text_bold {
+  font-weight: bold;
+}
+.b-text__text_larger {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
 }
 .b-notice {
   display: flex;
@@ -335,41 +365,6 @@
   min-width: 250px;
   max-width: 250px;
 }
-.b-text {
-  padding: 5rem;
-  display: inline-block;
-  background-color: #ffffff;
-  min-width: 600px;
-  max-width: 50%;
-}
-.b-text_gray-bgcl {
-  background-color: #f2f8f8;
-}
-.b-text__title {
-  color: #272474;
-  font-size: 1.8rem;
-  line-height: 2rem;
-  padding-bottom: 2rem;
-}
-.b-text__title_smaller {
-  color: #000000;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  padding-bottom: 1rem;
-}
-.b-text__text {
-  font-size: 1.1rem;
-  line-height: 1.2rem;
-  padding-bottom: 2rem;
-  margin-bottom: 0;
-}
-.b-text__text_bold {
-  font-weight: bold;
-}
-.b-text__text_larger {
-  font-size: 1.4rem;
-  line-height: 1.7rem;
-}
 .b-form {
   width: 100%;
   padding: 5rem;
@@ -410,22 +405,27 @@
   min-width: 400px;
   max-width: 400px;
 }
+.b-nav {
+  background-color: chocolate;
+  width: 10%;
+  display: inline-flex;
+}
+.b-metapage {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.b-header {
+  width: 100%;
+}
 .t-1 {
   background-color: red;
-  height: 132px;
-}
-.t-5 {
-  height: 472px;
-}
-.t-8 {
-  height: 906px;
 }
 .t-13 {
   background-color: blue;
-  height: 620px;
 }
 .t-14 {
   background-color: purple;
-  height: 266px;
 }
 

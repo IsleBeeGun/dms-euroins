@@ -12,184 +12,14 @@
 @import "./blocks/b-form.less";
 @import "./blocks/b-calc.less";
 @import "./blocks/b-nav.less";
-
-.b-notice {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  &_large-photo {
-    padding-top: 2.2rem;
-  }
-  &_large-text {
-    min-width: 200px;
-    width: 33%;
-  }
-  &_small-icon {
-
-  }
-  &__icon-container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 135px;
-    height: 135px;
-    padding: 35px;
-    border-radius: 50%;
-    overflow: visible;
-    background: @theme-color-5;
-    box-shadow: @light-shadow;
-    &_large-photo {
-      width: 200px;
-      height: 200px;
-    }
-    &_no-padding {
-      padding: 0;
-      width: auto;
-      height: auto;
-    }
-    &_no-shadow {
-      box-shadow: @transparent-shadow;
-    }
-  }
-  &__icon {
-    width: 70px;
-    height: 70px;
-    &_text {
-      width: auto;
-      height: auto;
-      font-size: 3rem;
-      line-height: 2rem;
-      font-weight: bold;
-      color: @theme-color-2;
-    }
-  }
-  &__index {
-    box-sizing: content-box;
-    padding: 5px 14px 9px 14px;
-    width: 1rem;
-    height: 2rem;
-    position: relative;
-    top: 3rem;
-    right: 4rem;
-    border-radius: 50%;
-    text-align: center;
-    background: @theme-color-5;
-    box-shadow: @light-shadow;
-    color: @theme-color-2;
-    font-weight: bold;
-    font-size: 1.7rem;
-  }
-  &__text {
-    margin: 0;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
-    max-width: 300px;
-    font-size: @fs-sm;
-    &_large {
-      font-size: @fs-md;
-      line-height: 1.6rem;
-      min-width: 300px;
-      max-width: 300px;
-    }
-    &_very-large {
-      font-size: 2rem;
-      line-height: 2.4rem;
-      min-width: 250px;
-      max-width: 250px;
-    }
-  }
-}
-
-.b-text {
-  padding: 5rem;
-  display: inline-block;
-  background-color: @theme-color-5;
-  min-width: 600px;
-  max-width: 50%;
-  &_gray-bgcl {
-    background-color: @theme-color-3;
-  }
-  &__title {
-    color: @theme-color-1;
-    font-size: 1.8rem;
-    line-height: 2rem;
-    padding-bottom: 2rem;
-    &_smaller {
-      color: @theme-color-4;
-      font-size: 1.4rem;
-      line-height: 1.6rem;
-      padding-bottom: 1rem;
-    }
-  }
-  &__text {
-    font-size: 1.1rem;
-    line-height: 1.2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 0;
-    &_bold {
-      font-weight: bold;
-    }
-    &_larger {
-      font-size: 1.4rem;
-      line-height: 1.7rem;
-    }
-  }
-}
-
-.b-form {
-  width: 100%;
-  padding: 5rem;
-  display: flex;
-  flex-flow: row wrap;
-
-  &__row {
-    width: 100%;
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    &_half {
-      width: 50%;
-    }
-  }
-  &__choice-name {
-    display: inline-block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    &_fixed-size {
-      min-width: 200px;
-      max-width: 200px;
-    }
-  }
-  &__label {
-    display: inline-block;
-    font-size: 1.2rem;
-    max-width: 1000px;
-    &_fixed-size {
-      min-width: 200px;
-      max-width: 200px;
-    }
-  }
-  &__checkbox {
-    margin-right: 1rem;
-  }
-  &__input-field {
-    min-width: 400px;
-    max-width: 400px;
-  }
-}
-
-
-
-
-
-
-
+@import "./blocks/b-metapage.less";
+@import "./blocks/b-header.less";
+@import "./blocks/b-footer.less";
 
 .t-1 {
   // HEADER (EZ)
   background-color: red;
-  height: 132px;
+  // height: 132px;
 }
 .t-2 {
   // INTRO (MED)
@@ -205,7 +35,7 @@
 }
 .t-5 {
   // DROPDOWN (MED)
-  height: 472px;
+  // height: 472px;
 }
 .t-6 {
   // PHOTO TILES (MED)
@@ -217,7 +47,7 @@
 }
 .t-8 {
   // FORM (HARD)
-  height: 906px;
+  // height: 906px;
 }
 .t-9 {
   // OTHER INSURANCE, PINK RIBBON (EZ) + add links & animation
@@ -238,10 +68,10 @@
 .t-13 {
   // MAP (MED)
   background-color: blue;
-  height: 620px;
+  // height: 620px;
 }
 .t-14 {
   // FOOTER (EZ)
   background-color: purple;
-  height: 266px;
+  // height: 266px;
 }

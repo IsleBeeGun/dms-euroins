@@ -1,0 +1,88 @@
+@import "../variables.less";
+
+.b-notice {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  &_large-photo {
+    padding-top: 2.2rem;
+  }
+  &_large-text {
+    min-width: 200px;
+    width: 33%;
+  }
+  &_small-icon {
+  }
+  &__icon-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 135px;
+    padding: 35px;
+    border-radius: 50%;
+    overflow: visible;
+    background: @theme-color-5;
+    box-shadow: @light-shadow;
+    &_large-photo {
+      width: 200px;
+      height: 200px;
+    }
+    &_no-padding {
+      padding: 0;
+      width: auto;
+      height: auto;
+    }
+    &_no-shadow {
+      box-shadow: @transparent-shadow;
+    }
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+    &_text {
+      width: auto;
+      height: auto;
+      font-size: 3rem;
+      line-height: 2rem;
+      font-weight: bold;
+      color: @theme-color-2;
+    }
+  }
+  &__index {
+    box-sizing: content-box;
+    padding: 5px 14px 9px 14px;
+    width: 1rem;
+    height: 2rem;
+    position: relative;
+    top: 3rem;
+    right: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    background: @theme-color-5;
+    box-shadow: @light-shadow;
+    color: @theme-color-2;
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+  &__text {
+    margin: 0;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    max-width: 300px;
+    font-size: @fs-sm;
+    &_large {
+      font-size: @fs-md;
+      line-height: 1.6rem;
+      min-width: 300px;
+      max-width: 300px;
+    }
+    &_very-large {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      min-width: 250px;
+      max-width: 250px;
+    }
+  }
+}
