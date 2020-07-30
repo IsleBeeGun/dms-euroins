@@ -65,21 +65,6 @@
 .u-text_ta-right {
   text-align: right !important;
 }
-.u-text_cl-black {
-  color: #000000 !important;
-}
-.u-text_cl-white {
-  color: #ffffff !important;
-}
-.u-text_cl-pink {
-  color: #e00b6c !important;
-}
-.u-text_cl-blue {
-  color: #272474 !important;
-}
-.u-text_cl-gray {
-  color: #f2f8f8 !important;
-}
 .u-text_ff-regular {
   font-family: Lato, sans-serif !important;
 }
@@ -114,41 +99,55 @@
 .u-text_italic {
   font-style: italic !important;
 }
+.u-color_ct-black {
+  color: #000000 !important;
+}
+.u-color_ct-white {
+  color: #ffffff !important;
+}
+.u-color_ct-pink {
+  color: #e00b6c !important;
+}
+.u-color_ct-blue {
+  color: #272474 !important;
+}
+.u-color_ct-gray {
+  color: #f2f8f8 !important;
+}
+.u-color_bg-black {
+  background-color: #000000 !important;
+}
+.u-color_bg-white {
+  background-color: #ffffff !important;
+}
+.u-color_bg-pink {
+  background-color: #e00b6c !important;
+}
+.u-color_bg-blue {
+  background-color: #272474 !important;
+}
+.u-color_bg-gray {
+  background-color: #f2f8f8 !important;
+}
 .b-page {
   width: 100%;
   display: flex;
   float: row wrap;
 }
 .b-section {
-  font-family: Lato, sans-serif;
-  display: flex;
-  flex-flow: column nowrap;
+  width: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 5rem;
-}
-.b-section_gray-bgcl {
-  background-color: #f2f8f8;
-}
-.b-section_pink-bgcl {
-  background-color: #e00b6c;
+  font-family: Lato, sans-serif;
 }
 .b-section__header {
-  padding-top: 2.8rem;
   display: flex;
   width: 100%;
   flex-flow: row wrap;
 }
-.b-section__header_extra-padding {
-  padding-top: 4.2rem;
-}
 .b-section__title {
-  width: 100%;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 1rem;
-  padding-top: 0.5rem;
-  margin: 0;
   font-size: 2.1rem;
   line-height: 2.31rem;
   color: #272474;
@@ -248,14 +247,8 @@
   font-size: 1.1rem;
   line-height: 1.2rem;
 }
-body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-}
 .b-nav {
+  background-color: chocolate;
   min-width: 200px;
 }
 .b-notice {
