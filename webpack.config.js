@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: "./js/index.bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: ".."
+    publicPath: "..",
   },
   devServer: {
     contentBase: "./dist",
@@ -17,11 +17,16 @@ module.exports = {
     rules: [
       {
         test: /\.(less)$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "less-loader",
+          { loader: "postcss-loader", options: { parser: "postcss-less" } },
+        ],
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [`file-loader?name=/fonts/[name].[ext]`]
+        use: [`file-loader?name=/fonts/[name].[ext]`],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -32,24 +37,24 @@ module.exports = {
             options: {
               mozjpeg: {
                 progressive: false,
-                quality: 100
+                quality: 100,
               },
               optipng: {
                 enabled: false,
               },
               pngquant: {
-                quality: [0.65, 0.90],
-                speed: 4
+                quality: [0.65, 0.9],
+                speed: 4,
               },
               gifsicle: {
                 interlaced: false,
               },
               webp: {
-                quality: 100
-              }
-            }
-          }
-        ]
+                quality: 100,
+              },
+            },
+          },
+        ],
       },
     ],
   },
