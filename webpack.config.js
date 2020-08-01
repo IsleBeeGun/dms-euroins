@@ -9,11 +9,11 @@ module.exports = {
   output: {
     filename: "./js/index.bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "./..",
+    // publicPath: "/",
   },
-  devServer: {
-    contentBase: "./dist",
-  },
+  // devServer: {
+  //   contentBase: "./dist",
+  // },
   module: {
     rules: [
       {
@@ -36,12 +36,12 @@ module.exports = {
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [`file-loader?name=/fonts/[name].[ext]`],
+        use: [`file-loader?name=fonts/[name].[ext]`],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
-          `file-loader?name=/img/[name].[ext]`,
+          `file-loader?name=img/[name].[ext]`,
           {
             loader: "image-webpack-loader",
             options: {
@@ -59,9 +59,10 @@ module.exports = {
               gifsicle: {
                 interlaced: false,
               },
-              webp: {
-                quality: 100,
-              },
+              // Safari doesn't like progressive compression
+              // webp: {
+              //   quality: 100,
+              // },
             },
           },
         ],
@@ -70,7 +71,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./css/index.bundle.css",
+      filename: "styles.bundle.css",
     }),
   ],
 };
