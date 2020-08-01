@@ -12,7 +12,6 @@
   4px -4px 6px hsla(0, 0%, 95%, 0.8);
 @transparent-shadow: 4px 4px 6px transparent;
 
-
 // Font sizes
 @fs-sm: 1rem;
 @fs-md: 1.3rem;
@@ -22,9 +21,39 @@
 // Padding
 @padding: 1rem;
 
+// Navigation & Main Page ratio
+@ratio-nav: 0.12;
+@ratio-nav-p: 12%;
 
-@screen-xl: 1600px; // large laptop
-@screen-lg: 1200px; // laptop
-@screen-md: 800px; // tablet
-@screen-sm: 529px; // large mobile
-@screen-xs: 475px; // mobile
+// Screens
+@screen-xs: 480px; // Mobile-landscape (and larger)
+@screen-sm: 768px; // Tablet-portrait (and larger)
+@screen-md: 800px; // Tablet-landscape (and larger)
+@screen-lg: 1200px; // Laptops (and langer)
+@screen-xl: 1600px; // Desktops (and langer)
+@min-point: 0.02px; // Minimal possible point
+
+/* Mobile-landscape (and larger) */
+@media screen and (min-width: @screen-xs) {
+  //
+}
+
+/* Tablet-portrait (and larger) */
+@media screen and (min-width: @screen-sm) {
+  //
+}
+
+/* Tablet-landscape (and larger) */
+@media screen and (min-width: @screen-md) {
+  //
+}
+
+/* Laptops (and langer) */
+@media screen and (min-width: @screen-lg) {
+  //
+}
+
+/* Desktops (and langer) */
+@media screen and (min-width: @screen-xl) {
+  //
+}

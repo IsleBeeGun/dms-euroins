@@ -1,5 +1,48 @@
+@import "../variables.less";
+
 .b-page {
-    width: 90%;
-    display: inline-flex;
-    flex-flow: row wrap;
+  min-width: 100% - @ratio-nav-p;
+  max-width: 100% - @ratio-nav-p;
+  display: inline-flex;
+  flex-flow: row wrap;
+}
+
+/* Mobile-landscape (and larger) */
+@media screen and (min-width: @screen-xs) {
+  .b-page {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Tablet-portrait (and larger) */
+@media screen and (min-width: @screen-sm) {
+  .b-page {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Tablet-landscape (and larger) */
+@media screen and (min-width: @screen-md) {
+  .b-page {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Laptops (and langer) */
+@media screen and (min-width: @screen-lg) {
+  .b-page {
+    min-width: 100% - @ratio-nav-p;
+    max-width: 100% - @ratio-nav-p;
+  }
+}
+
+/* Desktops (and langer) */
+@media screen and (min-width: @screen-xl) {
+  .b-page {
+    min-width: 100% - @ratio-nav-p;
+    max-width: 100% - @ratio-nav-p;
+  }
 }

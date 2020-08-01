@@ -1,23 +1,23 @@
 @import "../variables.less";
 
 .u-container {
-    &_padding {
-      &-top {
-        padding-top: 5*@padding !important;
-      }
-      &-rigth {
-        padding-right: 5*@padding !important;
-      }
-      &-bottom {
-        padding-bottom: 5*@padding !important;
-      }
-      &-left {
-        padding-left: 5*@padding !important;
-      }
-      &-all {
-        padding: 5*@padding !important;
-      }
+  &_padding {
+    &-top {
+      padding-top: 5 * @padding !important;
     }
+    &-rigth {
+      padding-right: 5 * @padding !important;
+    }
+    &-bottom {
+      padding-bottom: 5 * @padding !important;
+    }
+    &-left {
+      padding-left: 5 * @padding !important;
+    }
+    &-all {
+      padding: 5 * @padding !important;
+    }
+  }
   &_align {
     &-start {
       align-content: flex-start !important;
@@ -76,6 +76,371 @@
     }
     &-1of12 {
       width: 8.3% !important;
+    }
+  }
+}
+
+/* Mobile-landscape (and larger) */
+@media screen and (min-width: @screen-xs) {
+  .u-container {
+    &_padding {
+      &-top {
+        padding-top: @padding !important;
+      }
+      &-rigth {
+        padding-right: @padding !important;
+      }
+      &-bottom {
+        padding-bottom: @padding !important;
+      }
+      &-left {
+        padding-left: @padding !important;
+      }
+      &-all {
+        padding: @padding !important;
+      }
+    }
+    &_fraction {
+      &-1of1 {
+        min-width: @screen-xs * (1-@ratio-nav)- @min-point !important;
+        max-width: 100% !important;
+      }
+      &-1of2 {
+        min-width: @screen-xs / 2 * (1-@ratio-nav)- @min-point !important;
+        max-width: 50% !important;
+      }
+      &-1of3 {
+        min-width: @screen-xs / 3 * (1-@ratio-nav)- @min-point !important;
+        max-width: 33.3% !important;
+      }
+      &-1of4 {
+        min-width: @screen-xs / 4 * (1-@ratio-nav)- @min-point !important;
+        max-width: 25% !important;
+      }
+      &-1of5 {
+        min-width: @screen-xs / 5 * (1-@ratio-nav)- @min-point !important;
+        max-width: 20% !important;
+      }
+      &-1of6 {
+        min-width: @screen-xs / 6 * (1-@ratio-nav)- @min-point !important;
+        max-width: 16.6% !important;
+      }
+      &-1of7 {
+        min-width: @screen-xs / 7 * (1-@ratio-nav)- @min-point !important;
+        max-width: 14.2% !important;
+      }
+      &-1of8 {
+        min-width: @screen-xs / 8 * (1-@ratio-nav)- @min-point !important;
+        max-width: 12.5% !important;
+      }
+      &-1of9 {
+        min-width: @screen-xs / 9 * (1-@ratio-nav)- @min-point !important;
+        max-width: 11.1% !important;
+      }
+      &-1of10 {
+        min-width: @screen-xs / 10 * (1-@ratio-nav)- @min-point !important;
+        max-width: 10% !important;
+      }
+      &-1of11 {
+        min-width: @screen-xs / 11 * (1-@ratio-nav)- @min-point !important;
+        max-width: 9% !important;
+      }
+      &-1of12 {
+        min-width: @screen-xs / 12 * (1-@ratio-nav)- @min-point !important;
+        max-width: 8.3% !important;
+      }
+    }
+  }
+}
+
+/* Tablet-portrait (and larger) */
+@media screen and (min-width: @screen-sm) {
+  .u-container {
+    &_padding {
+      &-top {
+        padding-top: 2 * @padding !important;
+      }
+      &-rigth {
+        padding-right: 2 * @padding !important;
+      }
+      &-bottom {
+        padding-bottom: 2 * @padding !important;
+      }
+      &-left {
+        padding-left: 2 * @padding !important;
+      }
+      &-all {
+        padding: 2 * @padding !important;
+      }
+    }
+    &_fraction {
+      &-1of1 {
+        min-width: @screen-sm * (1-@ratio-nav)- @min-point !important;
+        max-width: 100% !important;
+      }
+      &-1of2 {
+        min-width: @screen-sm / 2 * (1-@ratio-nav)- @min-point !important;
+        max-width: 50% !important;
+      }
+      &-1of3 {
+        min-width: @screen-sm / 3 * (1-@ratio-nav)- @min-point !important;
+        max-width: 33.3% !important;
+      }
+      &-1of4 {
+        min-width: @screen-sm / 4 * (1-@ratio-nav)- @min-point !important;
+        max-width: 25% !important;
+      }
+      &-1of5 {
+        min-width: @screen-sm / 5 * (1-@ratio-nav)- @min-point !important;
+        max-width: 20% !important;
+      }
+      &-1of6 {
+        min-width: @screen-sm / 6 * (1-@ratio-nav)- @min-point !important;
+        max-width: 16.6% !important;
+      }
+      &-1of7 {
+        min-width: @screen-sm / 7 * (1-@ratio-nav)- @min-point !important;
+        max-width: 14.2% !important;
+      }
+      &-1of8 {
+        min-width: @screen-sm / 8 * (1-@ratio-nav)- @min-point !important;
+        max-width: 12.5% !important;
+      }
+      &-1of9 {
+        min-width: @screen-sm / 9 * (1-@ratio-nav)- @min-point !important;
+        max-width: 11.1% !important;
+      }
+      &-1of10 {
+        min-width: @screen-sm / 10 * (1-@ratio-nav)- @min-point !important;
+        max-width: 10% !important;
+      }
+      &-1of11 {
+        min-width: @screen-sm / 11 * (1-@ratio-nav)- @min-point !important;
+        max-width: 9% !important;
+      }
+      &-1of12 {
+        min-width: @screen-sm / 12 * (1-@ratio-nav)- @min-point !important;
+        max-width: 8.3% !important;
+      }
+    }
+  }
+}
+
+/* Tablet-landscape (and larger) */
+@media screen and (min-width: @screen-md) {
+  .u-container {
+    &_padding {
+      &-top {
+        padding-top: 3 * @padding !important;
+      }
+      &-rigth {
+        padding-right: 3 * @padding !important;
+      }
+      &-bottom {
+        padding-bottom: 3 * @padding !important;
+      }
+      &-left {
+        padding-left: 3 * @padding !important;
+      }
+      &-all {
+        padding: 3 * @padding !important;
+      }
+    }
+    &_fraction {
+      &-1of1 {
+        min-width: @screen-md * (1-@ratio-nav)- @min-point !important;
+        max-width: 100% !important;
+      }
+      &-1of2 {
+        min-width: @screen-md / 2 * (1-@ratio-nav)- @min-point !important;
+        max-width: 50% !important;
+      }
+      &-1of3 {
+        min-width: @screen-md / 3 * (1-@ratio-nav)- @min-point !important;
+        max-width: 33.3% !important;
+      }
+      &-1of4 {
+        min-width: @screen-md / 4 * (1-@ratio-nav)- @min-point !important;
+        max-width: 25% !important;
+      }
+      &-1of5 {
+        min-width: @screen-md / 5 * (1-@ratio-nav)- @min-point !important;
+        max-width: 20% !important;
+      }
+      &-1of6 {
+        min-width: @screen-md / 6 * (1-@ratio-nav)- @min-point !important;
+        max-width: 16.6% !important;
+      }
+      &-1of7 {
+        min-width: @screen-md / 7 * (1-@ratio-nav)- @min-point !important;
+        max-width: 14.2% !important;
+      }
+      &-1of8 {
+        min-width: @screen-md / 8 * (1-@ratio-nav)- @min-point !important;
+        max-width: 12.5% !important;
+      }
+      &-1of9 {
+        min-width: @screen-md / 9 * (1-@ratio-nav)- @min-point !important;
+        max-width: 11.1% !important;
+      }
+      &-1of10 {
+        min-width: @screen-md / 10 * (1-@ratio-nav)- @min-point !important;
+        max-width: 10% !important;
+      }
+      &-1of11 {
+        min-width: @screen-md / 11 * (1-@ratio-nav)- @min-point !important;
+        max-width: 9% !important;
+      }
+      &-1of12 {
+        min-width: @screen-md / 12 * (1-@ratio-nav)- @min-point !important;
+        max-width: 8.3% !important;
+      }
+    }
+  }
+}
+
+/* Laptops (and langer) */
+@media screen and (min-width: @screen-lg) {
+  .u-container {
+    &_padding {
+      &-top {
+        padding-top: 4 * @padding !important;
+      }
+      &-rigth {
+        padding-right: 4 * @padding !important;
+      }
+      &-bottom {
+        padding-bottom: 4 * @padding !important;
+      }
+      &-left {
+        padding-left: 4 * @padding !important;
+      }
+      &-all {
+        padding: 4 * @padding !important;
+      }
+    }
+    &_fraction {
+      &-1of1 {
+        min-width: @screen-lg * (1-@ratio-nav)- @min-point !important;
+        max-width: 100% !important;
+      }
+      &-1of2 {
+        min-width: @screen-lg / 2 * (1-@ratio-nav)- @min-point !important;
+        max-width: 50% !important;
+      }
+      &-1of3 {
+        min-width: @screen-lg / 3 * (1-@ratio-nav)- @min-point !important;
+        max-width: 33.3% !important;
+      }
+      &-1of4 {
+        min-width: @screen-lg / 4 * (1-@ratio-nav)- @min-point !important;
+        max-width: 25% !important;
+      }
+      &-1of5 {
+        min-width: @screen-lg / 5 * (1-@ratio-nav)- @min-point !important;
+        max-width: 20% !important;
+      }
+      &-1of6 {
+        min-width: @screen-lg / 6 * (1-@ratio-nav)- @min-point !important;
+        max-width: 16.6% !important;
+      }
+      &-1of7 {
+        min-width: @screen-lg / 7 * (1-@ratio-nav)- @min-point !important;
+        max-width: 14.2% !important;
+      }
+      &-1of8 {
+        min-width: @screen-lg / 8 * (1-@ratio-nav)- @min-point !important;
+        max-width: 12.5% !important;
+      }
+      &-1of9 {
+        min-width: @screen-lg / 9 * (1-@ratio-nav)- @min-point !important;
+        max-width: 11.1% !important;
+      }
+      &-1of10 {
+        min-width: @screen-lg / 10 * (1-@ratio-nav)- @min-point !important;
+        max-width: 10% !important;
+      }
+      &-1of11 {
+        min-width: @screen-lg / 11 * (1-@ratio-nav)- @min-point !important;
+        max-width: 9% !important;
+      }
+      &-1of12 {
+        min-width: @screen-lg / 12 * (1-@ratio-nav)- @min-point !important;
+        max-width: 8.3% !important;
+      }
+    }
+  }
+}
+
+/* Desktops (and langer) */
+@media screen and (min-width: @screen-xl) {
+  .u-container {
+    &_padding {
+      &-top {
+        padding-top: 5 * @padding !important;
+      }
+      &-rigth {
+        padding-right: 5 * @padding !important;
+      }
+      &-bottom {
+        padding-bottom: 5 * @padding !important;
+      }
+      &-left {
+        padding-left: 5 * @padding !important;
+      }
+      &-all {
+        padding: 5 * @padding !important;
+      }
+    }
+    &_fraction {
+      &-1of1 {
+        min-width: @screen-xl * (1-@ratio-nav)- @min-point !important;
+        max-width: 100% !important;
+      }
+      &-1of2 {
+        min-width: @screen-xl / 2 * (1-@ratio-nav)- @min-point !important;
+        max-width: 50% !important;
+      }
+      &-1of3 {
+        min-width: @screen-xl / 3 * (1-@ratio-nav)- @min-point !important;
+        max-width: 33.3% !important;
+      }
+      &-1of4 {
+        min-width: @screen-xl / 4 * (1-@ratio-nav)- @min-point !important;
+        max-width: 25% !important;
+      }
+      &-1of5 {
+        min-width: @screen-xl / 5 * (1-@ratio-nav)- @min-point !important;
+        max-width: 20% !important;
+      }
+      &-1of6 {
+        min-width: @screen-xl / 6 * (1-@ratio-nav)- @min-point !important;
+        max-width: 16.6% !important;
+      }
+      &-1of7 {
+        min-width: @screen-xl / 7 * (1-@ratio-nav)- @min-point !important;
+        max-width: 14.2% !important;
+      }
+      &-1of8 {
+        min-width: @screen-xl / 8 * (1-@ratio-nav)- @min-point !important;
+        max-width: 12.5% !important;
+      }
+      &-1of9 {
+        min-width: @screen-xl / 9 * (1-@ratio-nav)- @min-point !important;
+        max-width: 11.1% !important;
+      }
+      &-1of10 {
+        min-width: @screen-xl / 10 * (1-@ratio-nav)- @min-point !important;
+        max-width: 10% !important;
+      }
+      &-1of11 {
+        min-width: @screen-xl / 11 * (1-@ratio-nav)- @min-point !important;
+        max-width: 9% !important;
+      }
+      &-1of12 {
+        min-width: @screen-xl / 12 * (1-@ratio-nav)- @min-point !important;
+        max-width: 8.3% !important;
+      }
     }
   }
 }

@@ -1,5 +1,44 @@
+@import "../variables.less";
+
 .b-nav {
   background-color: chocolate;
-  width: 10%;
-  display: inline-flex;
+  min-width: @ratio-nav-p;
+  max-width: @ratio-nav-p;
+  display: none;
 }
+
+/* Mobile-landscape (and larger) */
+@media screen and (min-width: @screen-xs) {
+  .b-nav {
+    display: none;
+  }
+}
+
+/* Tablet-portrait (and larger) */
+@media screen and (min-width: @screen-sm) {
+  .b-nav {
+    display: none
+  }
+}
+
+/* Tablet-landscape (and larger) */
+@media screen and (min-width: @screen-md) {
+  .b-nav {
+    display: none;
+  }
+}
+
+/* Laptops (and langer) */
+@media screen and (min-width: @screen-lg) {
+  .b-nav {
+    display: inline-flex;
+  }
+}
+
+/* Desktops (and langer) */
+@media screen and (min-width: @screen-xl) {
+  .b-nav {
+    display: inline-flex;
+  }
+}
+
