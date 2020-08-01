@@ -1,44 +1,47 @@
 @import "../variables.less";
 
 .b-nav {
-  background-color: chocolate;
-  min-width: @ratio-nav-p;
-  max-width: @ratio-nav-p;
-  display: none;
+  background-color: maroon;
+  display: inline-flex;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 /* Mobile-landscape (and larger) */
 @media screen and (min-width: @screen-xs) {
   .b-nav {
-    display: none;
+    background-color: chocolate;
   }
 }
 
 /* Tablet-portrait (and larger) */
 @media screen and (min-width: @screen-sm) {
   .b-nav {
-    display: none
+    background-color: burlywood;
   }
 }
 
 /* Tablet-landscape (and larger) */
 @media screen and (min-width: @screen-md) {
   .b-nav {
-    display: none;
+    background-color: @theme-color-3;
+    min-width: @ratio-nav-p;
+    max-width: @ratio-nav-p;
   }
 }
 
 /* Laptops (and langer) */
 @media screen and (min-width: @screen-lg) {
   .b-nav {
-    display: inline-flex;
+    min-width: @ratio-nav-p;
+    max-width: @ratio-nav-p;
   }
 }
 
 /* Desktops (and langer) */
 @media screen and (min-width: @screen-xl) {
   .b-nav {
-    display: inline-flex;
+    min-width: @ratio-nav-p;
+    max-width: @ratio-nav-p;
   }
 }
-

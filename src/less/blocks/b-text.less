@@ -3,9 +3,7 @@
 .b-text {
   display: inline-block;
   background-color: @theme-color-5;
-  &_gray-bgcl {
-    background-color: @theme-color-3;
-  }
+  padding: 2 * @padding @padding;
   &__title {
     padding-top: @padding;
     margin: 0;
@@ -33,5 +31,41 @@
       // font-size: 1.4rem;
       // line-height: 1.7rem;
     }
+  }
+}
+
+/* Mobile */
+@media screen and (min-width: @screen-xs) {
+  .b-text {
+    padding: @padding;
+    padding-bottom: 2 * @padding;
+  }
+}
+
+/* Large Mobile */
+@media screen and (min-width: @screen-sm) {
+  .b-text {
+    padding: 2 * @padding;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: @screen-md) {
+  .b-text {
+    padding: 3 * @padding;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: @screen-lg) {
+  .b-text {
+    padding: 4 * @padding;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: @screen-xl) {
+  .b-text {
+    padding: 5 * @padding;
   }
 }

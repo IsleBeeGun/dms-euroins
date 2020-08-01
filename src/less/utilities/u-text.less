@@ -22,23 +22,22 @@
   &_fs {
     //_____________Font Size
     &-xl {
-      font-size: @fs-xl !important;
-      line-height: @fs-xl + @fs-xl / 10 !important;
-      letter-spacing: 0rem !important;
-    }
-    &-lg {
       font-size: @fs-lg !important;
       line-height: @fs-lg + @fs-lg / 10 !important;
       letter-spacing: 0rem !important;
     }
-    &-md {
+    &-lg {
       font-size: @fs-md !important;
       line-height: @fs-md + @fs-md / 10 !important;
       letter-spacing: @fs-md / 32 !important;
     }
-    &-sm {
+    &-md {
       font-size: @fs-sm !important;
-      line-height: @fs-sm + @fs-md / 10 !important;
+      line-height: @fs-sm + @fs-sm / 10 !important;
+    }
+    &-sm {
+      font-size: @fs-xs !important;
+      line-height: @fs-xs + @fs-xs / 10 !important;
     }
   }
   &_fw {
@@ -58,3 +57,39 @@
     font-style: italic !important;
   }
 }
+
+/* Large Mobile */
+
+
+/* Tablet */
+
+
+/* Laptop */
+@media screen and (min-width: @screen-lg) {
+  .u-text {
+    &_fs {
+      //_____________Font Size
+      &-xl {
+        font-size: @fs-xl !important;
+        line-height: @fs-xl + @fs-xl / 10 !important;
+        letter-spacing: 0rem !important;
+      }
+      &-lg {
+        font-size: @fs-lg !important;
+        line-height: @fs-lg + @fs-lg / 10 !important;
+        letter-spacing: 0rem !important;
+      }
+      &-md {
+        font-size: @fs-md !important;
+        line-height: @fs-md + @fs-md / 10 !important;
+        letter-spacing: @fs-md / 32 !important;
+      }
+      &-sm {
+        font-size: @fs-sm !important;
+        line-height: @fs-sm + @fs-sm / 10 !important;
+      }
+    }
+  }
+}
+
+

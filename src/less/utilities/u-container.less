@@ -1,23 +1,7 @@
 @import "../variables.less";
 
+/* Default behavior & SUPER SMALL screens */
 .u-container {
-  &_padding {
-    &-top {
-      padding-top: 5 * @padding !important;
-    }
-    &-rigth {
-      padding-right: 5 * @padding !important;
-    }
-    &-bottom {
-      padding-bottom: 5 * @padding !important;
-    }
-    &-left {
-      padding-left: 5 * @padding !important;
-    }
-    &-all {
-      padding: 5 * @padding !important;
-    }
-  }
   &_align {
     &-start {
       align-content: flex-start !important;
@@ -40,52 +24,107 @@
       justify-content: flex-end !important;
     }
   }
+  &_padding {
+    &-top {
+      padding-top: @padding !important;
+      &-no {
+        padding-top: 0 !important;
+      }
+    }
+    &-rigth {
+      padding-right: @padding !important;
+    }
+    &-bottom {
+      padding-bottom: @padding !important;
+    }
+    &-left {
+      padding-left: @padding !important;
+    }
+    &-all {
+      padding: @padding !important;
+    }
+  }
+  &_margin {
+    &-top {
+      margin-top: @padding !important;
+      &-no {
+        margin-top: 0 !important;
+      }
+    }
+    &-rigth {
+      margin-right: @padding !important;
+    }
+    &-bottom {
+      margin-bottom: @padding !important;
+    }
+    &-left {
+      margin-left: @padding !important;
+    }
+    &-all {
+      margin: @padding !important;
+    }
+  }
   &_fraction {
     &-1of1 {
-      width: 100% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of2 {
-      width: 50% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of3 {
-      width: 33.3% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of4 {
-      width: 25% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of5 {
-      width: 20% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of6 {
-      width: 16.6% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of7 {
-      width: 14.2% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of8 {
-      width: 12.5% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of9 {
-      width: 11.1% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of10 {
-      width: 10% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of11 {
-      width: 9% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
     &-1of12 {
-      width: 8.3% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
     }
   }
 }
 
-/* Mobile-landscape (and larger) */
+/* Mobile */
 @media screen and (min-width: @screen-xs) {
   .u-container {
     &_padding {
       &-top {
         padding-top: @padding !important;
+        &-no {
+          padding-top: 0 !important;
+        }
       }
       &-rigth {
         padding-right: @padding !important;
@@ -100,65 +139,38 @@
         padding: @padding !important;
       }
     }
-    &_fraction {
-      &-1of1 {
-        min-width: @screen-xs * (1-@ratio-nav)- @min-point !important;
-        max-width: 100% !important;
+    &_margin {
+      &-top {
+        margin-top: @padding !important;
+        &-no {
+          margin-top: 0 !important;
+        }
       }
-      &-1of2 {
-        min-width: @screen-xs / 2 * (1-@ratio-nav)- @min-point !important;
-        max-width: 50% !important;
+      &-rigth {
+        margin-right: @padding !important;
       }
-      &-1of3 {
-        min-width: @screen-xs / 3 * (1-@ratio-nav)- @min-point !important;
-        max-width: 33.3% !important;
+      &-bottom {
+        margin-bottom: @padding !important;
       }
-      &-1of4 {
-        min-width: @screen-xs / 4 * (1-@ratio-nav)- @min-point !important;
-        max-width: 25% !important;
+      &-left {
+        margin-left: @padding !important;
       }
-      &-1of5 {
-        min-width: @screen-xs / 5 * (1-@ratio-nav)- @min-point !important;
-        max-width: 20% !important;
-      }
-      &-1of6 {
-        min-width: @screen-xs / 6 * (1-@ratio-nav)- @min-point !important;
-        max-width: 16.6% !important;
-      }
-      &-1of7 {
-        min-width: @screen-xs / 7 * (1-@ratio-nav)- @min-point !important;
-        max-width: 14.2% !important;
-      }
-      &-1of8 {
-        min-width: @screen-xs / 8 * (1-@ratio-nav)- @min-point !important;
-        max-width: 12.5% !important;
-      }
-      &-1of9 {
-        min-width: @screen-xs / 9 * (1-@ratio-nav)- @min-point !important;
-        max-width: 11.1% !important;
-      }
-      &-1of10 {
-        min-width: @screen-xs / 10 * (1-@ratio-nav)- @min-point !important;
-        max-width: 10% !important;
-      }
-      &-1of11 {
-        min-width: @screen-xs / 11 * (1-@ratio-nav)- @min-point !important;
-        max-width: 9% !important;
-      }
-      &-1of12 {
-        min-width: @screen-xs / 12 * (1-@ratio-nav)- @min-point !important;
-        max-width: 8.3% !important;
+      &-all {
+        margin: @padding !important;
       }
     }
   }
 }
 
-/* Tablet-portrait (and larger) */
+/* Large Mobile */
 @media screen and (min-width: @screen-sm) {
   .u-container {
     &_padding {
       &-top {
         padding-top: 2 * @padding !important;
+        &-no {
+          padding-top: 0 !important;
+        }
       }
       &-rigth {
         padding-right: 2 * @padding !important;
@@ -173,65 +185,38 @@
         padding: 2 * @padding !important;
       }
     }
-    &_fraction {
-      &-1of1 {
-        min-width: @screen-sm * (1-@ratio-nav)- @min-point !important;
-        max-width: 100% !important;
+    &_margin {
+      &-top {
+        margin-top: 2 * @padding !important;
+        &-no {
+          margin-top: 0 !important;
+        }
       }
-      &-1of2 {
-        min-width: @screen-sm / 2 * (1-@ratio-nav)- @min-point !important;
-        max-width: 50% !important;
+      &-rigth {
+        margin-right: 2 * @padding !important;
       }
-      &-1of3 {
-        min-width: @screen-sm / 3 * (1-@ratio-nav)- @min-point !important;
-        max-width: 33.3% !important;
+      &-bottom {
+        margin-bottom: 2 * @padding !important;
       }
-      &-1of4 {
-        min-width: @screen-sm / 4 * (1-@ratio-nav)- @min-point !important;
-        max-width: 25% !important;
+      &-left {
+        margin-left: 2 * @padding !important;
       }
-      &-1of5 {
-        min-width: @screen-sm / 5 * (1-@ratio-nav)- @min-point !important;
-        max-width: 20% !important;
-      }
-      &-1of6 {
-        min-width: @screen-sm / 6 * (1-@ratio-nav)- @min-point !important;
-        max-width: 16.6% !important;
-      }
-      &-1of7 {
-        min-width: @screen-sm / 7 * (1-@ratio-nav)- @min-point !important;
-        max-width: 14.2% !important;
-      }
-      &-1of8 {
-        min-width: @screen-sm / 8 * (1-@ratio-nav)- @min-point !important;
-        max-width: 12.5% !important;
-      }
-      &-1of9 {
-        min-width: @screen-sm / 9 * (1-@ratio-nav)- @min-point !important;
-        max-width: 11.1% !important;
-      }
-      &-1of10 {
-        min-width: @screen-sm / 10 * (1-@ratio-nav)- @min-point !important;
-        max-width: 10% !important;
-      }
-      &-1of11 {
-        min-width: @screen-sm / 11 * (1-@ratio-nav)- @min-point !important;
-        max-width: 9% !important;
-      }
-      &-1of12 {
-        min-width: @screen-sm / 12 * (1-@ratio-nav)- @min-point !important;
-        max-width: 8.3% !important;
+      &-all {
+        margin: 2 * @padding !important;
       }
     }
   }
 }
 
-/* Tablet-landscape (and larger) */
+/* Tablet */
 @media screen and (min-width: @screen-md) {
   .u-container {
     &_padding {
       &-top {
         padding-top: 3 * @padding !important;
+        &-no {
+          padding-top: 0 !important;
+        }
       }
       &-rigth {
         padding-right: 3 * @padding !important;
@@ -244,6 +229,26 @@
       }
       &-all {
         padding: 3 * @padding !important;
+      }
+    }
+    &_margin {
+      &-top {
+        margin-top: 3 * @padding !important;
+        &-no {
+          margin-top: 0 !important;
+        }
+      }
+      &-rigth {
+        margin-right: 3 * @padding !important;
+      }
+      &-bottom {
+        margin-bottom: 3 * @padding !important;
+      }
+      &-left {
+        margin-left: 3 * @padding !important;
+      }
+      &-all {
+        margin: 3 * @padding !important;
       }
     }
     &_fraction {
@@ -299,12 +304,15 @@
   }
 }
 
-/* Laptops (and langer) */
+/* Laptop */
 @media screen and (min-width: @screen-lg) {
   .u-container {
     &_padding {
       &-top {
         padding-top: 4 * @padding !important;
+        &-no {
+          padding-top: 0 !important;
+        }
       }
       &-rigth {
         padding-right: 4 * @padding !important;
@@ -317,6 +325,26 @@
       }
       &-all {
         padding: 4 * @padding !important;
+      }
+    }
+    &_margin {
+      &-top {
+        margin-top: 4 * @padding !important;
+        &-no {
+          margin-top: 0 !important;
+        }
+      }
+      &-rigth {
+        margin-right: 4 * @padding !important;
+      }
+      &-bottom {
+        margin-bottom: 4 * @padding !important;
+      }
+      &-left {
+        margin-left: 4 * @padding !important;
+      }
+      &-all {
+        margin: 4 * @padding !important;
       }
     }
     &_fraction {
@@ -372,12 +400,15 @@
   }
 }
 
-/* Desktops (and langer) */
+/* Desktop */
 @media screen and (min-width: @screen-xl) {
   .u-container {
     &_padding {
       &-top {
         padding-top: 5 * @padding !important;
+        &-no {
+          padding-top: 0 !important;
+        }
       }
       &-rigth {
         padding-right: 5 * @padding !important;
@@ -390,6 +421,26 @@
       }
       &-all {
         padding: 5 * @padding !important;
+      }
+    }
+    &_margin {
+      &-top {
+        margin-top: 5 * @padding !important;
+        &-no {
+          margin-top: 0 !important;
+        }
+      }
+      &-rigth {
+        margin-right: 5 * @padding !important;
+      }
+      &-bottom {
+        margin-bottom: 5 * @padding !important;
+      }
+      &-left {
+        margin-left: 5 * @padding !important;
+      }
+      &-all {
+        margin: 5 * @padding !important;
       }
     }
     &_fraction {

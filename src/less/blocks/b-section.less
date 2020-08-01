@@ -4,11 +4,11 @@
   width: 100%;
   display: inline-flex;
   flex-flow: row wrap;
-  justify-content: flex-start;  // !!!!!!!!
-  align-items: flex-start;    // !!!!!!!
+  justify-content: flex-start; // !!!!!!!!
+  align-items: flex-start; // !!!!!!!
   font-family: @ff;
-  padding-bottom: 3*@padding;
-  margin-top: 10rem; // !!!!!!!!!!!!
+  padding-bottom: 3 * @padding;
+  margin-top: 3 * @padding; // !!!!!!!!!!!!
   &__header {
     width: 100%;
     display: inline-flex;
@@ -16,55 +16,143 @@
   }
   &__title {
     width: 100%;
-    display: inline-block;
-    padding-top: 3*@padding;
     margin: 0;
-    padding-left: 5*@padding;
-    padding-right: 5*@padding;
-    // Default (can be overriden with .u-text)
-    font-size: @fs-lg;
-    line-height: @fs-lg + @fs-lg / 10;
-    color: @theme-color-1;
-    text-align: center;
-    font-family: @ff;
-    font-weight: bold;
-    letter-spacing: 0rem;
-  }
-  &__subtitle {
-    width: 100%;
     display: inline-block;
     padding-top: @padding;
-    margin: 0;
-    padding-left: 5*@padding;
-    padding-right: 5*@padding;
+    padding-left: @padding;
+    padding-right: @padding;
     // Default (can be overriden with .u-text)
     font-size: @fs-md;
     line-height: @fs-md + @fs-md / 10;
+    letter-spacing: @fs-md / 32;
+    color: @theme-color-1;
+    text-align: left;
+    font-family: @ff;
+    font-weight: bold;
+  }
+  &__subtitle {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    padding-top: @padding;
+    padding-left: @padding;
+    padding-right: @padding;
+    // Default (can be overriden with .u-text)
+    font-size: @fs-sm;
+    line-height: @fs-sm + @fs-sm / 10;
     color: @theme-color-4;
-    text-align: center;
+    text-align: left;
     font-family: @ff;
     font-weight: normal;
     letter-spacing: @fs-md / 32;
   }
   &__container {
-    margin-top: 3*@padding;
     width: 100%;
     display: inline-flex;
+    margin-top: @padding;
     flex-flow: row wrap;
     justify-content: center;
   }
-  &__buttons-container {
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 100%;
-  }
   &__subinfo {
     width: 100%;
-    padding-top: 2.4rem;
-    padding-left: 23%;
-    padding-right: 23%;
-    font-size: 1.1rem;
-    line-height: 1.2rem;
+    text-align: justify;
+    padding-top: @padding;
+    padding-left: @padding;
+    padding-right: @padding;
+    font-size: @fs-sm;
+    line-height: @fs-sm + @fs-md / 10;
+  }
+}
+
+
+/* Large Mobile */
+@media screen and (min-width: @screen-sm) {
+  .b-section {
+    &__title {
+      padding-top: 3 * @padding;
+      padding-left: 2 * @padding;
+      padding-right: 2 * @padding;
+    }
+    &__subtitle {
+      padding-left: 2 * @padding;
+      padding-right: 2 * @padding;
+    }
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: @screen-md) {
+  .b-section {
+    &__title {
+      padding-top: 3 * @padding;
+      padding-left: 3 * @padding;
+      padding-right: 3 * @padding;
+      text-align: center;
+    }
+    &__subtitle {
+      padding-top: @padding;
+      padding-left: 23%;
+      padding-right: 23%;
+      // Default (can be overriden with .u-text)
+      font-size: @fs-sm ;
+      line-height: @fs-sm + @fs-sm / 10 ;
+      color: @theme-color-4;
+      text-align: center;
+      font-family: @ff;
+      font-weight: normal;
+    }
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: @screen-lg) {
+  .b-section {
+    padding-bottom: 3 * @padding;
+    margin-top: 5 * @padding;
+    &__title {
+      padding-top: 3 * @padding;
+      padding-left: 4 * @padding;
+      padding-right: 4 * @padding;
+      // Default (can be overriden with .u-text)
+      font-size: @fs-lg;
+      line-height: @fs-lg + @fs-lg / 10;
+      letter-spacing: 0rem;
+      color: @theme-color-1;
+      text-align: center;
+      font-family: @ff;
+      font-weight: bold;
+    }
+    &__subtitle {
+      padding-top: @padding;
+      padding-left: 23%;
+      padding-right: 23%;
+      // Default (can be overriden with .u-text)
+      font-size: @fs-md;
+      line-height: @fs-md + @fs-md / 10;
+      color: @theme-color-4;
+      text-align: center;
+      font-family: @ff;
+      font-weight: normal;
+      letter-spacing: @fs-md / 32;
+    }
+    &__container {
+      margin-top: 3 * @padding;
+    }
+    &__subinfo {
+      padding-top: 2 * @padding;
+      padding-left: 23%;
+      padding-right: 23%;
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: @screen-xl) {
+  .b-section {
+    &__title {
+      padding-top: 3 * @padding;
+      padding-left: 5 * @padding;
+      padding-right: 5 * @padding;
+    }
   }
 }
