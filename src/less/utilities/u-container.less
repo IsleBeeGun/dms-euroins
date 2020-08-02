@@ -4,24 +4,41 @@
 .u-container {
   &_align {
     &-start {
+      display: inline-flex !important;
+      flex-flow: row wrap !important;
       align-content: flex-start !important;
     }
     &-center {
+      display: inline-flex !important;
+      flex-flow: row wrap !important;
       align-content: center !important;
     }
     &-end {
+      display: inline-flex !important;
+      flex-flow: row wrap !important;
       align-content: flex-end !important;
     }
   }
   &_justify {
     &-start {
+      display: inline-flex !important;
+      flex-flow: row wrap !important;
       justify-content: flex-start !important;
     }
     &-center {
+      display: inline-flex !important;
+      flex-flow: row wrap !important;
       justify-content: center !important;
     }
     &-end {
+      display: inline-flex !important;
+      flex-flow: row wrap !important;
       justify-content: flex-end !important;
+    }
+    &-evenly {
+      display: inline-flex !important;
+      flex-flow: row wrap !important;
+      justify-content: space-evenly !important;
     }
   }
   &_padding {
@@ -31,17 +48,29 @@
         padding-top: 0 !important;
       }
     }
-    &-rigth {
+    &-right {
       padding-right: @padding !important;
+      &-no {
+        padding-right: 0 !important;
+      }
     }
     &-bottom {
       padding-bottom: @padding !important;
+      &-no {
+        padding-bottom: 0 !important;
+      }
     }
     &-left {
       padding-left: @padding !important;
+      &-no {
+        padding-left: 0 !important;
+      }
     }
     &-all {
       padding: @padding !important;
+      &-no {
+        padding: 0 !important;
+      }
     }
   }
   &_margin {
@@ -51,17 +80,29 @@
         margin-top: 0 !important;
       }
     }
-    &-rigth {
+    &-right {
       margin-right: @padding !important;
+      &-no {
+        margin-right: 0 !important;
+      }
     }
     &-bottom {
       margin-bottom: @padding !important;
+      &-no {
+        margin-bottom: 0 !important;
+      }
     }
     &-left {
       margin-left: @padding !important;
+      &-no {
+        margin-left: 0 !important;
+      }
     }
     &-all {
       margin: @padding !important;
+      &-no {
+        margin: 0 !important;
+      }
     }
   }
   &_fraction {
@@ -126,7 +167,7 @@
           padding-top: 0 !important;
         }
       }
-      &-rigth {
+      &-right {
         padding-right: @padding !important;
       }
       &-bottom {
@@ -146,7 +187,7 @@
           margin-top: 0 !important;
         }
       }
-      &-rigth {
+      &-right {
         margin-right: @padding !important;
       }
       &-bottom {
@@ -172,7 +213,7 @@
           padding-top: 0 !important;
         }
       }
-      &-rigth {
+      &-right {
         padding-right: 2 * @padding !important;
       }
       &-bottom {
@@ -192,7 +233,7 @@
           margin-top: 0 !important;
         }
       }
-      &-rigth {
+      &-right {
         margin-right: 2 * @padding !important;
       }
       &-bottom {
@@ -218,7 +259,7 @@
           padding-top: 0 !important;
         }
       }
-      &-rigth {
+      &-right {
         padding-right: 3 * @padding !important;
       }
       &-bottom {
@@ -238,7 +279,7 @@
           margin-top: 0 !important;
         }
       }
-      &-rigth {
+      &-right {
         margin-right: 3 * @padding !important;
       }
       &-bottom {
@@ -314,7 +355,7 @@
           padding-top: 0 !important;
         }
       }
-      &-rigth {
+      &-right {
         padding-right: 4 * @padding !important;
       }
       &-bottom {
@@ -334,7 +375,7 @@
           margin-top: 0 !important;
         }
       }
-      &-rigth {
+      &-right {
         margin-right: 4 * @padding !important;
       }
       &-bottom {
@@ -410,7 +451,7 @@
           padding-top: 0 !important;
         }
       }
-      &-rigth {
+      &-right {
         padding-right: 5 * @padding !important;
       }
       &-bottom {
@@ -430,7 +471,7 @@
           margin-top: 0 !important;
         }
       }
-      &-rigth {
+      &-right {
         margin-right: 5 * @padding !important;
       }
       &-bottom {
