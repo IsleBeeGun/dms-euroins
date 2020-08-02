@@ -24,7 +24,7 @@
   font-display: swap;
 }
 /* Mobile */
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 480px) {
 }
 /* Large Mobile */
 @media screen and (min-width: 529px) {
@@ -336,7 +336,7 @@
   max-width: 100% !important;
 }
 /* Mobile */
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 480px) {
   .u-container_padding-top {
     padding-top: 1rem !important;
   }
@@ -716,7 +716,7 @@
           flex-flow: row wrap;
 }
 /* Mobile-landscape (and larger) */
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 480px) {
   .b-page {
     min-width: 100%;
     max-width: 100%;
@@ -920,7 +920,7 @@
   line-height: 1.13rem;
 }
 /* Mobile */
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 480px) {
   .b-text {
     padding: 1rem;
     padding-bottom: 2rem;
@@ -1069,7 +1069,7 @@
   line-height: 1.1rem;
 }
 /* Mobile */
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 480px) {
 }
 /* Large Mobile */
 @media screen and (min-width: 529px) {
@@ -1088,6 +1088,10 @@
   }
   .b-notice__index {
     font-size: 1rem;
+  }
+  .b-notice__text {
+    font-size: 1rem;
+    line-height: 1.1rem;
   }
   .b-notice__text_wider {
     min-width: 150%;
@@ -1176,13 +1180,40 @@
 }
 .b-calc {
   display: inline-block;
-  border-radius: 60px;
-  padding: 0px 57px 20px 57px;
+  border-radius: 0px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   background-color: #f2f8f8;
-  width: 79%;
+  width: 100%;
 }
 .b-calc .calc-check {
   background-color: #f2f8f8;
+}
+/* Mobile */
+@media screen and (min-width: 480px) {
+  .b-calc {
+    padding-right: 1rem;
+  }
+}
+/* Large Mobile */
+@media screen and (min-width: 529px) {
+  .b-calc {
+    padding-right: 2rem;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 800px) {
+  .b-calc {
+    padding-right: 3rem;
+  }
+}
+/* Laptop */
+@media screen and (min-width: 1200px) {
+  .b-calc {
+    border-radius: 60px;
+    padding: 0px 57px 20px 57px;
+    width: 79%;
+  }
 }
 .b-nav {
   background-color: maroon;
@@ -1193,7 +1224,7 @@
   max-width: 100%;
 }
 /* Mobile-landscape (and larger) */
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 480px) {
   .b-nav {
     background-color: chocolate;
   }

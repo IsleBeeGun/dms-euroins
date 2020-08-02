@@ -1,13 +1,44 @@
 @import "../variables.less";
 
 .b-calc {
-    // height: 400px;
-    display: inline-block;
+  // height: 400px;
+  display: inline-block;
+  border-radius: 0px;
+  padding-right: @padding;
+  padding-left: @padding;
+  background-color: @theme-color-3;
+  width: 100%;
+  & .calc-check {
+    background-color: @theme-color-3;
+  }
+}
+
+/* Mobile */
+@media screen and (min-width: @screen-xs) {
+  .b-calc {
+    padding-right:  @padding;
+  }
+}
+
+/* Large Mobile */
+@media screen and (min-width: @screen-sm) {
+  .b-calc {
+    padding-right: 2 * @padding;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: @screen-md) {
+  .b-calc {
+    padding-right: 3 * @padding;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: @screen-lg) {
+  .b-calc {
     border-radius: 60px;
     padding: 0px 57px 20px 57px;
-    background-color: @theme-color-3;
     width: 79%;
-    & .calc-check {
-      background-color: @theme-color-3;
-    }
   }
+}
