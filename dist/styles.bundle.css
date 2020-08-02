@@ -919,12 +919,6 @@
   font-size: 1rem;
   line-height: 1.13rem;
 }
-.b-text__paragraph_bold {
-  text-decoration: underline;
-}
-.b-text__paragraph_larger {
-  color: crimson;
-}
 /* Mobile */
 @media screen and (min-width: 475px) {
   .b-text {
@@ -1301,9 +1295,6 @@
 }
 .t-1:fullscreen {
   background-color: red;
-}
-.t-13 {
-  background-color: blue;
 }
 .t-14 {
   background-color: purple;
