@@ -1,3 +1,60 @@
+@import "../variables.less";
+
 .b-footer {
-    width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding-left: @padding;
+  &__left-container {
+    padding-left: @padding;
+  }
+  &__logo-container {
+  }
+  &__social-container {
+  }
+  &__social-icon {
+  }
+}
+
+/* Mobile */
+@media screen and (min-width: @screen-xs) {
+  //
+}
+
+/* Large Mobile */
+@media screen and (min-width: @screen-sm) {
+  .b-footer {
+    padding-left: 2 * @padding;
+  }
+  &__left-container {
+    padding-left: 2 * @padding;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: @screen-md) {
+  .b-footer {
+    padding-left: @ratio-nav-p;
+    &__left-container {
+      padding-left: 3 * @padding;
+    }
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: @screen-lg) {
+  .b-footer {
+    &__left-container {
+      padding-left: 4 * @padding;
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: @screen-xl) {
+  .b-footer {
+    &__left-container {
+      padding-left: 5 * @padding;
+    }
+  }
 }
