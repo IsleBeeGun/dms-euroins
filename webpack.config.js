@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: "./js/index.bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/",
+    // publicPath: "/",
   },
   // devServer: {
   //   contentBase: "./dist",
