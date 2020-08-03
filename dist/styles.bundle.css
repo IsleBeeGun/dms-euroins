@@ -1414,6 +1414,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: Lato, sans-serif;
 }
 .b-header__logo {
   max-width: 224px;
@@ -1428,9 +1429,13 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .b-header__contact-icon {
   width: 50px;
+  margin-right: 1rem;
 }
 .b-header__inner-container {
   display: -webkit-inline-box;
@@ -1440,6 +1445,17 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+}
+.b-header__text_light {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.5vmax;
+  letter-spacing: 0.08vmax;
+  color: #808080;
+}
+.b-header__text_bold {
+  text-transform: uppercase;
+  font-size: 1.5vmax;
 }
 /* Mobile */
 @media screen and (min-width: 480px) {
