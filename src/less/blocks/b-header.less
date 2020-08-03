@@ -2,7 +2,7 @@
 
 .b-header {
   padding-left: @padding;
-  margin-top: 2*@padding ;
+  margin-top: 2 * @padding;
   width: 100%;
   height: auto;
   display: flex;
@@ -41,6 +41,7 @@
     display: inline-flex;
     align-items: center;
     margin-bottom: @padding;
+    margin-right: 0;
   }
   &__text {
     &_light {
@@ -78,7 +79,7 @@
 /* Tablet */
 @media screen and (min-width: @screen-md) {
   .b-header {
-    height: 8vw;
+    height: 10vw;
     padding-left: @ratio-nav-p;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -88,17 +89,19 @@
       display: inline-block;
     }
     &__contact-container {
-      min-width: (100%-@ratio-nav-p)/3;
-      max-width: (100%-@ratio-nav-p)/3;
-      margin-right: auto;
+      min-width: 25%;
+      max-width: 25%;
+      margin-left: auto;
+      margin-right: 0;
       display: inline-flex;
       flex-flow: row nowrap;
+      justify-content: stretch;
       align-items: center;
     }
     &__logo-container {
-      min-width: (100%-@ratio-nav-p)/6;
-      max-width: (100%-@ratio-nav-p)/6;
-      margin-right: auto;
+      min-width: 25% - @ratio-nav-p;
+      max-width: 25% - @ratio-nav-p;
+      margin-right: 0;
     }
     &__logo {
       width: 12vw;
@@ -108,22 +111,23 @@
       margin-right: 1vw;
     }
     &__text-container {
-      min-width: (100%-@ratio-nav-p)/3;
-      max-width: (100%-@ratio-nav-p)/3;
+      min-width: 25%;
+      max-width: 25%;
+      margin-left: auto;
     }
     &__text {
       &_light {
-        font-size: 1.6vw;
-        letter-spacing: 0.08vw;
-        padding-left:  @padding;
+        font-size: @fs-xs;
+        line-height: @fs-xs + 0.1px;
       }
       &_bold {
-        font-size: 1.6vw;
-        line-height: 2vw;
+        font-size: @fs-xs;
+        line-height: @fs-xs + 0.1px;
+        font-weight: bold;
       }
       &_small {
-        font-size: 1.3vw;
-        line-height: 1.4vw;
+        font-size: @fs-xs;
+        line-height: @fs-xs + 0.1px;
       }
     }
   }
@@ -132,14 +136,19 @@
 /* Laptop */
 @media screen and (min-width: @screen-lg) {
   .b-header {
+    height: 8vw;
+    &__contact-icon {
+      min-width: 3vw;
+    }
     &__text {
       &_light {
         font-size: 1.4vw;
-        padding-left: 2 * @padding;
+        letter-spacing: 0.08vw;
       }
       &_bold {
-        font-size: 1.4vw;
-        line-height: 1.5vw;
+        font-size: 1.2vw;
+        line-height: 1.3vw;
+        font-weight: bold;
       }
       &_small {
         font-size: 1vw;
@@ -155,15 +164,10 @@
     &__text {
       &_light {
         font-size: 1.2vw;
-        padding-left: 2 * @padding;
       }
       &_bold {
         font-size: 1.2vw;
         line-height: 2vw;
-      }
-      &_small {
-        font-size: 0.8vw;
-        line-height: 1.1vw;
       }
     }
   }
