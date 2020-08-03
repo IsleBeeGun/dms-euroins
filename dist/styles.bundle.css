@@ -1,24 +1,24 @@
 @font-face {
   font-family: Lato;
-  src: url(fonts/Lato-Bold.woff2) format("woff2"), url(fonts/Lato-Bold.woff) format("woff");
+  src: url(/fonts/Lato-Bold.woff2) format("woff2"), url(/fonts/Lato-Bold.woff) format("woff");
   font-weight: bold;
   font-display: swap;
 }
 @font-face {
   font-family: Lato;
-  src: url(fonts/Lato-Regular.woff2) format("woff2"), url(fonts/Lato-Regular.woff) format("woff");
+  src: url(/fonts/Lato-Regular.woff2) format("woff2"), url(/fonts/Lato-Regular.woff) format("woff");
   font-weight: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Lato;
-  src: url(fonts/Lato-Light.woff2) format("woff2"), url(fonts/Lato-Light.woff) format("woff");
+  src: url(/fonts/Lato-Light.woff2) format("woff2"), url(/fonts/Lato-Light.woff) format("woff");
   font-weight: 200;
   font-display: swap;
 }
 @font-face {
   font-family: Lato;
-  src: url(fonts/Lato-Italic.woff2) format("woff2"), url(fonts/Lato-Italic.woff) format("woff");
+  src: url(/fonts/Lato-Italic.woff2) format("woff2"), url(/fonts/Lato-Italic.woff) format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -39,44 +39,44 @@
 @media screen and (min-width: 1600px) {
 }
 .bg-main {
-  background: url(img/main_banner1.jpg) no-repeat;
+  background: url(/img/main_banner1.jpg) no-repeat;
 }
 .bg-prosto {
-  background: url(img/prosto.jpg) no-repeat;
+  background: url(/img/prosto.jpg) no-repeat;
 }
 .bg-feedback {
-  background: url(img/feedback.jpg) no-repeat;
+  background: url(/img/feedback.jpg) no-repeat;
 }
 .bg-1 {
-  background: url(img/1.jpg) no-repeat center 0px !important;
+  background: url(/img/1.jpg) no-repeat center 0px !important;
   background-size: cover !important;
 }
 .bg-2 {
-  background: url(img/2.jpg) no-repeat center 0px !important;
+  background: url(/img/2.jpg) no-repeat center 0px !important;
   background-size: cover !important;
 }
 .bg-3 {
-  background: url(img/3.jpg) no-repeat center 0px !important;
+  background: url(/img/3.jpg) no-repeat center 0px !important;
   background-size: cover !important;
 }
 .bg-4 {
-  background: url(img/4.jpg) no-repeat center 0px !important;
+  background: url(/img/4.jpg) no-repeat center 0px !important;
   background-size: cover !important;
 }
 .bg-5 {
-  background: url(img/5.jpg) no-repeat center 0px !important;
+  background: url(/img/5.jpg) no-repeat center 0px !important;
   background-size: cover !important;
 }
 .bg-6 {
-  background: url(img/6.jpg) no-repeat 80% center !important;
+  background: url(/img/6.jpg) no-repeat 80% center !important;
   background-size: cover !important;
 }
 .bg-7 {
-  background: url(img/7.jpg) no-repeat center 0px !important;
+  background: url(/img/7.jpg) no-repeat center 0px !important;
   background-size: cover !important;
 }
 .bg-8 {
-  background: url(img/8.jpg) no-repeat 0px center !important;
+  background: url(/img/8.jpg) no-repeat 0px center !important;
   background-size: cover !important;
 }
 /* Mobile */
@@ -1325,6 +1325,9 @@
 .b-calc .calc-check {
   background-color: #f2f8f8;
 }
+.b-calc .ant-affix {
+  position: static !important;
+}
 /* Mobile */
 @media screen and (min-width: 480px) {
   .b-calc {
@@ -1624,11 +1627,37 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: 100%;
+  width: 92%;
   padding-left: 1rem;
 }
 .b-footer__left-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 1rem;
+  padding-bottom: 1rem;
+  min-width: 100%;
+  max-width: 100%;
+}
+.b-footer__right-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 100%;
+  max-width: 100%;
+}
+.b-footer__logo {
+  width: 280px;
+}
+.b-footer__logo-container {
+  text-align: center;
+}
+.b-footer__social-container {
+  padding-top: 2rem;
+}
+.b-footer__social-icon {
+  width: 30px;
+  margin: 4px 2px;
+  background-color: #272474;
+  border: 6px solid #272474;
 }
 /* Mobile */
 @media screen and (min-width: 480px) {
@@ -1638,8 +1667,21 @@
   .b-footer {
     padding-left: 2rem;
   }
-  __left-container {
+  .b-footer__logo {
+    width: 16vw;
+  }
+  .b-footer__logo-container {
+    text-align: left;
+  }
+  .b-footer__left-container {
     padding-left: 2rem;
+    padding-bottom: 2rem;
+    min-width: 30%;
+    max-width: 30%;
+  }
+  .b-footer__right-container {
+    min-width: 70%;
+    max-width: 70%;
   }
 }
 /* Tablet */
@@ -1649,18 +1691,21 @@
   }
   .b-footer__left-container {
     padding-left: 3rem;
+    padding-bottom: 3rem;
   }
 }
 /* Laptop */
 @media screen and (min-width: 1200px) {
   .b-footer__left-container {
     padding-left: 4rem;
+    padding-bottom: 4rem;
   }
 }
 /* Desktop */
 @media screen and (min-width: 1600px) {
   .b-footer__left-container {
     padding-left: 5rem;
+    padding-bottom: 5rem;
   }
 }
 .b-button {

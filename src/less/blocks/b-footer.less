@@ -3,16 +3,34 @@
 .b-footer {
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
+  width: 100% - @ratio-nav-p;
   padding-left: @padding;
   &__left-container {
+    box-sizing: border-box;
     padding-left: @padding;
+    padding-bottom: @padding;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  &__right-container {
+    box-sizing: border-box;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  &__logo {
+    width: 280px;
   }
   &__logo-container {
+    text-align: center;
   }
   &__social-container {
+    padding-top: 2 * @padding;
   }
   &__social-icon {
+    width: 30px;
+    margin: 4px 2px;
+    background-color: @theme-color-1;
+    border: 6px solid @theme-color-1;
   }
 }
 
@@ -25,9 +43,22 @@
 @media screen and (min-width: @screen-sm) {
   .b-footer {
     padding-left: 2 * @padding;
-  }
-  &__left-container {
-    padding-left: 2 * @padding;
+    &__logo {
+      width: 16vw;
+    }
+    &__logo-container {
+      text-align: left;
+    }
+    &__left-container {
+      padding-left: 2 * @padding;
+      padding-bottom: 2 * @padding;
+      min-width: 30%;
+      max-width: 30%;
+    }
+    &__right-container {
+      min-width: 70%;
+      max-width: 70%;
+    }
   }
 }
 
@@ -37,6 +68,7 @@
     padding-left: @ratio-nav-p;
     &__left-container {
       padding-left: 3 * @padding;
+      padding-bottom: 3 * @padding;
     }
   }
 }
@@ -46,6 +78,7 @@
   .b-footer {
     &__left-container {
       padding-left: 4 * @padding;
+      padding-bottom: 4 * @padding;
     }
   }
 }
@@ -55,6 +88,7 @@
   .b-footer {
     &__left-container {
       padding-left: 5 * @padding;
+      padding-bottom: 5 * @padding;
     }
   }
 }
