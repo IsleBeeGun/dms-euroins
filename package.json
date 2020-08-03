@@ -33,7 +33,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "browserslist": [
-    "ie >= 8", 
+    "ie >= 8",
     "last 4 version"
   ]
 }
