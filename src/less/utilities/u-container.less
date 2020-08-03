@@ -79,11 +79,17 @@
       &-no {
         margin-top: 0 !important;
       }
+      &-auto {
+        margin-top: auto !important;
+      }
     }
     &-right {
       margin-right: @padding !important;
       &-no {
         margin-right: 0 !important;
+      }
+      &-auto {
+        margin-right: auto !important;
       }
     }
     &-bottom {
@@ -91,17 +97,26 @@
       &-no {
         margin-bottom: 0 !important;
       }
+      &-auto {
+        margin-bottom: auto !important;
+      }
     }
     &-left {
       margin-left: @padding !important;
       &-no {
         margin-left: 0 !important;
       }
+      &-auto {
+        margin-left: auto !important;
+      }
     }
     &-all {
       margin: @padding !important;
       &-no {
         margin: 0 !important;
+      }
+      &-auto {
+        margin: auto !important;
       }
     }
   }
@@ -296,50 +311,86 @@
       &-1of1 {
         min-width: @screen-md * (1-@ratio-nav)- @min-point !important;
         max-width: 100% !important;
+        &-full {
+          min-width: @screen-md - @min-point !important;
+        }
       }
       &-1of2 {
         min-width: @screen-md / 2 * (1-@ratio-nav)- @min-point !important;
         max-width: 50% !important;
+        &-full {
+          min-width: @screen-md / 2 - @min-point !important;
+        }
       }
       &-1of3 {
         min-width: @screen-md / 3 * (1-@ratio-nav)- @min-point !important;
         max-width: 33.3% !important;
+        &-full {
+          min-width: @screen-md / 3 - @min-point !important;
+        }
       }
       &-1of4 {
         min-width: @screen-md / 4 * (1-@ratio-nav)- @min-point !important;
         max-width: 25% !important;
+        &-full {
+          min-width: @screen-md / 4 - @min-point !important;
+        }
       }
       &-1of5 {
         min-width: @screen-md / 5 * (1-@ratio-nav)- @min-point !important;
         max-width: 20% !important;
+        &-full {
+          min-width: @screen-md / 5 - @min-point !important;
+        }
       }
       &-1of6 {
         min-width: @screen-md / 6 * (1-@ratio-nav)- @min-point !important;
         max-width: 16.6% !important;
+        &-full {
+          min-width: @screen-md / 6 - @min-point !important;
+        }
       }
       &-1of7 {
         min-width: @screen-md / 7 * (1-@ratio-nav)- @min-point !important;
         max-width: 14.2% !important;
+        &-full {
+          min-width: @screen-md / 7 - @min-point !important;
+        }
       }
       &-1of8 {
         min-width: @screen-md / 8 * (1-@ratio-nav)- @min-point !important;
         max-width: 12.5% !important;
+        &-full {
+          min-width: @screen-md / 8 - @min-point !important;
+        }
       }
       &-1of9 {
         min-width: @screen-md / 9 * (1-@ratio-nav)- @min-point !important;
         max-width: 11.1% !important;
+        &-full {
+          min-width: @screen-md / 9 - @min-point !important;
+        }
       }
       &-1of10 {
         min-width: @screen-md / 10 * (1-@ratio-nav)- @min-point !important;
         max-width: 10% !important;
+        &-full {
+          min-width: @screen-md / 10 - @min-point !important;
+        }
       }
       &-1of11 {
         min-width: @screen-md / 11 * (1-@ratio-nav)- @min-point !important;
         max-width: 9% !important;
+        &-full {
+          min-width: @screen-md / 11 - @min-point !important;
+        }
       }
       &-1of12 {
         min-width: @screen-md / 12 * (1-@ratio-nav)- @min-point !important;
         max-width: 8.3% !important;
+        &-full {
+          min-width: @screen-md / 12 - @min-point !important;
+        }
       }
     }
   }
@@ -392,50 +443,86 @@
       &-1of1 {
         min-width: @screen-lg * (1-@ratio-nav)- @min-point !important;
         max-width: 100% !important;
+        &-full {
+          min-width: @screen-lg - @min-point !important;
+        }
       }
       &-1of2 {
         min-width: @screen-lg / 2 * (1-@ratio-nav)- @min-point !important;
         max-width: 50% !important;
+        &-full {
+          min-width: @screen-lg / 2 - @min-point !important;
+        }
       }
       &-1of3 {
         min-width: @screen-lg / 3 * (1-@ratio-nav)- @min-point !important;
         max-width: 33.3% !important;
+        &-full {
+          min-width: @screen-lg / 3 - @min-point !important;
+        }
       }
       &-1of4 {
         min-width: @screen-lg / 4 * (1-@ratio-nav)- @min-point !important;
         max-width: 25% !important;
+        &-full {
+          min-width: @screen-lg / 4 - @min-point !important;
+        }
       }
       &-1of5 {
         min-width: @screen-lg / 5 * (1-@ratio-nav)- @min-point !important;
         max-width: 20% !important;
+        &-full {
+          min-width: @screen-lg / 5 - @min-point !important;
+        }
       }
       &-1of6 {
         min-width: @screen-lg / 6 * (1-@ratio-nav)- @min-point !important;
         max-width: 16.6% !important;
+        &-full {
+          min-width: @screen-lg / 6 - @min-point !important;
+        }
       }
       &-1of7 {
         min-width: @screen-lg / 7 * (1-@ratio-nav)- @min-point !important;
         max-width: 14.2% !important;
+        &-full {
+          min-width: @screen-lg / 7 - @min-point !important;
+        }
       }
       &-1of8 {
         min-width: @screen-lg / 8 * (1-@ratio-nav)- @min-point !important;
         max-width: 12.5% !important;
+        &-full {
+          min-width: @screen-lg / 8 - @min-point !important;
+        }
       }
       &-1of9 {
         min-width: @screen-lg / 9 * (1-@ratio-nav)- @min-point !important;
         max-width: 11.1% !important;
+        &-full {
+          min-width: @screen-lg / 9 - @min-point !important;
+        }
       }
       &-1of10 {
         min-width: @screen-lg / 10 * (1-@ratio-nav)- @min-point !important;
         max-width: 10% !important;
+        &-full {
+          min-width: @screen-lg / 10 - @min-point !important;
+        }
       }
       &-1of11 {
         min-width: @screen-lg / 11 * (1-@ratio-nav)- @min-point !important;
         max-width: 9% !important;
+        &-full {
+          min-width: @screen-lg / 11 - @min-point !important;
+        }
       }
       &-1of12 {
         min-width: @screen-lg / 12 * (1-@ratio-nav)- @min-point !important;
         max-width: 8.3% !important;
+        &-full {
+          min-width: @screen-lg / 12 - @min-point !important;
+        }
       }
     }
   }
@@ -488,50 +575,86 @@
       &-1of1 {
         min-width: @screen-xl * (1-@ratio-nav)- @min-point !important;
         max-width: 100% !important;
+        &-full {
+          min-width: @screen-xl - @min-point !important;
+        }
       }
       &-1of2 {
         min-width: @screen-xl / 2 * (1-@ratio-nav)- @min-point !important;
         max-width: 50% !important;
+        &-full {
+          min-width: @screen-xl / 2 - @min-point !important;
+        }
       }
       &-1of3 {
         min-width: @screen-xl / 3 * (1-@ratio-nav)- @min-point !important;
         max-width: 33.3% !important;
+        &-full {
+          min-width: @screen-xl / 3 - @min-point !important;
+        }
       }
       &-1of4 {
         min-width: @screen-xl / 4 * (1-@ratio-nav)- @min-point !important;
         max-width: 25% !important;
+        &-full {
+          min-width: @screen-xl / 4 - @min-point !important;
+        }
       }
       &-1of5 {
         min-width: @screen-xl / 5 * (1-@ratio-nav)- @min-point !important;
         max-width: 20% !important;
+        &-full {
+          min-width: @screen-xl / 5 - @min-point !important;
+        }
       }
       &-1of6 {
         min-width: @screen-xl / 6 * (1-@ratio-nav)- @min-point !important;
         max-width: 16.6% !important;
+        &-full {
+          min-width: @screen-xl / 6 - @min-point !important;
+        }
       }
       &-1of7 {
         min-width: @screen-xl / 7 * (1-@ratio-nav)- @min-point !important;
         max-width: 14.2% !important;
+        &-full {
+          min-width: @screen-xl / 7 - @min-point !important;
+        }
       }
       &-1of8 {
         min-width: @screen-xl / 8 * (1-@ratio-nav)- @min-point !important;
         max-width: 12.5% !important;
+        &-full {
+          min-width: @screen-xl / 8 - @min-point !important;
+        }
       }
       &-1of9 {
         min-width: @screen-xl / 9 * (1-@ratio-nav)- @min-point !important;
         max-width: 11.1% !important;
+        &-full {
+          min-width: @screen-xl / 9 - @min-point !important;
+        }
       }
       &-1of10 {
         min-width: @screen-xl / 10 * (1-@ratio-nav)- @min-point !important;
         max-width: 10% !important;
+        &-full {
+          min-width: @screen-xl / 10 - @min-point !important;
+        }
       }
       &-1of11 {
         min-width: @screen-xl / 11 * (1-@ratio-nav)- @min-point !important;
         max-width: 9% !important;
+        &-full {
+          min-width: @screen-xl / 11 - @min-point !important;
+        }
       }
       &-1of12 {
         min-width: @screen-xl / 12 * (1-@ratio-nav)- @min-point !important;
         max-width: 8.3% !important;
+        &-full {
+          min-width: @screen-xl / 12 - @min-point !important;
+        }
       }
     }
   }
