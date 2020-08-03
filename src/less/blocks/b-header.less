@@ -2,90 +2,169 @@
 
 .b-header {
   padding-left: @padding;
+  margin-top: 2*@padding ;
   width: 100%;
   height: auto;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
   font-family: @ff;
+  &__spacer {
+    display: none;
+  }
+  &__logo-container {
+    width: 50%;
+  }
   &__logo {
-    max-width: 224px;
-    max-height: 50px;
+    width: 224px;
+    margin-bottom: @padding;
   }
   &__contact-container {
+    margin-bottom: @padding;
     margin-right: auto;
     display: inline-flex;
     flex-flow: row nowrap;
     align-items: center;
   }
   &__contact-icon {
-    width: 50px;
+    width: 30px;
     margin-right: @padding;
   }
   &__inner-container {
     display: inline-flex;
     flex-flow: column wrap;
   }
+  &__text-container {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: @padding;
+  }
   &__text {
     &_light {
       font-weight: 200;
       font-style: italic;
-      font-size: 1.5vmax;
-      letter-spacing: 0.08vmax;
       color: lighten((@theme-color-4), 50%);
-      // line-height: @fs-md + @fs-md / 10;
-      // letter-spacing: @fs-md / 32;
+      font-size: @fs-sm;
+      line-height: @fs-sm + @fs-sm / 10;
     }
     &_bold {
-      // font-weight: bold;
       text-transform: uppercase;
-      font-size: 1.5vmax;
-      // font-size: @fs-md;
-      // line-height: @fs-md + @fs-md / 10;
-      // letter-spacing: @fs-md / 32;
+      font-size: @fs-sm;
+      line-height: @fs-sm + @fs-sm / 10;
     }
     &_small {
-      // font-size: @fs-sm;
-      // line-height: @fs-sm + @fs-sm / 10;
+      font-size: @fs-xs;
     }
   }
-}
-
-/* Mobile */
-@media screen and (min-width: @screen-xs) {
-  //
 }
 
 /* Large Mobile */
 @media screen and (min-width: @screen-sm) {
   .b-header {
+    flex-flow: row wrap;
     padding-left: 2 * @padding;
+    &__text-container {
+      min-width: 250px;
+      width: 50%;
+      display: inline-flex;
+      align-items: center;
+    }
   }
 }
 
 /* Tablet */
 @media screen and (min-width: @screen-md) {
   .b-header {
-    height: 132px;
+    height: 8vw;
     padding-left: @ratio-nav-p;
     flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    &__spacer {
+      display: inline-block;
+    }
+    &__contact-container {
+      min-width: (100%-@ratio-nav-p)/3;
+      max-width: (100%-@ratio-nav-p)/3;
+      margin-right: auto;
+      display: inline-flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+    &__logo-container {
+      min-width: (100%-@ratio-nav-p)/6;
+      max-width: (100%-@ratio-nav-p)/6;
+      margin-right: auto;
+    }
+    &__logo {
+      width: 12vw;
+    }
+    &__contact-icon {
+      width: 3vw;
+      margin-right: 1vw;
+    }
+    &__text-container {
+      min-width: (100%-@ratio-nav-p)/3;
+      max-width: (100%-@ratio-nav-p)/3;
+    }
+    &__text {
+      &_light {
+        font-size: 1.6vw;
+        letter-spacing: 0.08vw;
+        padding-left:  @padding;
+      }
+      &_bold {
+        font-size: 1.6vw;
+        line-height: 2vw;
+      }
+      &_small {
+        font-size: 1.3vw;
+        line-height: 1.4vw;
+      }
+    }
   }
 }
 
 /* Laptop */
 @media screen and (min-width: @screen-lg) {
-  // .b-header {
-  //   padding-left: @screen-lg * @ratio-nav - @min-point + 4 * @padding;
-  //   padding-right: 4 * @padding;
-  // }
+  .b-header {
+    &__text {
+      &_light {
+        font-size: 1.4vw;
+        padding-left: 2 * @padding;
+      }
+      &_bold {
+        font-size: 1.4vw;
+        line-height: 1.5vw;
+      }
+      &_small {
+        font-size: 1vw;
+        line-height: 1.1vw;
+      }
+    }
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: @screen-xl) {
-  // .b-header {
-  //   padding-left: @screen-xl * @ratio-nav - @min-point + 5 * @padding;
-  //   padding-right: 5 * @padding;
-  // }
+  .b-header {
+    &__text {
+      &_light {
+        font-size: 1.2vw;
+        padding-left: 2 * @padding;
+      }
+      &_bold {
+        font-size: 1.2vw;
+        line-height: 2vw;
+      }
+      &_small {
+        font-size: 0.8vw;
+        line-height: 1.1vw;
+      }
+    }
+  }
 }
