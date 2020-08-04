@@ -527,30 +527,10 @@
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
-.b-form__row {
-  width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-.b-form__row_half {
-  width: 50%;
-}
 .b-form__choice-name {
   display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
-}
-.b-form__choice-name_fixed-size {
-  min-width: 200px;
-  max-width: 200px;
 }
 .b-form__label {
   display: inline-block;
@@ -1550,7 +1530,7 @@
     min-width: 218.16181818px;
   }
   .u-container_fraction-4of5 {
-    min-width: 735.98px;
+    min-width: 588.78px;
     max-width: 80%;
   }
   .u-container_fraction-4of5-full {
@@ -1918,7 +1898,7 @@
     min-width: 327.25272727px;
   }
   .u-container_fraction-4of5 {
-    min-width: 1103.98px;
+    min-width: 883.18px;
     max-width: 80%;
   }
   .u-container_fraction-4of5-full {
@@ -2286,7 +2266,7 @@
     min-width: 436.34363636px;
   }
   .u-container_fraction-4of5 {
-    min-width: 1471.98px;
+    min-width: 1177.58px;
     max-width: 80%;
   }
   .u-container_fraction-4of5-full {
