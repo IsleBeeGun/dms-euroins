@@ -1,7 +1,7 @@
 @import "../variables.less";
 
 .b-form {
-  width: 100%;
+  // width: 100%;
   display: flex;
   flex-flow: row wrap;
   &__choice-name {
@@ -10,19 +10,17 @@
     font-weight: bold;
   }
   &__label {
-    display: inline-block;
-    font-size: 1.2rem;
-    max-width: 1000px;
-    &_fixed-size {
-      min-width: 200px;
-      max-width: 200px;
-    }
+    display: inline-flex;
+    align-items: center;
+    font-size: @fs-md;
   }
   &__checkbox {
     margin-right: 1rem;
+    min-width: 30px;
+    min-height: 30px;
   }
   &__input-field {
-    min-width: 300px;
-    max-width: 300px;
+    // min-width: 300px;
+    // max-width: 300px;
   }
 }
