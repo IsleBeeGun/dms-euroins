@@ -532,6 +532,8 @@
   font-weight: bold;
 }
 .b-form__choice-option {
+  width: 100%;
+  margin-top: 1rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -541,7 +543,6 @@
 }
 .b-form__choice-row {
   padding-top: 2rem;
-  width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -558,11 +559,29 @@
   min-width: 2rem;
   min-height: 2rem;
   border: 1px solid #272474;
+  background-color: #ffffff;
 }
 .b-form__choice-field {
   min-height: 2rem;
   width: 100%;
   border: 1px solid #272474;
+}
+/* Mobile */
+/* Large Mobile */
+@media screen and (min-width: 548px) {
+}
+/* Tablet */
+@media screen and (min-width: 800px) {
+  .b-form__choice-option {
+    width: auto;
+    margin-top: 0;
+  }
+}
+/* Laptop */
+@media screen and (min-width: 1200px) {
+}
+/* Desktop */
+@media screen and (min-width: 1600px) {
 }
 .b-calc {
   display: inline-block;

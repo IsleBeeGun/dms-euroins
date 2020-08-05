@@ -9,12 +9,13 @@
     font-weight: bold;
   }
   &__choice-option {
+    width: 100%;
+    margin-top: @padding;
     display: inline-flex;
     align-items: center;
   }
   &__choice-row {
     padding-top: 2 * @padding;
-    width: 100%;
     display: inline-flex;
     flex-flow: row wrap;
     align-items: center;
@@ -24,10 +25,40 @@
     min-width: 2rem;
     min-height: 2rem;
     border: 1px solid @theme-color-1;
+    background-color: @theme-color-5;
   }
   &__choice-field {
     min-height: 2rem;
     width: 100%;
     border: 1px solid @theme-color-1;
   }
+}
+
+/* Mobile */
+@media screen and (min-width: @screen-xs) {
+}
+
+/* Large Mobile */
+@media screen and (min-width: @screen-sm) {
+  //
+}
+
+/* Tablet */
+@media screen and (min-width: @screen-md) {
+  .b-form {
+    &__choice-option {
+      width: auto;
+      margin-top: 0;
+    }
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: @screen-lg) {
+  //
+}
+
+/* Desktop */
+@media screen and (min-width: @screen-xl) {
+  //
 }
