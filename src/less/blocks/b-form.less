@@ -1,26 +1,33 @@
 @import "../variables.less";
 
 .b-form {
-  // width: 100%;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
-  &__choice-name {
+  &__choice-title {
     display: inline-block;
-    font-size: 1.2rem;
     font-weight: bold;
   }
-  &__label {
+  &__choice-option {
     display: inline-flex;
     align-items: center;
-    font-size: @fs-md;
   }
-  &__checkbox {
+  &__choice-row {
+    padding-top: 2 * @padding;
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  &__choice-checkbox {
     margin-right: 1rem;
     min-width: 2rem;
     min-height: 2rem;
+    border: 1px solid @theme-color-1;
   }
-  &__input-field {
-    // min-width: 300px;
-    // max-width: 300px;
+  &__choice-field {
+    min-height: 2rem;
+    width: 100%;
+    border: 1px solid @theme-color-1;
   }
 }

@@ -452,87 +452,87 @@
               * звёздочкой обозначены обязательные для заполнения поля
             </p>
           </header>
-            <form class="b-form">
-              <div class="u-container_fraction-1of1 u-container_align-start">
-                <span class="b-form__choice-name u-container_fraction-1of5 u-container_padding-left"
+            <form class="b-form u-container_margin-top u-container_padding-right">
+              <div class="b-form__choice-row u-container_fraction-1of1 u-container_align-start">
+                <span class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5-fixed u-container_padding-left"
                   >Вид программы:</span
                 >
-                <label class="b-form__label u-container_fraction-1of5"
+                <label class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
                   ><input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx01"
                   />Поликлиника</label
                 >
-                <label class="b-form__label u-container_fraction-1of5"
+                <label class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
                   ><input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx02"
                   />Помощь на дому</label
                 >
-                <label class="b-form__label u-container_fraction-1of5"
+                <label class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
                   ><input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx03"
                   />Стоматология</label
                 >
-                <label class="b-form__label u-container_fraction-1of5"
+                <label class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
                   ><input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx04"
                   />Скорая помощь</label
                 >
               </div>
-              <div class="u-container_fraction-1of1 u-container_align-start">
-                <span class="b-form__choice-name u-container_fraction-1of5 u-container_padding-left"
+              <div class="b-form__choice-row u-container_fraction-1of1 u-container_align-start">
+                <span class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5-fixed u-container_padding-left"
                   >Застрахованный:</span
                 >
-                <label class="b-form__label u-container_fraction-1of5"
+                <label class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
                   ><input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx05"
                   />Мужчина</label
                 >
-                <label class="b-form__label u-container_fraction-1of5"
+                <label class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
                   ><input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx06"
                   />Женщина</label
                 >
-                <label class="b-form__label u-container_fraction-1of5"
+                <label class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
                   ><input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx07"
                   />Ребёнок</label
                 >
               </div>
-              <div class="u-container_fraction-1of1 u-container_align-start">
-                <span class="b-form__choice-name u-container_fraction-1of5 u-container_padding-left"
+              <div class="b-form__choice-row u-container_fraction-1of1 u-container_align-start">
+                <span class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5-fixed u-container_padding-left"
                   >Желаемый уровень:</span
                 >
-                <label class="b-form__label u-container_fraction-1of5"
+                <label class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
                   ><input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx08"
                   />Эконом</label
                 >
-                <label class="b-form__label u-container_fraction-1of5"
+                <label class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
                   ><input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx09"
                   />Бизнес</label
                 >
-                <label class="b-form__label u-container_fraction-1of5"
+                <label class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
                   ><input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx10"
                   />VIP</label
@@ -540,54 +540,52 @@
               </div>
               <div class="u-container_fraction-1of1-fixed" style="display: inline-flex; flex-flow: row wrap; justify-content: flex-start;">
                 <div class="u-container_fraction-3of5 u-container_align-start">
-                  <span class="b-form__choice-name u-container_fraction-1of5 u-container_padding-left"
+                  <div class="b-form__choice-row"><span class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
                     >Ваше имя*:</span
-                  >
-                  <input
-                    class="b-form__input-field u-container_fraction-2of5"
+                  ><div class="u-container_fraction-2of5 u-container_padding-left"><input
+                    class="b-form__choice-field"
                     type="text"
-                  />
-
-                  <span class="b-form__choice-name u-container_fraction-1of5 u-container_padding-left"
+                  /></div>
+                  </div>
+                  <div class="b-form__choice-row"><span class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
                     >Телефон*:</span
-                  >
-                  <input
-                    class="b-form__input-field u-container_fraction-2of5"
+                  ><div class="u-container_fraction-2of5 u-container_padding-left"><input
+                    class="b-form__choice-field"
                     type="text"
-                  />
-
-                  <span class="b-form__choice-name u-container_fraction-1of5 u-container_padding-left"
+                  /></div>
+                  </div>
+                  <div class="b-form__choice-row"><span class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
                     >E-mail*:</span
-                  >
-                  <input
-                    class="b-form__input-field u-container_fraction-2of5"
+                  ><div class="u-container_fraction-2of5 u-container_padding-left"><input
+                    class="b-form__choice-field"
                     type="text"
-                  />
+                  /></div>
+                  </div>
                 </div>
                 <div
-                  class="u-container_fraction-2of5 u-container_justify-start" 
+                  class="b-form__choice-row u-container_fraction-2of5 u-container_justify-start" style="align-items: stretch;"
                 >
-                  <span class="b-form__choice-name" style="width: 100%; padding-left: 3rem;"
+                  <span class="b-form__choice-title u-text_fs-sm u-container_padding-left"
                     >Дополнительная информация:</span
                   >
                   <textarea
                     spellcheck
-                    style="resize: none; width: 100%; margin-left:3rem"
-                    class=""
+                    style="resize: none; width: 100%;"
+                    class="b-form__choice-field u-container_margin-left"
                   >
  sup </textarea
                   >
                 </div>
               </div>
-              <div class="u-container_fraction-1of1">
-                <span class="b-form__choice-name u-container_fraction-1of5"
+              <div class="b-form__choice-row u-container_fraction-1of1">
+                <span class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5"
                   >&nbsp;</span
                 >
                 <label
-                  class="b-form__label u-container_fraction-4of5 u-text_ta-justify"
+                  class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-4of5-fixed u-text_ta-justify"
                 >
                   <input
-                    class="b-form__checkbox"
+                    class="b-form__choice-checkbox"
                     type="checkbox"
                     name="chkbx11"
                   />
