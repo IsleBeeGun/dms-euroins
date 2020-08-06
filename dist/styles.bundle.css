@@ -1100,6 +1100,7 @@
 }
 .b-button {
   cursor: pointer;
+  text-decoration: none;
   outline: none;
   outline-width: 0px;
   border: 0px solid transparent;

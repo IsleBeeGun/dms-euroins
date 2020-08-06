@@ -87,8 +87,8 @@
           <div
             class="b-section__container u-container_justify-start u-container_padding-left u-container_margin-top-no"
           >
-            <a href="#" class="b-button b-button_pink">Отправить заявку</a>
-            <a href="#" class="b-button b-button_blue">Выбрать программу</a>
+            <a href="#feedback" class="b-button b-button_pink">Отправить заявку</a>
+            <a href="#calculator" class="b-button b-button_blue">Выбрать программу</a>
           </div>
           <div class="b-section__container u-container_justify-evenly">
             <div class="b-notice u-container_fraction-1of10">
@@ -162,7 +162,7 @@
           </div>
         </section>
 
-        <section class="t-3 b-section">
+        <section class="t-3 b-section" id="calculator">
           <header class="b-section__header">
             <h2 class="b-section__title">
               Выбрать полис медицинского страхования
@@ -333,8 +333,8 @@
             </p>
           </div>
           <div class="b-section__container u-container_margin-top-no">
-            <a href="#" class="b-button b-button_pink">Отправить заявку</a>
-            <a href="#" class="b-button b-button_blue">Выбрать программу</a>
+            <a href="#feedback" class="b-button b-button_pink">Отправить заявку</a>
+            <a href="#calculator" class="b-button b-button_blue">Выбрать программу</a>
           </div>
         </section>
 
@@ -443,7 +443,7 @@
           </div>
         </section>
 
-        <section class="t-8 b-section bg-feedback">
+        <section class="t-8 b-section bg-feedback" id="feedback">
           <header class="b-section__header">
             <h2 class="b-section__title">
               Заполнить и отправить заявку на медицинское страхование
@@ -594,7 +594,12 @@
                   <div
                     class="u-container_fraction-2of5 u-container_padding-left"
                   >
-                    <input class="b-form__choice-field u-text_fs-sm" type="text" />
+                    <input
+                      class="b-form__choice-field u-text_fs-sm"
+                      type="text"
+                      placeholder="Укажите Вашу фамилию, имя, отчество"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="b-form__choice-row b-form__choice-row_special">
@@ -605,7 +610,12 @@
                   <div
                     class="u-container_fraction-2of5 u-container_padding-left"
                   >
-                    <input class="b-form__choice-field u-text_fs-sm" type="text" />
+                    <input
+                      class="b-form__choice-field u-text_fs-sm"
+                      type="tel"
+                      placeholder="Укажите Ваш номер телефона"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="b-form__choice-row b-form__choice-row_special">
@@ -616,7 +626,12 @@
                   <div
                     class="u-container_fraction-2of5 u-container_padding-left"
                   >
-                    <input class="b-form__choice-field u-text_fs-sm" type="text" />
+                    <input
+                      class="b-form__choice-field u-text_fs-sm"
+                      type="email"
+                      placeholder="Укажите Вашу электронную почту"
+                      required
+                    />
                   </div>
                 </div>
               </div>
@@ -630,6 +645,7 @@
                 <textarea
                   spellcheck
                   class="b-form__choice-field u-container_margin-left u-text_fs-sm"
+                  placeholder="Оставьте дополнительные пожелания к Вашей заявке"
                 ></textarea>
               </div>
             </div>
@@ -854,8 +870,8 @@
             </div>
           </div>
           <div class="b-section__container">
-            <a href="#" class="b-button b-button_pink">Отправить заявку</a>
-            <a href="#" class="b-button b-button_blue">Выбрать программу</a>
+            <a href="#feedback" class="b-button b-button_pink">Отправить заявку</a>
+            <a href="#calculator" class="b-button b-button_blue">Выбрать программу</a>
           </div>
         </section>
 
