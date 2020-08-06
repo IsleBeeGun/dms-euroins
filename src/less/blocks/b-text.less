@@ -11,6 +11,7 @@
     font-size: @fs-md;
     line-height: @fs-md + @fs-md / 10;
     letter-spacing: @fs-md / 32;
+    width: 100%;
 
     &_smaller {
       color: lime;
@@ -18,6 +19,7 @@
   }
   &__paragraph {
     padding-top: @padding;
+    text-align: justify;
     margin: 0;
     font-size: @fs-sm;
     line-height: @fs-sm + @fs-md / 10;
@@ -43,6 +45,9 @@
 @media screen and (min-width: @screen-md) {
   .b-text {
     padding: 3 * @padding;
+    &__title {
+      width: 70%;
+    }
   }
 }
 
