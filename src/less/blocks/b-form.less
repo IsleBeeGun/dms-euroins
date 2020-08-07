@@ -111,6 +111,11 @@
     width: 100%;
     border: 1px solid @theme-color-1;
     border-radius: 5px;
+    &:focus {
+      outline: none;     // !! Set focused behavior here
+      border: 2px solid @theme-color-2;
+      background-color: @theme-color-3;
+    }
   }
 }
 

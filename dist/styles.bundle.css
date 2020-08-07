@@ -655,6 +655,11 @@
   border: 1px solid #272474;
   border-radius: 5px;
 }
+.b-form__choice-field:focus {
+  outline: none;
+  border: 2px solid #e00b6c;
+  background-color: #f2f8f8;
+}
 /* Mobile */
 /* Large Mobile */
 @media screen and (min-width: 548px) {
