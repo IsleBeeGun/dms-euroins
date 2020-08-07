@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
   &__choice-title {
     display: inline-block;
     font-weight: bold;
@@ -71,13 +72,17 @@
     align-items: center;
     &_special {
       align-items: stretch;
+ 
+      & span {
+        padding-top: @padding/2;
+      }
       & textarea {
         width: 100%;
         resize: none;
         min-height: auto;
         padding-left: @padding;
         padding-right: @padding;
-        padding-top: @padding/4;
+        padding-top: @padding / 4;
       }
     }
   }
@@ -136,7 +141,7 @@
         max-width: 100% !important;
         & textarea {
           min-height: 8rem !important;
-          padding-top: @padding/2 !important;
+          padding-top: @padding / 2 !important;
         }
       }
     }
@@ -165,6 +170,7 @@
 /* Laptop */
 @media screen and (min-width: @screen-lg) {
   .b-form {
+    justify-content: center;
     &__choice-option {
       & .b-form__choice-checkbox:after {
         left: 4 * @padding + 0.6rem;

@@ -531,6 +531,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .b-form__choice-title {
   display: inline-block;
@@ -615,6 +618,9 @@
       -ms-flex-align: stretch;
           align-items: stretch;
 }
+.b-form__choice-row_special span {
+  padding-top: 0.5rem;
+}
 .b-form__choice-row_special textarea {
   width: 100%;
   resize: none;
@@ -694,6 +700,11 @@
 }
 /* Laptop */
 @media screen and (min-width: 1200px) {
+  .b-form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .b-form__choice-option .b-form__choice-checkbox:after {
     left: 4.6rem;
   }
@@ -751,6 +762,67 @@
   display: inline-flex;
   min-width: 100%;
   max-width: 100%;
+  min-height: 30px;
+}
+.b-nav__sidemenu-container {
+  height: auto;
+  list-style: none;
+  width: 100%;
+}
+.b-nav__sidemenu-container li {
+  height: 25px;
+  margin: 0;
+  padding: 5px 0;
+  background-color: #666;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  clear: both;
+  width: 100px;
+}
+.b-nav__sidemenu-container li:hover {
+  background-color: #f36f25;
+  color: #ffffff;
+}
+.b-nav__sidemenu-container li:hover ul {
+  display: block;
+}
+.b-nav__sidemenu-container li:hover .sub-menu {
+  position: relative;
+  margin-top: -27.5px;
+}
+.b-nav__sidemenu-container li:hover .sub-menu li {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-width: 180px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.b-nav__sidemenu-container li:hover .sub-menu li a {
+  display: inline-block;
+  padding: 0 10px;
+}
+.b-nav__sidemenu-container li a {
+  font-family: Calibri, Arial;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+.b-nav__sidemenu-container li.current {
+  background-color: #f36f25;
+}
+.b-nav__sidemenu-container li.current a {
+  color: #ffffff;
+}
+.b-nav__sidemenu-container li ul {
+  display: none;
+  margin-top: 10px;
+  padding: 0;
 }
 /* Mobile-landscape (and larger) */
 @media screen and (min-width: 480px) {
@@ -773,19 +845,7 @@
   }
 }
 /* Laptops (and langer) */
-@media screen and (min-width: 1200px) {
-  .b-nav {
-    min-width: 8%;
-    max-width: 8%;
-  }
-}
 /* Desktops (and langer) */
-@media screen and (min-width: 1700px) {
-  .b-nav {
-    min-width: 8%;
-    max-width: 8%;
-  }
-}
 .b-metapage {
   display: -webkit-box;
   display: -ms-flexbox;
