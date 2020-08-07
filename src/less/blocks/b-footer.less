@@ -18,19 +18,25 @@
     max-width: 100%;
   }
   &__logo {
-    width: 280px;
+    width: 224px;
   }
   &__logo-container {
     text-align: center;
   }
   &__social-container {
     padding-top: 2 * @padding;
+    text-align: center;
   }
   &__social-icon {
     width: 30px;
     margin: 4px 2px;
     background-color: @theme-color-1;
     border: 6px solid @theme-color-1;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    &:hover {
+      background-color: @theme-color-2;
+      border-color: @theme-color-2;
+    }
   }
 }
 
@@ -58,6 +64,9 @@
     &__right-container {
       min-width: 70%;
       max-width: 70%;
+    }
+    &__social-container {
+      text-align: left;
     }
   }
 }
