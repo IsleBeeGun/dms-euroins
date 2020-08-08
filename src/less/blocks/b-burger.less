@@ -11,7 +11,6 @@
   justify-content: flex-start;
   align-items: center;
   background-color: @theme-color-1;
-  //   box-shadow: @normal-shadow;
   position: fixed;
   top: 0px;
   &__menu-toggle {
@@ -72,7 +71,8 @@
     box-shadow: @normal-shadow;
     margin: -50px 0 0 -50px;
     padding: 50px;
-    padding-top: 125px;
+    padding-top: 100px;
+    padding-right: 15px;
     background-color: @theme-color-5;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -80,8 +80,30 @@
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     list-style: none;
     & li {
+      line-height: 3vh;
       padding: 10px 0;
       transition-delay: 2s;
+      border-bottom: 1px solid lighten(@theme-color-1, 50%);
+      &:last-child {
+        border-bottom: 0px solid @theme-color-1;
+      }
+      & a {
+        text-decoration: none;
+        color: @theme-color-1;
+      }
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .b-burger {
+    &__menu {
+      padding-top: 80px;
+      width: 50vw;
+      & li {
+        line-height: 6vh;
+        padding: 5px 0;
+      }
     }
   }
 }
