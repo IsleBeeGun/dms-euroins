@@ -2,7 +2,7 @@
 
 .b-header {
   padding-left: @padding;
-  margin-top: 2 * @padding;
+  margin-top: 2 * @padding + @burger-height;
   width: 100%;
   height: auto;
   display: flex;
@@ -79,6 +79,7 @@
 /* Tablet */
 @media screen and (min-width: @screen-md) {
   .b-header {
+    margin-top: 2 * @padding;
     height: 10vw;
     padding-left: @ratio-nav-p;
     flex-flow: row nowrap;

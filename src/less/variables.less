@@ -1,18 +1,14 @@
 @import "./fonts.less";
 
 @ff: Lato, sans-serif;
-@theme-color-1: rgb(39, 36, 116);
+@theme-color-1: rgb(39, 36, 116); // dont forget to set meta theme-color
 @theme-color-2: rgb(224, 11, 108);
 @theme-color-3: rgb(242, 248, 248);
 @theme-color-4: rgb(0, 0, 0);
 @theme-color-5: rgb(255, 255, 255);
 @lighten-hover: 20%;
-@light-shadow: 4px 4px 6px hsla(0, 0%, 95%, 0.8),
-  -4px -4px 6px hsla(0, 0%, 95%, 0.8), -4px 4px 6px hsla(0, 0%, 95%, 0.8),
-  4px -4px 6px hsla(0, 0%, 95%, 0.8);
-@normal-shadow: 4px 4px 6px hsla(0, 0%, 80%, 0.5),
-  -4px -4px 6px hsla(0, 0%, 80%, 0.5), -4px 4px 6px hsla(0, 0%, 80%, 0.5),
-  4px -4px 6px hsla(0, 0%, 80%, 0.5);
+@normal-shadow: 0 0 10px gray;
+@light-shadow: 0 0 10px lightgray;
 @transparent-shadow: 4px 4px 6px transparent;
 
 // Font sizes
@@ -31,6 +27,9 @@
 
 // Menu height location
 @ratio-menu-vertical: 19vh;
+
+// Burger
+@burger-height: 3rem; // 3.25 looks fine
 
 // Screens
 @screen-xs: 480px; // Mobile   &  Calculator's breakpoint
