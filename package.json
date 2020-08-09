@@ -36,5 +36,8 @@
   "browserslist": [
     "ie >= 8",
     "last 4 version"
-  ]
+  ],
+  "dependencies": {
+    "slim-select": "^1.26.0"
+  }
 }

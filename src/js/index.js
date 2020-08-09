@@ -7,5 +7,3 @@ require("../less/index.less");
 import clinicsList from '../clinicsList.json5';
 
 console.log(clinicsList.clinics[0].text);
-
-document.getElementById("testtest").innerHTML = clinicsList.clinics[3].text;
