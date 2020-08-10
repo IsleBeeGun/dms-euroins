@@ -1092,9 +1092,6 @@
   text-align: center;
   padding-top: 3rem;
 }
-.b-notice_margin {
-  margin: 1rem;
-}
 .b-notice__icon-container {
   position: relative;
   display: -webkit-inline-box;
@@ -1958,6 +1955,9 @@
 }
 .u-text_italic {
   font-style: italic;
+}
+.u-text_shadow-white {
+  text-shadow: 1px 1px 2px white;
 }
 /* Large Mobile */
 /* Tablet */
