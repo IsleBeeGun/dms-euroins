@@ -799,7 +799,7 @@
 @media screen and (orientation: landscape) {
   .b-burger__menu {
     padding-top: 80px;
-    width: 50vw;
+    width: 60vw;
   }
   .b-burger__menu li {
     line-height: 6vh;
