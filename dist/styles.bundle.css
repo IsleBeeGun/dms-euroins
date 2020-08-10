@@ -383,8 +383,7 @@
   background-size: cover !important;
 }
 .bg-prosto {
-  background: url(img/prosto.jpg) no-repeat;
-  background-size: cover !important;
+  background: #f2f8f8;
 }
 .bg-feedback {
   background: url(img/feedback.jpg) no-repeat;
@@ -430,6 +429,10 @@
 }
 /* Tablet */
 @media screen and (min-width: 44rem) {
+  .bg-prosto {
+    background: url(img/prosto.jpg) no-repeat;
+    background-size: cover !important;
+  }
 }
 /* Laptop */
 @media screen and (min-width: 67rem) {
@@ -1091,6 +1094,8 @@
           justify-content: flex-start;
   text-align: center;
   padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .b-notice__icon-container {
   position: relative;
@@ -1171,9 +1176,8 @@
   padding-top: 1rem;
   min-width: 90%;
   max-width: 90%;
-  font-size: 1.3rem;
-  line-height: 1.43rem;
-  letter-spacing: 0.040625rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
 }
 .b-notice__text_wider {
   min-width: 90%;
@@ -1822,12 +1826,13 @@
   border-radius: 5px;
   color: #ffffff;
   font-weight: bold;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.08rem;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
   margin-top: 1rem;
   margin-right: 1rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   -webkit-transition: background-color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
@@ -1853,6 +1858,16 @@
 .b-button_blue:active {
   color: #ffffff;
   background-color: #0d0c26;
+}
+/* Tablet */
+@media screen and (min-width: 44rem) {
+  .b-button {
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+  }
 }
 .b-clinics-selector {
   width: 80%;
@@ -2065,6 +2080,18 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+.u-container_justify-between {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .u-container_padding-top {
   padding-top: 1rem;
 }
@@ -2145,48 +2172,48 @@
   max-width: 100%;
 }
 .u-container_fraction-1of2 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-1of3 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-1of4 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-1of5 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-1of6 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-1of7 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-1of8 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-1of9 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-1of10 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-1of11 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-1of12 {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 50%;
 }
 .u-container_fraction-2of3 {
   min-width: 100%;

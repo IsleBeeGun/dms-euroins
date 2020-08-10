@@ -11,12 +11,13 @@
   border-radius: 5px;
   color: @theme-color-5;
   font-weight: bold;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.08rem;
   text-transform: uppercase;
-  font-size: @fs-sm;
+  font-size: @fs-xs;
+  line-height: @fs-md;
   margin-top: @padding;               //// !!
   margin-right: @padding;
-  padding: @padding 2*@padding;
+  padding: @padding/2 @padding;
   transition: background-color 0.2s ease-in-out;
   &_pink {
     background-color: @theme-color-2;
@@ -39,5 +40,16 @@
       color: @theme-color-5;
       background-color: darken((@theme-color-1), @lighten-hover);
     }
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: @screen-md) {
+  .b-button {
+    letter-spacing: 0.2rem;
+    font-size: @fs-sm;
+    margin-top: @padding;
+    margin-right: @padding;
+    padding: @padding 2*@padding;
   }
 }

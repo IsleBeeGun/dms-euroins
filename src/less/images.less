@@ -1,10 +1,11 @@
+@import "./variables.less";
+
 .bg-main {
   background: url("./../img/bg/main_banner1.jpg") no-repeat;
   background-size: cover !important;
 }
 .bg-prosto {
-  background: url("./../img/bg/prosto.jpg") no-repeat;
-  background-size: cover !important;
+  background: @theme-color-3;
 }
 .bg-feedback {
   background: url("./../img/bg/feedback.jpg") no-repeat;
@@ -54,7 +55,10 @@
 
 /* Tablet */
 @media screen and (min-width: @screen-md) {
-  //
+  .bg-prosto {
+    background: url("./../img/bg/prosto.jpg") no-repeat;
+    background-size: cover !important;
+  }
 }
 
 /* Laptop */
