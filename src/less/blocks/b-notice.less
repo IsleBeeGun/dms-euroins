@@ -48,11 +48,11 @@
     display: inline-flex;
     position: relative;
     z-index: 5;
-    top: 14%;
-    right: 16%;
-    width: 12%;
+    top: 5%;
+    right: 18%;
+    width: 16%;
     height: 0;
-    padding-bottom: 12%;
+    padding-bottom: 16%;
     border-radius: 50%;
     text-align: center;
     background: @theme-color-5;
@@ -61,7 +61,7 @@
     font-weight: bold;
   }
   &__index {
-    font-size: @fs-md;
+    font-size: @fs-xs;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,14 +72,11 @@
     padding-top: @padding;
     min-width: 90%;
     max-width: 90%;
-    // font-size: @fs-md;
-    // line-height: @fs-md + @fs-md / 10;
-    // letter-spacing: @fs-md / 32;
     font-size: @fs-sm;
     line-height: @fs-sm + @fs-sm / 10;
     &_wider {
-      min-width: 90%;
-      max-width: 90%;
+      min-width: 110%;
+      max-width: 110%;
     }
     &_thinner {
       min-width: 90%;
@@ -94,17 +91,24 @@
 
 /* Mobile */
 @media screen and (min-width: @screen-xs) {
-  //
-}
-
-/* Large Mobile */
-@media screen and (min-width: @screen-sm) {
-  //
+  .b-notice {
+    &__index-container {
+      top: 10%;
+      right: 16%;
+    }
+    &__index {
+      font-size: @fs-sm;
+    }
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: @screen-md) {
   .b-notice {
+    &_texticon {
+      min-width: 50% !important;
+      max-width: 50% !important;
+    }
     &__icon-container {
       width: 60%;
       padding-bottom: 60%;
@@ -112,7 +116,7 @@
     &__index-container {
       width: 20%;
       padding-bottom: 20%;
-      top: 6%;
+      top: 10%;
       right: 20%;
     }
     &__index {
@@ -122,8 +126,8 @@
       font-size: @fs-sm;
       line-height: @fs-sm + @fs-sm / 10;
       &_wider {
-        min-width: 150%;
-        max-width: 150%;
+        min-width: 130%;
+        max-width: 130%;
       }
       &_thinner {
         min-width: 70%;
@@ -136,6 +140,10 @@
 /* Laptop */
 @media screen and (min-width: @screen-lg) {
   .b-notice {
+    &_texticon {
+      min-width: 33% !important;
+      max-width: 33% !important;
+    }
     &__index-container {
       top: 10%;
     }
@@ -153,7 +161,7 @@
       right: 24%;
     }
     &__index {
-      font-size: @fs-md;
+      font-size: @fs-lg;
     }
     &__text {
       font-size: @fs-md;
