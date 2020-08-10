@@ -618,8 +618,8 @@
   background-color: black;
   color: #ffffff;
 }
-/* Tablet-landscape (and larger) */
-@media screen and (min-width: 44rem) {
+/* Laptops (and langer) */
+@media screen and (min-width: 67rem) {
   .b-nav {
     background-color: #ffffff;
     min-width: 8%;
@@ -631,9 +631,6 @@
   .b-nav__burger-container {
     display: none;
   }
-}
-/* Laptops (and langer) */
-@media screen and (min-width: 67rem) {
   .b-nav__menu-L0 li a img {
     min-width: 2.85714286vw;
     max-width: 2.85714286vw;
@@ -809,8 +806,8 @@
     padding: 5px 0;
   }
 }
-/* Tablet-landscape (and larger) */
-@media screen and (min-width: 44rem) {
+/* Laptop */
+@media screen and (min-width: 67rem) {
   .b-burger {
     display: none;
   }
@@ -1097,6 +1094,10 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.b-notice_main-icon {
+  min-width: 33% !important;
+  max-width: 33% !important;
+}
 .b-notice__icon-container {
   position: relative;
   display: -webkit-inline-box;
@@ -1203,7 +1204,7 @@
 }
 /* Tablet */
 @media screen and (min-width: 44rem) {
-  .b-notice_texticon {
+  .b-notice_text-icon {
     min-width: 50% !important;
     max-width: 50% !important;
   }
@@ -1225,8 +1226,8 @@
     line-height: 1.1rem;
   }
   .b-notice__text_wider {
-    min-width: 130%;
-    max-width: 130%;
+    min-width: 80%;
+    max-width: 80%;
   }
   .b-notice__text_thinner {
     min-width: 70%;
@@ -1235,9 +1236,13 @@
 }
 /* Laptop */
 @media screen and (min-width: 67rem) {
-  .b-notice_texticon {
+  .b-notice_text-icon {
     min-width: 33% !important;
     max-width: 33% !important;
+  }
+  .b-notice_main-icon {
+    min-width: 16% !important;
+    max-width: 16% !important;
   }
   .b-notice__index-container {
     top: 10%;
@@ -1390,7 +1395,7 @@
 .b-form__choice-field {
   padding-left: 1rem;
   padding-right: 1rem;
-  min-height: 2rem;
+  min-height: 3rem;
   width: 100%;
   border: 1px solid #272474;
   border-radius: 5px;
@@ -1400,7 +1405,6 @@
   border: 2px solid #e00b6c;
   background-color: #f2f8f8;
 }
-/* Mobile */
 /* Large Mobile */
 @media screen and (min-width: 32.25rem) {
   .b-form__choice-option .b-form__choice-checkbox:after {
@@ -1430,14 +1434,17 @@
 }
 /* Tablet */
 @media screen and (min-width: 44rem) {
+  .b-form__choice-checkbox {
+    margin-right: 0.5rem;
+  }
   .b-form__choice-option {
     width: auto;
     margin-top: 0;
   }
   .b-form__choice-option:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .b-form__choice-option .b-form__choice-checkbox:after {
     left: 3.6rem;
@@ -1449,6 +1456,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .b-form__choice-checkbox {
+    margin-right: 1rem;
   }
   .b-form__choice-option .b-form__choice-checkbox:after {
     left: 4.6rem;
