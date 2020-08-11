@@ -383,6 +383,11 @@
   background-size: cover !important;
   background-position: left center;
 }
+.bg-foreign-kids {
+  background: url(img/foreignkids_head.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: left center;
+}
 .bg-foreign-students {
   background: url(img/foreignstudents_head.jpg) no-repeat;
   background-size: cover !important;
@@ -521,6 +526,9 @@
   .bg-main {
     background-position: right -400px center;
   }
+  .bg-foreign-kids {
+    background-position: right -400px center;
+  }
   .bg-foreign-students {
     background-position: right -400px center;
   }
@@ -555,6 +563,9 @@
 /* Desktop */
 @media screen and (min-width: 100rem) {
   .bg-main {
+    background-position: right 0px center;
+  }
+  .bg-foreign-kids {
     background-position: right 0px center;
   }
   .bg-foreign-students {
