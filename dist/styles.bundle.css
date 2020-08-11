@@ -383,6 +383,11 @@
   background-size: cover !important;
   background-position: left center;
 }
+.bg-clinics {
+  background: url(img/clinics_head.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: left center;
+}
 .bg-about {
   background: url(img/about_head.jpg) no-repeat;
   background-size: cover !important;
@@ -531,6 +536,9 @@
   .bg-main {
     background-position: right -400px center;
   }
+  .bg-clinics {
+    background-position: right -200px center;
+  }
   .bg-about {
     background-position: right -200px center;
   }
@@ -571,6 +579,9 @@
 /* Desktop */
 @media screen and (min-width: 100rem) {
   .bg-main {
+    background-position: right 0px center;
+  }
+  .bg-clinics {
     background-position: right 0px center;
   }
   .bg-about {

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <title>Поликлиники по ДМС: выбрать из списка медицинских учреждений</title>
+    <meta
+      name="description"
+      content="Компания дает клиентам выбор удобной поликлиники по ДМС.  На сайте доступен список поликлиник по полису добровольного медицинского страхования и описание медицинских клиник."
+    />
+    <meta name="keywords" content="Поликлиники ДМС" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="theme-color" content="#272474" />
+    <link rel="stylesheet" href="styles.bundle.css" />
+  </head>
+
+  <body>
+    <div class="b-burger">
+      <div class="b-burger__menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="b-burger__menu">
+          <li><a href="#" class="u-text_fs-sm">О компании</a></li>
+          <li><a href="#" class="u-text_fs-sm">Программы</a></li>
+          <li style="padding-left: 1.5rem;">
+            <a href="personal.html" class="u-text_fs-sm"
+              >ДМС для физических лиц</a
+            >
+          </li>
+          <li style="padding-left: 1.5rem;">
+            <a href="kids.html" class="u-text_fs-sm">ДМС для детей</a>
+          </li>
+          <li style="padding-left: 1.5rem;">
+            <a href="birth.html" class="u-text_fs-sm">ДМС для беременных</a>
+          </li>
+          <li style="padding-left: 1.5rem;">
+            <a href="legal.html" class="u-text_fs-sm"
+              >ДМС для юридических лиц</a
+            >
+          </li>
+          <li style="padding-left: 1.5rem;">
+            <a href="#" class="u-text_fs-sm">ДМС для иностранных граждан</a>
+          </li>
+          <li style="padding-left: 1.5rem;">
+            <a href="#" class="u-text_fs-sm">ДМС для иностранных студентов</a>
+          </li>
+          <li style="padding-left: 1.5rem;">
+            <a href="#" class="u-text_fs-sm">ДМС для иностранных детей</a>
+          </li>
+          <li><a href="#" class="u-text_fs-sm">Поликлиники</a></li>
+          <li><a href="#" class="u-text_fs-sm">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="b-metapage">
+      <header class="b-header">
+        <div class="b-header__logo-container u-container_padding-left">
+          <img class="b-header__logo" src="./img/svg/logo.png" />
+        </div>
+        <div class="b-header__text-container">
+          <span class="b-header__text b-header__text_light"
+            >Европейский страховой сервис</span
+          >
+        </div>
+        <div class="b-header__contact-container">
+          <img class="b-header__contact-icon" src="./img/svg/mailme.svg" />
+          <span class="b-header__text b-header__text_small b-header__spacer"
+            >&nbsp;<br />&nbsp;</span
+          >
+          <span class="b-header__text b-header__text_bold"
+            >epolis-dms@euro-ins.ru</span
+          >
+          <span class="b-header__text b-header__text_small b-header__spacer"
+            >&nbsp;<br />&nbsp;</span
+          >
+        </div>
+        <div class="b-header__contact-container">
+          <img class="b-header__contact-icon" src="./img/svg/callme.svg" />
+          <div class="b-header__inner-container">
+            <span class="b-header__text b-header__text_small b-header__spacer"
+              >&nbsp;<br />&nbsp;</span
+            >
+            <span class="b-header__text b-header__text_bold"
+              >+7 (495) 926-51-67</span
+            >
+            <span class="b-header__text b-header__text_small"
+              >По вопросам выбора программы <br />
+              с 9-30 до 18-30 в рабочие дни</span
+            >
+          </div>
+        </div>
+      </header>
+      <nav class="b-nav">
+        <div class="b-nav__menu-container">
+          <ul class="b-nav__menu-L0">
+            <li>
+              <a href="#">
+                <img src="./img/svg/about_menu.svg" />
+                <span>О компании</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src="./img/svg/programms_menu.svg" />
+                <span>Программы</span>
+              </a>
+              <ul class="b-nav__menu-L1">
+                <li><a href="personal.html">ДМС для физических лиц</a></li>
+                <li><a href="kids.html">ДМС для детей</a></li>
+                <li><a href="birth.html">ДМС для беременных</a></li>
+                <li><a href="legal.html">ДМС для юридических лиц</a></li>
+                <li>
+                  <a href="#">ДМС для иностранных граждан</a>
+                  <ul class="b-nav__menu-L2">
+                    <li><a href="#">ДМС для иностранных студентов</a></li>
+                    <li><a href="#">ДМС для иностранных детей</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/svg/hospitals_menu.svg" />
+                <span>Поликлиники</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/svg/contacts_menu.svg" />
+                <span>Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="b-page">
+        <section
+          class="b-section u-container_align-end u-container_margin-top-no u-container_padding-bottom-no bg-clinics"
+          style="min-height: 650px;"
+        >
+          <header class="b-section__header">
+            <h1
+              class="b-section__title u-text_ta-left u-color_ct-pink u-text_fs-xl"
+            >
+              Выбрать медицинское <br />
+              учреждение по ДМС
+            </h1>
+            <p
+              class="b-section__subtitle u-text_ta-left u-container_padding-left u-container_fraction-2of3 u-text_shadow-white"
+            >
+              Выбирайте удобной вариант медицинского учреждения по ДМС. На сайте
+              доступен список и описание учреждений по полису добровольного
+              медицинского страхования. Наши партнеры – это надежные
+              многопрофильные медицинские учреждения Москвы и области
+            </p>
+          </header>
+          <div
+            class="b-section__container u-container_justify-evenly u-container_padding-left u-container_padding-right"
+          >
+            <div class="b-notice u-container_fraction-1of7 b-notice_main-icon">
+              <div class="b-notice__icon-container">
+                <img class="b-notice__icon" src="./img/svg/star_png.png" />
+              </div>
+              <p
+                class="b-notice__text b-notice__text_wider b-notice__text_smaller"
+              >
+                обслуживание всех категорий пациентов
+              </p>
+            </div>
+
+            <div class="b-notice u-container_fraction-1of7 b-notice_main-icon">
+              <div class="b-notice__icon-container">
+                <img class="b-notice__icon" src="./img/svg/star_png.png" />
+              </div>
+              <p
+                class="b-notice__text b-notice__text_wider b-notice__text_smaller"
+              >
+                полный перечень амбулаторно- поликлинической помощи
+              </p>
+            </div>
+
+            <div class="b-notice u-container_fraction-1of7 b-notice_main-icon">
+              <div class="b-notice__icon-container">
+                <img class="b-notice__icon" src="./img/svg/star_png.png" />
+              </div>
+              <p
+                class="b-notice__text b-notice__text_wider b-notice__text_smaller"
+              >
+                современные стандарты медицины
+              </p>
+            </div>
+
+            <div class="b-notice u-container_fraction-1of7 b-notice_main-icon">
+              <div class="b-notice__icon-container">
+                <img class="b-notice__icon" src="./img/svg/star_png.png" />
+              </div>
+              <p
+                class="b-notice__text b-notice__text_wider b-notice__text_smaller"
+              >
+                врачи высокой категории широкой и узкой специализаций
+              </p>
+            </div>
+
+            <div class="b-notice u-container_fraction-1of7 b-notice_main-icon">
+              <div class="b-notice__icon-container">
+                <img class="b-notice__icon" src="./img/svg/star_png.png" />
+              </div>
+              <p
+                class="b-notice__text b-notice__text_wider b-notice__text_smaller"
+              >
+                оснащенность всем необходимым оборудованием
+              </p>
+            </div>
+
+            <div class="b-notice u-container_fraction-1of7 b-notice_main-icon">
+              <div class="b-notice__icon-container">
+                <img class="b-notice__icon" src="./img/svg/star_png.png" />
+              </div>
+              <p
+                class="b-notice__text b-notice__text_wider b-notice__text_smaller"
+              >
+                поддержка круглосуточно, 7 дней в неделю
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-section u-color_bg-gray">
+          <header class="b-section__header">
+            <h2 class="b-section__title u-color_ct-black">
+              Медицинские центры, с которыми сотрудничает ЕВРОИНС
+            </h2>
+            <p class="b-section__subtitle">
+              В этом разделе Вы можете посмотреть список медицинских центров и
+              учреждений, с которыми ЕВРОИНС сотрудничает по медицинскому
+              страхованию
+            </p>
+          </header>
+          <div class="b-section__container">
+            <div class="b-clinics-selector">
+              <select name="clinics-selector" id="clinics-selector"> </select>
+            </div>
+          </div>
+          <div class="b-section__container">
+            <div class="b-text u-container_fraction-1of2" id="clinics-result">
+              <p class="b-text__paragraph">
+                Здесь будет краткое описание выбранного медцентра
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-section" id="calculator">
+          <header class="b-section__header">
+            <h2 class="b-section__title">
+              Выбрать полис медицинского страхования
+            </h2>
+            <p class="b-section__subtitle">
+              Введите необходимые данные, выберите программу и оплатите полис
+              ДМС
+            </p>
+          </header>
+          <div class="b-section__container u-container_justify-center">
+            <div class="b-calc">
+              <div id="eu-health-standart"></div>
+              <script
+                src="https://euro-ins.ru/front/src/js/calc/health/standart/calculator.js"
+                defer
+              ></script>
+              <script>
+                (function () {
+                  window.addEventListener("eCalcLoaded", function () {
+                    new HealthStandartCalculator("eu-health-standart", {
+                      pid: "MTAwMTEwMDE1MDAwMDAw",
+                    });
+                  });
+                })();
+              </script>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-section u-container_margin-top-no">
+          <div class="b-section__container">
+            <div class="b-text u-container_fraction-1of2 u-color_bg-gray">
+              <p class="b-text__paragraph">
+                Выбор клиники в значительной мере определяет качество услуг,
+                получаемых в рамках договора добровобного медицинского
+                страхования (ДМС).
+              </p>
+              <p class="b-text__paragraph">
+                ЕВРОИНС тщательно выбирает партнеров среди медицинских
+                учреждений. Важный критерий определяющий перспективы
+                сотрудничества – квалификация врачей, современность
+                оборудования, удобство расположения клиники.
+              </p>
+              <p class="b-text__paragraph">
+                Среди партнеров компании много сетевых поликлиник и
+                многопрофильных центров. И это не случайно. Крупные учреждения –
+                это высокие стандарты качества услуг и обслуживания. Специалисты
+                повышают свою квалификацию, применяется современное
+                оборудование.
+              </p>
+              <p class="b-text__paragraph">
+                Заключив договор ДМС с нашей компании можно напрямую обращаться
+                в медицинское учреждение и записываться к врачу.
+              </p>
+            </div>
+            <div class="b-text u-container_fraction-1of2">
+              <p class="b-text__paragraph">
+                Специалисты ЕВРОИНС подберут и предложат, основываясь на
+                эксклюзивных условиях работы со многими медицинскими
+                учреждениями, самые выгодные условия по добровольному
+                медицинскому страхованию (ДМС), полностью отвечающие требованиям
+                клиента.
+              </p>
+              <p class="b-text__paragraph">
+                Предлагаемые страховые программы основаны на абсолютной
+                финансовой надежности и медицинской эффективности. Цели, которые
+                стоят перед ЕВРОИНС в сфере медицинского страхования физических
+                и юридических лиц, достигаются через формирование комплексного
+                подхода в организации медицинского обеспечения сотрудников.
+              </p>
+              <p class="b-text__paragraph">
+                Клиенты ЕВРОИНС могут рассчитывать на индивидуальный подход в
+                разработке и ведении программ страхования, надежную систему
+                организации медицинской помощи, консультации компетентных
+                сотрудников, заинтересованность в организации совместной работы
+                с кадровой службой предприятия по планированию мероприятий,
+                нацеленных на профилактику заболеваемости, повышение уровня
+                здоровья сотрудников, пропаганду здорового образа жизни.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-section bg-feedback" id="feedback">
+          <header class="b-section__header">
+            <h2 class="b-section__title">
+              Заполнить и отправить заявку на медицинское страхование
+            </h2>
+            <p class="b-section__subtitle">
+              * звёздочкой обозначены обязательные для заполнения поля
+            </p>
+          </header>
+          <form class="b-form u-container_margin-top u-container_padding-right">
+            <div
+              class="b-form__choice-row u-container_fraction-1of1 u-container_align-start"
+            >
+              <span
+                class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5-fixed u-container_padding-left"
+                >Вид программы:</span
+              >
+              <label
+                class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
+                ><input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx01"
+                />
+                <div class="b-form__choice-checkbox"></div>
+                Поликлиника</label
+              >
+              <label
+                class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
+                ><input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx02"
+                />
+                <div class="b-form__choice-checkbox"></div>
+                Помощь на дому</label
+              >
+              <label
+                class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
+                ><input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx03"
+                />
+                <div class="b-form__choice-checkbox"></div>
+                Стоматология</label
+              >
+              <label
+                class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
+                ><input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx04"
+                />
+                <div class="b-form__choice-checkbox"></div>
+                Скорая помощь</label
+              >
+            </div>
+            <div
+              class="b-form__choice-row u-container_fraction-1of1 u-container_align-start"
+            >
+              <span
+                class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5-fixed u-container_padding-left"
+                >Застрахованный:</span
+              >
+              <label
+                class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
+                ><input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx05"
+                />
+                <div class="b-form__choice-checkbox"></div>
+                Мужчина</label
+              >
+              <label
+                class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
+                ><input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx06"
+                />
+                <div class="b-form__choice-checkbox"></div>
+                Женщина</label
+              >
+              <label
+                class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
+                ><input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx07"
+                />
+                <div class="b-form__choice-checkbox"></div>
+                Ребёнок</label
+              >
+            </div>
+            <div
+              class="b-form__choice-row u-container_fraction-1of1 u-container_align-start"
+            >
+              <span
+                class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5-fixed u-container_padding-left"
+                >Желаемый уровень:</span
+              >
+              <label
+                class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
+                ><input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx08"
+                />
+                <div class="b-form__choice-checkbox"></div>
+                Эконом</label
+              >
+              <label
+                class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
+                ><input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx09"
+                />
+                <div class="b-form__choice-checkbox"></div>
+                Бизнес</label
+              >
+              <label
+                class="b-form__choice-option u-text_fs-sm u-container_padding-left u-container_fraction-1of5-fixed"
+                ><input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx10"
+                />
+                <div class="b-form__choice-checkbox"></div>
+                VIP</label
+              >
+            </div>
+            <div
+              class="u-container_fraction-1of1-fixed"
+              style="
+                display: inline-flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+              "
+            >
+              <div class="u-container_fraction-3of5 u-container_align-start">
+                <div class="b-form__choice-row b-form__choice-row_special">
+                  <span
+                    class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
+                    >Ваше имя*:</span
+                  >
+                  <div
+                    class="u-container_fraction-2of5 u-container_padding-left"
+                  >
+                    <input
+                      class="b-form__choice-field u-text_fs-sm"
+                      type="text"
+                      placeholder="Укажите Вашу фамилию, имя, отчество"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="b-form__choice-row b-form__choice-row_special">
+                  <span
+                    class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
+                    >Телефон*:</span
+                  >
+                  <div
+                    class="u-container_fraction-2of5 u-container_padding-left"
+                  >
+                    <input
+                      class="b-form__choice-field u-text_fs-sm"
+                      type="tel"
+                      placeholder="Укажите Ваш номер телефона"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="b-form__choice-row b-form__choice-row_special">
+                  <span
+                    class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
+                    >E-mail*:</span
+                  >
+                  <div
+                    class="u-container_fraction-2of5 u-container_padding-left"
+                  >
+                    <input
+                      class="b-form__choice-field u-text_fs-sm"
+                      type="email"
+                      placeholder="Укажите Вашу электронную почту"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="b-form__choice-row b-form__choice-row_special u-container_fraction-2of5 u-container_justify-start"
+              >
+                <span
+                  class="b-form__choice-title u-text_fs-sm u-container_padding-left"
+                  >Дополнительная информация:</span
+                >
+                <textarea
+                  spellcheck
+                  class="b-form__choice-field u-container_margin-left u-text_fs-sm"
+                  placeholder="Оставьте дополнительные пожелания к Вашей заявке"
+                  style="min-height: 4.7rem !important;"
+                ></textarea>
+              </div>
+            </div>
+            <div
+              class="b-form__choice-row b-form__choice-row_special u-container_fraction-1of1"
+            >
+              <span
+                class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5"
+                >&nbsp;</span
+              >
+              <label
+                class="b-form__choice-option b-form__choice-option_special u-text_fs-sm u-container_padding-left u-container_fraction-4of5-fixed u-text_ta-justify"
+              >
+                <input
+                  class="b-form__choice-checkbox-hidden"
+                  type="checkbox"
+                  name="chkbx11"
+                  required
+                />
+                <div class="b-form__choice-checkbox"></div>
+                <p>
+                  C
+                  <a
+                    href="https://www.euro-ins.ru/wp-content/uploads/pictures/%d0%9f%d0%be%d0%bb%d0%b8%d1%82%d0%b8%d0%ba%d0%b0-%d0%9e%d0%9e%d0%9e-%d0%a0%d0%a1%d0%9e-%d0%95%d0%92%d0%a0%d0%9e%d0%98%d0%9d%d0%a1-%d0%b2-%d0%be%d1%82%d0%bd%d0%be%d1%88%d0%b5%d0%bd%d0%b8%d0%b8-%d0%be%d0%b1%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d0%b8-%d0%b8-%d0%b7%d0%b0%d1%89%d0%b8%d1%82%d1%8b-%d0%bf%d0%b5%d1%80%d1%81%d0%be%d0%bd%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d1%85-%d0%b4%d0%b0%d0%bd%d0%bd%d1%8b%d1%85.pdf"
+                    >политикой обработки и защиты персональных данных</a
+                  >
+                  ознакомлен. <br />
+                  В соответствии с законом «О персональных данных» от
+                  27.07.2006. N 152-ФЗ даю свое согласие на их обработку,
+                  включая все операции с персональными данными, предусмотренные
+                  п.З ст.З указанного закона.
+                </p></label
+              >
+            </div>
+            <div class="u-container_justify-center" style="width: 100%;">
+              <input
+                class="b-button b-button_pink u-container_margin-left"
+                type="submit"
+                value="Отправить заявку"
+              />
+            </div>
+          </form>
+        </section>
+
+      </main>
+      <footer class="b-footer">
+        <div class="b-footer__left-container">
+          <div class="b-footer__logo-container">
+            <img class="b-footer__logo" src="./img/svg/logo.png" />
+          </div>
+          <div class="b-footer__social-container">
+            <a
+              href="https://www.instagram.com/euroins_insurance_rus/"
+              target="_blank"
+              ><img class="b-footer__social-icon" src="./img/svg/instagram.svg"
+            /></a>
+            <a href="https://www.facebook.com/euroinsrus" target="_blank"
+              ><img class="b-footer__social-icon" src="./img/svg/facebook.svg"
+            /></a>
+            <a href="https://www.facebook.com/euroinsrus" target="_blank"
+              ><img class="b-footer__social-icon" src="./img/svg/vkontakte.svg"
+            /></a>
+          </div>
+        </div>
+
+        <div
+          class="b-footer__right-container b-text u-container_padding-top-no"
+        >
+          <p class="b-text__title u-container_padding-top-no u-text_italic">
+            Европейский индивидуальный сервис
+          </p>
+          <p class="b-text__paragraph u-text_fs-sm">
+            © 2009-2020, ООО РСО «ЕВРОИНС». <br />
+            Все материалы, размещенные на данном сайте, защищены законом об
+            авторских правах и являются собственностью страховой компании.
+            <br />
+            Лицензии на страхование ЦБ РФ СЛ No 3954, СИ No 3954, ОС No 3954-03
+            тел. +7 (495) 926-51-55
+          </p>
+          <p class="b-text__paragraph u-text_fs-sm">
+            <span class="u-color_ct-blue">Карта сайта</span> <br />
+            <span class="u-color_ct-blue"
+              >Политика защиты и обработки персональных данных</span
+            >
+            <br />
+            <span class="u-color_ct-blue">Служба контроля качества</span>
+          </p>
+        </div>
+      </footer>
+      <script src="js/index.bundle.js"></script>
+    </div>
+  </body>
+</html>
