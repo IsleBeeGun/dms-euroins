@@ -392,6 +392,10 @@
   background: url(img/prosto.jpg) no-repeat;
   background-size: cover !important;
 }
+.bg-reglament_1 {
+  background: url(img/reglament_1.jpg) no-repeat;
+  background-size: cover !important;
+}
 .bg-feedback {
   background: url(img/feedback.jpg) no-repeat;
   background-size: cover !important;
@@ -444,6 +448,10 @@
     background-position: right -400px center;
   }
   .bg-prosto {
+    background-size: contain !important;
+    background-position: center bottom;
+  }
+  .bg-reglament_1 {
     background-size: contain !important;
     background-position: center bottom;
   }
@@ -1267,6 +1275,10 @@
     min-width: 70%;
     max-width: 70%;
   }
+  .b-notice__text_withpadding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 /* Laptop */
 @media screen and (min-width: 67rem) {
@@ -1285,8 +1297,8 @@
     font-size: 1rem;
   }
   .b-notice__text_extrawide {
-    min-width: 200%;
-    max-width: 200%;
+    min-width: 190%;
+    max-width: 190%;
   }
 }
 /* Desktop */
