@@ -5,6 +5,11 @@
   background-size: cover !important;
   background-position: left center;
 }
+.bg-legal {
+  background: url("./../img/bg/yurlica_head.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: left center;
+}
 .bg-birth {
   background: url("./../img/bg/pregnant_head.jpg") no-repeat;
   background-size: cover !important;
@@ -110,7 +115,6 @@
   background-size: cover !important;
 }
 
-
 /* Mobile */
 @media screen and (min-width: @screen-xs) {
   //
@@ -129,6 +133,9 @@
 @media screen and (min-width: @screen-lg) {
   .bg-main {
     background-position: right -400px center;
+  }
+  .bg-legal {
+    background-position: right -200px center;
   }
   .bg-birth {
     background-position: right -400px center;
@@ -151,16 +158,20 @@
 
 /* Desktop */
 @media screen and (min-width: @screen-xl) {
+  .bg-main {
+    background-position: right 0px center;
+  }
+  .bg-legal {
+    background-position: right 0px center;
+  }
   .bg-birth {
     background-position: right 0px center;
   }
   .bg-kids {
     background-position: right 0px center;
-  }
-  .bg-main {
-    background-position: right 0px center;
-  }
-  .bg-personal {
-    background-position: right 0px center;
+
+    .bg-personal {
+      background-position: right 0px center;
+    }
   }
 }
