@@ -383,6 +383,11 @@
   background-size: cover !important;
   background-position: left center;
 }
+.bg-foreign-students {
+  background: url(img/foreignstudents_head.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: left center;
+}
 .bg-foreign {
   background: url(img/migrants_head.jpg) no-repeat;
   background-size: cover !important;
@@ -516,6 +521,9 @@
   .bg-main {
     background-position: right -400px center;
   }
+  .bg-foreign-students {
+    background-position: right -400px center;
+  }
   .bg-foreign {
     background-position: right -400px center;
   }
@@ -539,11 +547,18 @@
     background-size: contain !important;
     background-position: center bottom;
   }
+  .bg-reglament_2 {
+    background-size: contain !important;
+    background-position: center bottom;
+  }
 }
 /* Desktop */
 @media screen and (min-width: 100rem) {
   .bg-main {
     background-position: right 0px center;
+  }
+  .bg-foreign-students {
+    background-position: right -100px center;
   }
   .bg-foreign {
     background-position: right 0px center;
@@ -1136,6 +1151,9 @@
   display: inline-block;
   background-color: #ffffff;
   padding: 2rem 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .b-text__title {
   padding-top: 1rem;
