@@ -383,6 +383,11 @@
   background-size: cover !important;
   background-position: left center;
 }
+.bg-foreign {
+  background: url(img/migrants_head.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: left center;
+}
 .bg-legal {
   background: url(img/yurlica_head.jpg) no-repeat;
   background-size: cover !important;
@@ -409,6 +414,10 @@
 }
 .bg-reglament_1 {
   background: url(img/reglament_1.jpg) no-repeat;
+  background-size: cover !important;
+}
+.bg-reglament_2 {
+  background: url(img/reglament_2.jpg) no-repeat;
   background-size: cover !important;
 }
 .bg-feedback {
@@ -480,7 +489,19 @@
   background-size: cover !important;
 }
 .bg-17 {
-  background: url(img/dopuslugi.jpg) no-repeat 70% center !important;
+  background: url(img/dopuslugi.jpg) no-repeat 30% center !important;
+  background-size: cover !important;
+}
+.bg-18 {
+  background: url(img/hospital.jpg) no-repeat 70% center !important;
+  background-size: cover !important;
+}
+.bg-19 {
+  background: url(img/ambulatory.jpg) no-repeat 70% center !important;
+  background-size: cover !important;
+}
+.bg-20 {
+  background: url(img/stomache.jpg) no-repeat 20% center !important;
   background-size: cover !important;
 }
 /* Mobile */
@@ -493,6 +514,9 @@
 /* Laptop */
 @media screen and (min-width: 67rem) {
   .bg-main {
+    background-position: right -400px center;
+  }
+  .bg-foreign {
     background-position: right -400px center;
   }
   .bg-legal {
@@ -521,6 +545,9 @@
   .bg-main {
     background-position: right 0px center;
   }
+  .bg-foreign {
+    background-position: right 0px center;
+  }
   .bg-legal {
     background-position: right 0px center;
   }
@@ -530,7 +557,7 @@
   .bg-kids {
     background-position: right 0px center;
   }
-  .bg-kids .bg-personal {
+  .bg-personal {
     background-position: right 0px center;
   }
 }
