@@ -17,23 +17,26 @@ import clinicsList from "../clinicsList.json5";
 //     document.getElementById("clinics-selector").appendChild(option);
 // });
 
-// Applying & configuring SlimSelect
-var select = new SlimSelect({
-  select: "#clinics-selector",
-  placeholder: "Выберите медцентр",
-  searchPlaceholder: "Поиск",
-  searchText: 'Нет результатов',
-  searchFocus: false,
-  showContent: "down",
-  data: clinicsList.clinics.map((clinic) => {
-    return { text: clinic.name, value: clinic.name };
-  }),
-  onChange: (option) => {
-    console.log(option);
-    document.getElementById(
-      "clinics-result"
-    ).innerHTML = clinicsList.clinics.find(
-      (clinic) => clinic.name == option.value
-    ).text;
-  },
-});
+
+if (document.getElementById("clinics-selector")) {
+  // Applying & configuring SlimSelect
+  var select = new SlimSelect({
+    select: "#clinics-selector",
+    placeholder: "Выберите медцентр",
+    searchPlaceholder: "Поиск",
+    searchText: "Нет результатов",
+    searchFocus: false,
+    showContent: "down",
+    data: clinicsList.clinics.map((clinic) => {
+      return { text: clinic.name, value: clinic.name };
+    }),
+    onChange: (option) => {
+      // console.log(option);
+      document.getElementById(
+        "clinics-result"
+      ).innerHTML = clinicsList.clinics.find(
+        (clinic) => clinic.name == option.value
+      ).text;
+    },
+  });
+}
