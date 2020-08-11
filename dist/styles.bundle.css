@@ -383,6 +383,11 @@
   background-size: cover !important;
   background-position: left center;
 }
+.bg-personal {
+  background: url(img/fizlica_head.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: left center;
+}
 .bg-prosto {
   background: url(img/prosto.jpg) no-repeat;
   background-size: cover !important;
@@ -435,6 +440,9 @@
   .bg-main {
     background-position: right -400px center;
   }
+  .bg-personal {
+    background-position: right -400px center;
+  }
   .bg-prosto {
     background-size: contain !important;
     background-position: center bottom;
@@ -443,6 +451,9 @@
 /* Desktop */
 @media screen and (min-width: 100rem) {
   .bg-main {
+    background-position: right 0px center;
+  }
+  .bg-personal {
     background-position: right 0px center;
   }
 }
