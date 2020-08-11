@@ -109,6 +109,7 @@
           & li {
             height: 2rem; // modified height
             .li-visible;
+            min-height: 4rem;
             width: 300px; // !!!!! SET WIDTH HERE
             &:hover {
               background-color: @theme-color-1; // second level highlited
@@ -117,9 +118,10 @@
                 .ul-visible;
                 & li {
                   .li-visible;
-                  width: 500px;
+                  min-height: 4rem;
+                  width: 300px;
                   &:hover {
-                    background-color: black; // third level highlited
+                    background-color: @theme-color-2; // third level highlited
                     color: @theme-color-5;
                   }
                 }

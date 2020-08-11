@@ -3,9 +3,13 @@
 .bg-main {
   background: url("./../img/bg/main_banner1.jpg") no-repeat;
   background-size: cover !important;
+  background-position: left center;
 }
 .bg-prosto {
-  background: @theme-color-3;
+  // background: @theme-color-3;
+
+  background: url("./../img/bg/prosto.jpg") no-repeat;
+  background-size: cover !important;
 }
 .bg-feedback {
   background: url("./../img/bg/feedback.jpg") no-repeat;
@@ -55,17 +59,22 @@
 
 /* Tablet */
 @media screen and (min-width: @screen-md) {
-  .bg-prosto {
-    background: url("./../img/bg/prosto.jpg") no-repeat;
-    background-size: cover !important;
-  }
 }
 
 /* Laptop */
 @media screen and (min-width: @screen-lg) {
-  //
+  .bg-main {
+    background-position: right -400px center;
+  }
+  .bg-prosto {
+    background-size: contain !important;
+    background-position: center bottom;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: @screen-xl) {
+  .bg-main {
+    background-position: right 0px center;
+  }
 }

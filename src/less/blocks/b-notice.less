@@ -12,8 +12,8 @@
   padding-left: @padding;
   padding-right: @padding;
   &_main-icon {
-    min-width: 33% !important;
-    max-width: 33% !important;
+    min-width: 50% !important;
+    max-width: 50% !important;
   }
   &__icon-container {
     position: relative;
@@ -78,6 +78,10 @@
     max-width: 90%;
     font-size: @fs-sm;
     line-height: @fs-sm + @fs-sm / 10;
+    &_extrawide {
+      min-width: 90%;
+      max-width: 90%;
+    }
     &_wider {
       min-width: 110%;
       max-width: 110%;
@@ -96,6 +100,10 @@
 /* Mobile */
 @media screen and (min-width: @screen-xs) {
   .b-notice {
+    &_main-icon {
+      min-width: 33% !important;
+      max-width: 33% !important;
+    }
     &__index-container {
       top: 10%;
       right: 16%;
@@ -120,11 +128,11 @@
     &__index-container {
       width: 20%;
       padding-bottom: 20%;
-      top: 10%;
-      right: 20%;
+      top: 5%;
+      right: 22%;
     }
     &__index {
-      font-size: @fs-sm;
+      font-size: @fs-xs;
     }
     &__text {
       font-size: @fs-sm;
@@ -132,6 +140,10 @@
       &_wider {
         min-width: 80%;
         max-width: 80%;
+      }
+      &_extrawide {
+        min-width: 220%;
+        max-width: 220%;
       }
       &_thinner {
         min-width: 70%;
@@ -153,10 +165,16 @@
       max-width: 16% !important;
     }
     &__index-container {
-      top: 10%;
+      top: 8%;
     }
     &__index {
       font-size: @fs-sm;
+    }
+    &__text {
+      &_extrawide {
+        min-width: 200%;
+        max-width: 200%;
+      }
     }
   }
 }
@@ -169,7 +187,7 @@
       right: 24%;
     }
     &__index {
-      font-size: @fs-lg;
+      font-size: @fs-md;
     }
     &__text {
       font-size: @fs-md;
