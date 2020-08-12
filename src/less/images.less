@@ -5,6 +5,11 @@
   background-size: cover !important;
   background-position: left center;
 }
+.bg-contacts {
+  background: url("./../img/bg/contacts_head.jpg") no-repeat;
+  // background-size: cover !important;
+  background-position: left center;
+}
 .bg-clinics {
   background: url("./../img/bg/clinics_head.jpg") no-repeat;
   background-size: cover !important;
@@ -171,11 +176,20 @@
 
 /* Tablet */
 @media screen and (min-width: @screen-md) {
+  .bg-contacts {
+    background: url("./../img/bg/contacts_head.jpg") no-repeat;
+    background-size: cover !important;
+    background-position: left center;
+  }
 }
 
 /* Laptop */
 @media screen and (min-width: @screen-lg) {
   .bg-main {
+    background-position: right -400px center;
+  }
+  .bg-contacts {
+    min-height: 650px;
     background-position: right -400px center;
   }
   .bg-clinics {
@@ -222,6 +236,9 @@
 /* Desktop */
 @media screen and (min-width: @screen-xl) {
   .bg-main {
+    background-position: right 0px center;
+  }
+  .bg-contacts {
     background-position: right 0px center;
   }
   .bg-clinics {
