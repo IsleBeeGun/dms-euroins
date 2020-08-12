@@ -1319,9 +1319,9 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  width: 40%;
+  width: 60%;
   height: 0;
-  padding-bottom: 40%;
+  padding-bottom: 60%;
   overflow: visible;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px lightgray;
@@ -1783,6 +1783,7 @@
   display: none;
 }
 .b-header__logo-container {
+  display: none;
   width: 50%;
   padding-left: 0;
   margin-right: auto;
@@ -1910,6 +1911,7 @@
             align-items: center;
   }
   .b-header__logo-container {
+    display: inline-block;
     min-width: 17%;
     max-width: 17%;
     margin-right: 0;
