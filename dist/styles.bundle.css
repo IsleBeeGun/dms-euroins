@@ -868,8 +868,14 @@
   top: 0px;
 }
 .b-burger__logo {
+  padding: 3px 8px 8px 8px;
+  height: 3rem;
   margin-left: auto;
   color: white;
+}
+.b-burger__logo img {
+  height: 2rem;
+  width: auto;
 }
 .b-burger__menu-toggle {
   display: -webkit-inline-box;
