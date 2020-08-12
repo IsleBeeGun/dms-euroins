@@ -20,49 +20,64 @@
   <body>
     <div class="b-burger">
       <div class="b-burger__menu-toggle">
-        <input type="checkbox" />
+        <input type="checkbox" class="b-burger__toggle-input" />
         <span></span>
         <span></span>
         <span></span>
         <ul class="b-burger__menu">
           <li><a href="about.html" class="u-text_fs-sm">О компании</a></li>
-          <li><a class="u-text_fs-sm">Программы:</a></li>
-          <li style="padding-left: 1.5rem;">
-            <a href="personal.html" class="u-text_fs-sm"
-              >ДМС для физических лиц</a
-            >
-          </li>
-          <li style="padding-left: 1.5rem;">
-            <a href="kids.html" class="u-text_fs-sm">ДМС для детей</a>
-          </li>
-          <li style="padding-left: 1.5rem;">
-            <a href="birth.html" class="u-text_fs-sm">ДМС для беременных</a>
-          </li>
-          <li style="padding-left: 1.5rem;">
-            <a href="legal.html" class="u-text_fs-sm"
-              >ДМС для юридических лиц</a
-            >
-          </li>
-          <li style="padding-left: 1.5rem;">
-            <a href="foreign.html" class="u-text_fs-sm"
-              >ДМС для иностранных граждан</a
-            >
-          </li>
-          <li style="padding-left: 1.5rem;">
-            <a href="foreign-students.html" class="u-text_fs-sm"
-              >ДМС для иностранных студентов</a
-            >
-          </li>
-          <li style="padding-left: 1.5rem;">
-            <a href="foreign-kids.html" class="u-text_fs-sm"
-              >ДМС для иностранных детей</a
-            >
-          </li>
+          <li class="collapse">
+            <input class="collapse-input" type="checkbox" />
+            Программы ДМС
+            <i class="collapse-mark"
+              ><img src="./img/svg/angle-down.svg" alt="Раскрыть"
+            /></i>
+            <ul class="collapse-show">
+              <li>
+                <a href="personal.html" class="u-text_fs-sm"
+                  >для физических лиц</a
+                >
+              </li>
+              <li >
+                <a href="kids.html" class="u-text_fs-sm">для детей</a>
+              </li>
+              <li>
+                <a href="birth.html" class="u-text_fs-sm">для беременных</a>
+              </li>
+              <li>
+                <a href="legal.html" class="u-text_fs-sm"
+                  >для юридических лиц</a
+                >
+              </li>
+              <li>
+                <a href="foreign.html" class="u-text_fs-sm"
+                  >для иностранных граждан</a
+                >
+              </li>
+              <li>
+                <a href="foreign-students.html" class="u-text_fs-sm"
+                  >для иностранных студентов</a
+                >
+              </li>
+              <li>
+                <a href="foreign-kids.html" class="u-text_fs-sm"
+                  >для иностранных детей</a
+                >
+              </li>
+            </ul>
           <li><a href="clinics.html" class="u-text_fs-sm">Поликлиники</a></li>
           <li><a href="contacts.html" class="u-text_fs-sm">Контакты</a></li>
         </ul>
       </div>
-      <div class="b-burger__logo">X</div>
+      <a href="index.html" class="b-burger__logo"
+        ><img src="./img/svg/logo_white.svg" alt="На главную"
+      /></a>
+      <a href="mailto:epolis-dms@euro-ins.ru" class="b-burger__mail"
+        ><img src="./img/svg/mailme_white.svg" alt="Отправить письмо"
+      /></a>
+      <a href="tel:+74959265167" class="b-burger__phone"
+        ><img src="./img/svg/callme_white.svg" alt="Позвонить"
+      /></a>
     </div>
     <div class="b-metapage">
       <header class="b-header">

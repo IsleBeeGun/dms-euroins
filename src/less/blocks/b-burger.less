@@ -1,5 +1,52 @@
 @import "../variables.less";
 
+.collapse-input:checked ~ .collapse-show {
+  height: auto;
+  padding-top: 0px;
+  padding-left: 2 * @padding
+}
+
+.collapse-input:checked ~ .collapse-mark {
+  transform: rotate(180deg);
+}
+
+.collapse {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  color: @theme-color-2
+}
+
+
+.collapse-input {
+  position: absolute;
+  height: 3vh;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+  
+}
+
+.collapse-mark {
+  position: absolute;
+  right: 20px; // from menu right border
+  font-size: 16px;
+  transition: 0.2s linear;
+  & img {
+    width: 12px;
+  }
+}
+
+.collapse-show {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+}
+
+
 .b-burger {
   font-family: @ff;
   width: 100%;
@@ -14,7 +61,7 @@
   position: fixed;
   top: 0px;
   &__logo {
-    padding: 3px 8px 8px 8px;
+    padding: 4px 8px 8px 8px;
     height: @burger-height;
     margin-left: auto;
     margin-right: auto;
@@ -53,7 +100,7 @@
     padding-left: @padding;
     z-index: 1;
     user-select: none;
-    & input {
+    & .b-burger__toggle-input {
       display: flex;
       width: 40px;
       height: 32px;
