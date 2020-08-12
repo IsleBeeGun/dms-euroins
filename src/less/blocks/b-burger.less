@@ -17,6 +17,28 @@
     padding: 3px 8px 8px 8px;
     height: @burger-height;
     margin-left: auto;
+    margin-right: auto;
+    color: white;
+    & img {
+      height: @burger-height - @padding;
+      width: auto;
+    }
+  }
+  &__mail {
+    padding: 3px 8px 8px 8px;
+    margin-right: @padding;
+    height: @burger-height;
+    margin-left: auto;
+    color: white;
+    & img {
+      height: @burger-height - @padding;
+      width: auto;
+    }
+  }
+  &__phone {
+    padding: 3px 8px 8px 8px;
+    margin-right: @padding;
+    height: @burger-height;
     color: white;
     & img {
       height: @burger-height - @padding;
@@ -24,6 +46,7 @@
     }
   }
   &__menu-toggle {
+    margin-right: auto;
     display: inline-flex;
     flex-direction: column;
     position: relative;
