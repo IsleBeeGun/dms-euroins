@@ -646,7 +646,7 @@
               * звёздочкой обозначены обязательные для заполнения поля
             </p>
           </header>
-          <form class="b-form u-container_margin-top u-container_padding-right">
+          <form class="b-form u-container_margin-top u-container_padding-right" action="sendmail.php?com=order&ref=" method="POST" enctype="application/x-www-form-urlencoded" accept-charset="utf-8">
             <div
               class="b-form__choice-row u-container_fraction-1of1 u-container_align-start"
             >
@@ -659,7 +659,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx01"
+                  name="programs[]"
+                  value="Поликлиника"
                 />
                 <div class="b-form__choice-checkbox"></div>
                 Поликлиника</label
@@ -669,7 +670,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx02"
+                  name="programs[]"
+                  value="Помощь на дому"
                 />
                 <div class="b-form__choice-checkbox"></div>
                 Помощь на дому</label
@@ -679,7 +681,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx03"
+                  name="programs[]"
+                  value="Стоматология"
                 />
                 <div class="b-form__choice-checkbox"></div>
                 Стоматология</label
@@ -689,7 +692,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx04"
+                  name="programs[]"
+                  value="Скорая помощь"
                 />
                 <div class="b-form__choice-checkbox"></div>
                 Скорая помощь</label
@@ -707,7 +711,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx05"
+                  name="genders[]"
+                  value="Мужчина"
                 />
                 <div class="b-form__choice-checkbox"></div>
                 Мужчина</label
@@ -717,7 +722,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx06"
+                  name="genders[]"
+                  value="Женщина"
                 />
                 <div class="b-form__choice-checkbox"></div>
                 Женщина</label
@@ -727,7 +733,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx07"
+                  name="genders[]"
+                  value="Ребёнок"
                 />
                 <div class="b-form__choice-checkbox"></div>
                 Ребёнок</label
@@ -745,7 +752,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx08"
+                  name="prices[]"
+                  value="Эконом"
                 />
                 <div class="b-form__choice-checkbox"></div>
                 Эконом</label
@@ -755,7 +763,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx09"
+                  name="prices[]"
+                  value="Бизнес"
                 />
                 <div class="b-form__choice-checkbox"></div>
                 Бизнес</label
@@ -765,7 +774,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx10"
+                  name="prices[]"
+                  value="VIP"
                 />
                 <div class="b-form__choice-checkbox"></div>
                 VIP</label
@@ -791,6 +801,7 @@
                     <input
                       class="b-form__choice-field u-text_fs-sm"
                       type="text"
+                      name="name"
                       placeholder="Укажите Вашу фамилию, имя, отчество"
                       required
                     />
@@ -807,6 +818,7 @@
                     <input
                       class="b-form__choice-field u-text_fs-sm"
                       type="tel"
+                      name="tel"
                       placeholder="Укажите Ваш номер телефона"
                       required
                     />
@@ -823,6 +835,7 @@
                     <input
                       class="b-form__choice-field u-text_fs-sm"
                       type="email"
+                      name="email"
                       placeholder="Укажите Вашу электронную почту"
                       required
                     />
@@ -840,6 +853,7 @@
                   spellcheck
                   class="b-form__choice-field u-container_margin-left u-text_fs-sm"
                   placeholder="Оставьте дополнительные пожелания к Вашей заявке"
+                  name="info"
                   style="min-height: 4.7rem !important;"
                 ></textarea>
               </div>
@@ -857,7 +871,8 @@
                 <input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="chkbx11"
+                  name="gdpr"
+                  value="Условия приняты"
                   required
                 />
                 <div class="b-form__choice-checkbox"></div>
