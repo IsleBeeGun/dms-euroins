@@ -1,0 +1,100 @@
+@import "../variables.less";
+
+.b-card {
+  color: @theme-color-4;
+  position: relative;
+  min-width: 90%;
+  max-width: 100%;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-color: @theme-color-5;
+  padding: 2 * @padding @padding;
+  flex-grow: 1;
+  margin: @padding @padding;
+  border-radius: 30px;
+  overflow: hidden;
+  &::after {
+      position: absolute;
+      background-color: @theme-color-1;
+      width: 50px;
+      height: 50px;
+      top: 0px;
+      right: 0px;
+      content: '';
+  }
+  &__spacer {
+    padding-left: @padding;
+    padding-right: @padding;
+    padding-top: 0px;
+    border-bottom: 5px solid @theme-color-2;
+  }
+  &__title {
+    padding-top: @padding;
+    margin: 0;
+    width: 100%;
+    & h2 {
+      margin-bottom: 0;
+      color: @theme-color-1;
+      font-size: @fs-md;
+      line-height: @fs-md + @fs-md / 10;
+      letter-spacing: @fs-md / 32;
+      text-transform: uppercase;
+    }
+  }
+  & p {
+    padding-top: @padding;
+    text-align: left;
+    margin: 0;
+    font-size: @fs-sm;
+    line-height: @fs-sm + @fs-md / 10;
+  }
+  &__paragraph {
+    padding-top: @padding;
+    text-align: justify;
+    margin: 0;
+    font-size: @fs-sm;
+    line-height: @fs-sm + @fs-md / 10;
+  }
+}
+
+/* Mobile */
+@media screen and (min-width: @screen-xs) {
+  .b-card {
+    padding: @padding 2 * @padding;
+    padding-bottom: 2 * @padding;
+  }
+}
+
+/* Large Mobile */
+@media screen and (min-width: @screen-sm) {
+  .b-card {
+    padding: 2 * @padding 2 * @padding;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: @screen-md) {
+  .b-card {
+    min-width: 45%;
+    max-width: 45%;
+    padding: 3 * @padding 2 * @padding;
+    &__title {
+      width: 70%;
+    }
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: @screen-lg) {
+  .b-card {
+    padding: 4 * @padding 2 * @padding;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: @screen-xl) {
+  .b-card {
+    padding: 3 * @padding 3 * @padding 3 * @padding 2 * @padding;
+  }
+}

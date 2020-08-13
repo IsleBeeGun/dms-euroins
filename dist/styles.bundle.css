@@ -528,6 +528,16 @@
   background: url(img/stomache.jpg) no-repeat 20% center !important;
   background-size: cover !important;
 }
+.bg-21 {
+  background: url(img/container_kids.jpg) no-repeat center center !important;
+  background-origin: border-box !important;
+  background-size: cover !important;
+}
+.bg-22 {
+  background: url(img/container_students.jpg) no-repeat left center !important;
+  background-origin: border-box !important;
+  background-size: cover !important;
+}
 /* Mobile */
 @media screen and (min-width: 28rem) {
 }
@@ -540,6 +550,12 @@
     background: url(img/contacts_head.jpg) no-repeat;
     background-size: cover !important;
     background-position: left center;
+  }
+  .bg-21 {
+    background-position: right 50% center !important;
+  }
+  .bg-22 {
+    background-position: right 50% top !important;
   }
 }
 /* Laptop */
@@ -590,6 +606,12 @@
     background-size: contain !important;
     background-position: center bottom;
   }
+  .bg-21 {
+    background-position: center center !important;
+  }
+  .bg-22 {
+    background-position: center top !important;
+  }
 }
 /* Desktop */
 @media screen and (min-width: 100rem) {
@@ -625,6 +647,12 @@
   }
   .bg-personal {
     background-position: right 0px center;
+  }
+  .bg-21 {
+    min-height: 400px;
+  }
+  .bg-22 {
+    min-height: 400px;
   }
 }
 .ul-visible {
@@ -1290,9 +1318,6 @@
   letter-spacing: 0.040625rem;
   width: 100%;
 }
-.b-text__title_smaller {
-  color: lime;
-}
 .b-text p {
   padding-top: 1rem;
   text-align: left;
@@ -1339,6 +1364,108 @@
 @media screen and (min-width: 100rem) {
   .b-text {
     padding: 5rem;
+  }
+}
+.b-card {
+  color: rgba(0, 0, 0, 0.75);
+  position: relative;
+  min-width: 90%;
+  max-width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 1rem 1rem;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.b-card::after {
+  position: absolute;
+  background-color: #272474;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  right: 0px;
+  content: '';
+}
+.b-card__spacer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0px;
+  border-bottom: 5px solid #e00b6c;
+}
+.b-card__title {
+  padding-top: 1rem;
+  margin: 0;
+  width: 100%;
+}
+.b-card__title h2 {
+  margin-bottom: 0;
+  color: #272474;
+  font-size: 1.3rem;
+  line-height: 1.43rem;
+  letter-spacing: 0.040625rem;
+  text-transform: uppercase;
+}
+.b-card p {
+  padding-top: 1rem;
+  text-align: left;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.13rem;
+}
+.b-card__paragraph {
+  padding-top: 1rem;
+  text-align: justify;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.13rem;
+}
+/* Mobile */
+@media screen and (min-width: 28rem) {
+  .b-card {
+    padding: 1rem 2rem;
+    padding-bottom: 2rem;
+  }
+}
+/* Large Mobile */
+@media screen and (min-width: 32.25rem) {
+  .b-card {
+    padding: 2rem 2rem;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 44rem) {
+  .b-card {
+    min-width: 45%;
+    max-width: 45%;
+    padding: 3rem 2rem;
+  }
+  .b-card__title {
+    width: 70%;
+  }
+}
+/* Laptop */
+@media screen and (min-width: 67rem) {
+  .b-card {
+    padding: 4rem 2rem;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 100rem) {
+  .b-card {
+    padding: 3rem 3rem 3rem 2rem;
   }
 }
 .b-notice {

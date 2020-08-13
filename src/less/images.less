@@ -164,6 +164,18 @@
   background-size: cover !important;
 }
 
+.bg-21 {
+  background: url("./../img/bg/container_kids.jpg") no-repeat center center !important;
+  background-origin: border-box !important;
+  background-size: cover !important;
+}
+
+.bg-22 {
+  background: url("./../img/bg/container_students.jpg") no-repeat left center !important;
+  background-origin: border-box !important;
+  background-size: cover !important;
+}
+
 /* Mobile */
 @media screen and (min-width: @screen-xs) {
   //
@@ -180,6 +192,13 @@
     background: url("./../img/bg/contacts_head.jpg") no-repeat;
     background-size: cover !important;
     background-position: left center;
+  }
+  .bg-21 {
+    background-position: right 50% center !important;
+  }
+
+  .bg-22 {
+    background-position: right 50% top !important;
   }
 }
 
@@ -231,6 +250,13 @@
     background-size: contain !important;
     background-position: center bottom;
   }
+  .bg-21 {
+    background-position: center center !important;
+  }
+
+  .bg-22 {
+    background-position: center top !important;
+  }
 }
 
 /* Desktop */
@@ -267,5 +293,12 @@
   }
   .bg-personal {
     background-position: right 0px center;
+  }
+  .bg-21 {
+    min-height: 400px;
+  }
+
+  .bg-22 {
+    min-height: 400px;
   }
 }
