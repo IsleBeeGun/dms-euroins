@@ -1387,7 +1387,7 @@
   width: 60%;
   height: 0;
   padding-bottom: 60%;
-  overflow: visible;
+  overflow: hidden;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px lightgray;
           box-shadow: 0 0 10px lightgray;
@@ -1397,6 +1397,8 @@
           box-shadow: 4px 4px 6px transparent;
 }
 .b-notice__icon-container_texticon {
+  border-radius: 0;
+  overflow: visible;
   width: 100% !important;
   height: auto !important;
   padding-bottom: 0 !important;
@@ -4461,5 +4463,67 @@
 }
 .u-color_bg-gray {
   background-color: #f2f8f8 !important;
+}
+.u-animation_sheen {
+  position: absolute;
+  width: 20px;
+  height: 150%;
+  top: -20%;
+  -webkit-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
+  background-color: #ffffff;
+  -webkit-box-shadow: 2px 2px 5px lightgray initial, -2px -2px 5px lightyellow inset;
+          box-shadow: 2px 2px 5px lightgray initial, -2px -2px 5px lightyellow inset;
+  -webkit-animation-name: sheen;
+          animation-name: sheen;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+@-webkit-keyframes sheen {
+  0% {
+    left: -50%;
+    background-color: #ffffff;
+  }
+  30% {
+    left: -50%;
+    background-color: #e00b6c;
+  }
+  50% {
+    background-color: #feecf4;
+  }
+  70% {
+    left: 110%;
+    background-color: #ffffff;
+  }
+  100% {
+    left: 110%;
+    background-color: #ffffff;
+  }
+}
+@keyframes sheen {
+  0% {
+    left: -50%;
+    background-color: #ffffff;
+  }
+  30% {
+    left: -50%;
+    background-color: #e00b6c;
+  }
+  50% {
+    background-color: #feecf4;
+  }
+  70% {
+    left: 110%;
+    background-color: #ffffff;
+  }
+  100% {
+    left: 110%;
+    background-color: #ffffff;
+  }
 }
 

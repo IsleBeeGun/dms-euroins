@@ -25,13 +25,15 @@
     width: 60%;
     height: 0;
     padding-bottom: 60%;
-    overflow: visible;
+    overflow: hidden;
     background: @theme-color-5;
     box-shadow: @light-shadow;
     &_no-shadow {
       box-shadow: @transparent-shadow;
     }
     &_texticon {
+      border-radius: 0;
+      overflow: visible;
       width: 100% !important;
       height: auto !important;
       padding-bottom: 0 !important;
