@@ -3,7 +3,7 @@
 .b-header {
   color: @theme-color-4;
   padding-left: @padding;
-  margin-top: 2 * @padding + @burger-height;
+  margin-top: @burger-height;
   width: 100%;
   height: auto;
   display: flex;
@@ -28,7 +28,7 @@
   &__contact-container {
     margin-bottom: @padding;
     margin-right: auto;
-    display: inline-flex;
+    display: none;
     flex-flow: row nowrap;
     align-items: center;
   }
@@ -42,7 +42,7 @@
   }
   &__text-container {
     width: 100%;
-    display: inline-flex;
+    display: none;
     align-items: center;
     margin-bottom: @padding;
     margin-right: 0;
@@ -68,18 +68,18 @@
 }
 
 /* Large Mobile */
-@media screen and (min-width: @screen-sm) {
-  .b-header {
-    flex-flow: row wrap;
-    padding-left: 2 * @padding;
-    &__text-container {
-      min-width: 250px;
-      width: 50%;
-      display: inline-flex;
-      align-items: center;
-    }
-  }
-}
+// @media screen and (min-width: @screen-sm) {
+//   .b-header {
+//     flex-flow: row wrap;
+//     padding-left: 2 * @padding;
+//     &__text-container {
+//       min-width: 250px;
+//       width: 50%;
+//       display: inline-flex;
+//       align-items: center;
+//     }
+//   }
+// }
 
 /* Tablet */
 @media screen and (min-width: @screen-md) {
@@ -118,6 +118,7 @@
       margin-right: 1vw;
     }
     &__text-container {
+      display: inline-flex;
       min-width: 25%;
       max-width: 25%;
       margin-left: auto;
