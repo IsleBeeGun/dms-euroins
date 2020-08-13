@@ -1,44 +1,47 @@
 @import "../variables.less";
 
+@blink-duration: 2s;
+
 .u-animation {
   &_sheen {
     position: absolute;
 
-    width: 2pt;
+    width: 20px;
     height: 150%;
     top: -20%;
 
     transform: rotate(20deg);
 
-    background-color: #fff;
+    background-color: @theme-color-5; // doesn't matter, just in case
 
-    box-shadow: 0 0 10pt 4pt #fff;
+    box-shadow: 2px 2px 5px lightgray initial, -2px -2px 5px lightyellow inset;  // color of blur around
 
     animation-name: sheen;
-    animation-duration: 1.5s;
+    animation-duration: @blink-duration;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
 
+
     @keyframes sheen {
-        0% {
-          left: -50%;
-          background-color: #aaa;
-        }
-        30% {
-          left: -50%;
-          background-color: #aaa;
-        }
-        50% {
-          background-color: #eee;
-        }
-        70% {
-          left: 110%;
-          background-color: #ccc;
-        }
-        100% {
-          left: 110%;
-          background-color: #aaa;
-        }
+      0% {
+        left: -50%;
+        background-color: @theme-color-5; // at start
       }
+      30% {
+        left: -50%;
+        background-color: @theme-color-2;
+      }
+      50% {
+        background-color: lighten(@theme-color-2, 50%); // color of first half
+      }
+      70% {
+        left: 110%;
+        background-color: @theme-color-5; // color of second half
+      }
+      100% {
+        left: 110%;
+        background-color: @theme-color-5;
+      }
+    }
   }
 }
