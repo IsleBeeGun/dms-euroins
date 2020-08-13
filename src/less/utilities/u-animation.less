@@ -1,0 +1,44 @@
+@import "../variables.less";
+
+.u-animation {
+  &_sheen {
+    position: absolute;
+
+    width: 2pt;
+    height: 150%;
+    top: -20%;
+
+    transform: rotate(20deg);
+
+    background-color: #fff;
+
+    box-shadow: 0 0 10pt 4pt #fff;
+
+    animation-name: sheen;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+    @keyframes sheen {
+        0% {
+          left: -50%;
+          background-color: #aaa;
+        }
+        30% {
+          left: -50%;
+          background-color: #aaa;
+        }
+        50% {
+          background-color: #eee;
+        }
+        70% {
+          left: 110%;
+          background-color: #ccc;
+        }
+        100% {
+          left: 110%;
+          background-color: #aaa;
+        }
+      }
+  }
+}
