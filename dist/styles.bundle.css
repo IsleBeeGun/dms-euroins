@@ -4676,6 +4676,11 @@
   }
 }
 html {
-  display: block;
+  /* Preventing FUOC here */
+  -webkit-transition: visibility 0.1s ease-in, opacity 0.2s ease-in !important;
+  -o-transition: visibility 0.1s ease-in, opacity 0.2s ease-in !important;
+  transition: visibility 0.1s ease-in, opacity 0.2s ease-in !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
