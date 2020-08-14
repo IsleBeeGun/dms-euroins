@@ -4675,4 +4675,7 @@
     background-color: #ffffff;
   }
 }
+html {
+  display: block;
+}
 
