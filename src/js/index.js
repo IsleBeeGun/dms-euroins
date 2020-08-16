@@ -17,7 +17,6 @@ import clinicsList from "../clinicsList.json5";
 //     document.getElementById("clinics-selector").appendChild(option);
 // });
 
-
 if (document.getElementById("clinics-selector")) {
   // Applying & configuring SlimSelect
   var select = new SlimSelect({
