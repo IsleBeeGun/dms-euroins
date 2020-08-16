@@ -1871,6 +1871,22 @@
   border: 2px solid #e00b6c;
   background-color: #f2f8f8;
 }
+.b-form__choice-field_selector {
+  padding: 0;
+}
+.b-form__choice-field_selector .ss-single-selected {
+  width: 100%;
+  min-height: 3rem;
+  padding-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.b-form__choice-field_selector .ss-content {
+  border-color: #272474;
+  width: 100.8%;
+  margin-left: -2px;
+  border-radius: 5px;
+}
 /* Large Mobile */
 @media screen and (min-width: 32.25rem) {
   .b-form__choice-option .b-form__choice-checkbox:after {

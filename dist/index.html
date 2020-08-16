@@ -604,7 +604,7 @@
           </div>
         </section>
 
-        <section class="b-section bg-feedback" id="feedback">
+        <section class="b-section bg-feedback" id="orderForm">
           <header class="b-section__header">
             <h2 class="b-section__title">
               Заполнить и отправить заявку на медицинское страхование
@@ -614,13 +614,7 @@
             </p>
           </header>
 
-          <form
-            class="b-form u-container_margin-top u-container_padding-right"
-            action="sendmail.php?com=order&ref="
-            method="POST"
-            enctype="application/x-www-form-urlencoded"
-            accept-charset="utf-8"
-          >
+          <form class="b-form u-container_margin-top u-container_padding-right">
             <div
               class="b-form__choice-row u-container_fraction-1of1 u-container_align-start"
             >
@@ -634,6 +628,7 @@
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
                   name="programs[]"
+                  id="orderForm_programs_1"
                   value="Поликлиника"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -645,6 +640,7 @@
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
                   name="programs[]"
+                  id="orderForm_programs_2"
                   value="Помощь на дому"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -656,6 +652,7 @@
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
                   name="programs[]"
+                  id="orderForm_programs_3"
                   value="Стоматология"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -667,6 +664,7 @@
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
                   name="programs[]"
+                  id="orderForm_programs_4"
                   value="Скорая помощь"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -685,7 +683,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="genders[]"
+                  name="insured[]"
+                  id="orderForm_insured_1"
                   value="Мужчина"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -696,7 +695,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="genders[]"
+                  name="insured[]"
+                  id="orderForm_insured_2"
                   value="Женщина"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -707,7 +707,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="genders[]"
+                  name="insured[]"
+                  id="orderForm_insured_3"
                   value="Ребёнок"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -726,7 +727,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="prices[]"
+                  name="levels[]"
+                  id="orderForm_levels_1"
                   value="Эконом"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -737,7 +739,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="prices[]"
+                  name="levels[]"
+                  id="orderForm_levels_2"
                   value="Бизнес"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -748,7 +751,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="prices[]"
+                  name="levels[]"
+                  id="orderForm_levels_3"
                   value="VIP"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -776,7 +780,8 @@
                       class="b-form__choice-field u-text_fs-sm"
                       type="text"
                       name="name"
-                      placeholder="Укажите Вашу фамилию, имя, отчество"
+                      id="orderForm_name"
+                      placeholder="Ваша Фамилия, Имя, Отчество"
                       required
                     />
                   </div>
@@ -789,13 +794,12 @@
                   <div
                     class="u-container_fraction-2of5 u-container_padding-left"
                   >
-                    <input
-                      class="b-form__choice-field u-text_fs-sm"
-                      type="text"
-                      name="name"
-                      placeholder="Укажите Вашу фамилию, имя, отчество"
-                      required
-                    />
+                    <select
+                      name="region"
+                      class="b-form__choice-field b-form__choice-field_selector u-text_fs-sm"
+                      id="region-selector"
+                    >
+                    </select>
                   </div>
                 </div>
                 <div class="b-form__choice-row b-form__choice-row_special">
@@ -809,8 +813,9 @@
                     <input
                       class="b-form__choice-field u-text_fs-sm"
                       type="tel"
-                      name="tel"
-                      placeholder="Укажите Ваш номер телефона"
+                      name="phone"
+                      id="orderForm_phone"
+                      placeholder="Ваш номер телефона"
                       required
                     />
                   </div>
@@ -827,7 +832,8 @@
                       class="b-form__choice-field u-text_fs-sm"
                       type="email"
                       name="email"
-                      placeholder="Укажите Вашу электронную почту"
+                      id="orderForm_email"
+                      placeholder="Ваша электронная почта"
                       required
                     />
                   </div>
@@ -843,8 +849,9 @@
                 <textarea
                   spellcheck
                   class="b-form__choice-field u-container_margin-left u-text_fs-sm"
-                  placeholder="Оставьте дополнительные пожелания к Вашей заявке"
-                  name="info"
+                  placeholder="Дополнительная информация к Вашей заявке"
+                  name="comment"
+                  id="orderForm_comment"
                   style="min-height: 9rem !important;"
                 ></textarea>
               </div>
@@ -862,7 +869,8 @@
                 <input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="gdpr"
+                  name="agreement"
+                  id="orderForm_agreement"
                   value="Условия приняты"
                   required
                 />
@@ -1468,5 +1476,93 @@
     </div>
     <link rel="stylesheet" href="styles.bundle.css" />
     <script src="js/index.bundle.js"></script>
+    <script>
+      function sendHttpRequest(method, url, data) {
+        const promise = new Promise((resolve, reject) => {
+          const xhr = new XMLHttpRequest();
+          xhr.open(method, url);
+          xhr.setRequestHeader("Content-Type", "application/json");
+          xhr.responseType = "json";
+          xhr.onload = function () {
+            if ((xhr.status >= 200) & (xhr.status < 300)) {
+              resolve(xhr.response);
+            } else {
+              reject(new Error("Проблема с сервером"));
+            }
+          };
+          xhr.onerror = function () {
+            reject(new Error("Проблема с интренет-соединением"));
+          };
+          xhr.send(JSON.stringify(data));
+        });
+        return promise;
+      }
+      function sendOrder() {
+        let programs = [];
+        document.getElementById("orderForm_programs_1").checked
+          ? programs.push(document.getElementById("orderForm_programs_1").value)
+          : null;
+        document.getElementById("orderForm_programs_2").checked
+          ? programs.push(document.getElementById("orderForm_programs_2").value)
+          : null;
+        document.getElementById("orderForm_programs_3").checked
+          ? programs.push(document.getElementById("orderForm_programs_3").value)
+          : null;
+        document.getElementById("orderForm_programs_4").checked
+          ? programs.push(document.getElementById("orderForm_programs_4").value)
+          : null;
+        let insured = [];
+        document.getElementById("orderForm_insured_1").checked
+          ? insured.push(document.getElementById("orderForm_insured_1").value)
+          : null;
+        document.getElementById("orderForm_insured_2").checked
+          ? insured.push(document.getElementById("orderForm_insured_2").value)
+          : null;
+        document.getElementById("orderForm_insured_3").checked
+          ? insured.push(document.getElementById("orderForm_insured_3").value)
+          : null;
+        let levels = [];
+        document.getElementById("orderForm_levels_1").checked
+          ? levels.push(document.getElementById("orderForm_levels_1").value)
+          : null;
+        document.getElementById("orderForm_levels_2").checked
+          ? levels.push(document.getElementById("orderForm_levels_2").value)
+          : null;
+        document.getElementById("orderForm_levels_3").checked
+          ? levels.push(document.getElementById("orderForm_levels_3").value)
+          : null;
+
+        let orderData = {
+          source: "dms.euro-ins.ru",
+          name: document.getElementById("orderForm_name").value,
+          phone: document.getElementById("orderForm_phone").value,
+          email: document.getElementById("orderForm_email").value,
+          comment: document.getElementById("orderForm_comment").value,
+          region: document.getElementById("region-selector").value,
+          agreement: document.getElementById("orderForm_agreement").checked,
+          programs,
+          insured,
+          levels,
+        };
+
+        sendHttpRequest(
+          "POST",
+          "https://jsonplaceholder.typicode.com/posts",
+          orderData
+        )
+          .then((res) => {
+            console.log(res);
+            console.log("Modal for OK appears");
+          })
+          .catch((rej) => {
+            console.log(rej);
+            console.log("Modal for ERROR appears");
+          });
+      }
+      document.getElementById("orderForm").onsubmit = async (event) => {
+        event.preventDefault();
+        sendOrder();
+      };
+    </script>
   </body>
 </html>
