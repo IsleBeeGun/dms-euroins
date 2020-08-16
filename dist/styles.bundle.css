@@ -376,7 +376,7 @@
 @media screen and (min-width: 67rem) {
 }
 /* Desktop */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
 }
 .bg-main {
   background: url(img/main_banner1.jpg) no-repeat;
@@ -647,7 +647,7 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .bg-main {
     background-position: right 0px center;
   }
@@ -903,7 +903,7 @@
   }
 }
 /* Desktops (and langer) */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .b-nav__menu-L0 li a img {
     min-width: 2.66666667vw;
     max-width: 2.66666667vw;
@@ -1194,7 +1194,7 @@
   }
 }
 /* Desktops (and langer) */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .b-page {
     min-width: 92%;
     max-width: 92%;
@@ -1340,7 +1340,7 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .b-section__title {
     padding-top: 3rem;
     padding-left: 5rem;
@@ -1408,7 +1408,7 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .b-text {
     padding: 5rem;
   }
@@ -1510,7 +1510,7 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .b-card {
     padding: 3rem 3rem 3rem 2rem;
   }
@@ -1718,7 +1718,7 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .b-notice__index-container {
     top: 12%;
     right: 24%;
@@ -1936,7 +1936,7 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .b-form__choice-option .b-form__choice-checkbox:after {
     left: 5.6rem;
   }
@@ -2190,7 +2190,7 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .b-header__logo-container {
     margin-left: 5rem;
   }
@@ -2296,7 +2296,7 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .b-footer__left-container {
     padding-left: 5rem;
     padding-bottom: 5rem;
@@ -2579,6 +2579,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.u-container_justify-around {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .u-container_padding-top {
   padding-top: 1rem;
@@ -4033,7 +4044,7 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 101rem) {
   .u-container_padding-top {
     padding-top: 5rem;
   }
@@ -4071,521 +4082,521 @@
     margin: 5rem;
   }
   .u-container_fraction-1of1 {
-    min-width: 92rem;
+    min-width: 92.92rem;
     max-width: 100%;
   }
   .u-container_fraction-1of1-fixed {
-    min-width: 92rem;
-    max-width: 92rem;
+    min-width: 92.92rem;
+    max-width: 92.92rem;
   }
   .u-container_fraction-1of1-full {
-    min-width: 100rem;
+    min-width: 101rem;
   }
   .u-container_fraction-1of2 {
-    min-width: 46rem;
+    min-width: 46.46rem;
     max-width: 50%;
   }
   .u-container_fraction-1of2-fixed {
-    min-width: 46rem;
-    max-width: 46rem;
+    min-width: 46.46rem;
+    max-width: 46.46rem;
   }
   .u-container_fraction-1of2-full {
-    min-width: 50rem;
+    min-width: 50.5rem;
   }
   .u-container_fraction-1of3 {
-    min-width: 30.66666667rem;
+    min-width: 30.97333333rem;
     max-width: 33.3%;
   }
   .u-container_fraction-1of3-fixed {
-    min-width: 30.66666667rem;
-    max-width: 30.66666667rem;
+    min-width: 30.97333333rem;
+    max-width: 30.97333333rem;
   }
   .u-container_fraction-1of3-full {
-    min-width: 33.33333333rem;
+    min-width: 33.66666667rem;
   }
   .u-container_fraction-1of4 {
-    min-width: 23rem;
+    min-width: 23.23rem;
     max-width: 25%;
   }
   .u-container_fraction-1of4-fixed {
-    min-width: 23rem;
-    max-width: 23rem;
+    min-width: 23.23rem;
+    max-width: 23.23rem;
   }
   .u-container_fraction-1of4-full {
-    min-width: 25rem;
+    min-width: 25.25rem;
   }
   .u-container_fraction-1of5 {
-    min-width: 18.4rem;
+    min-width: 18.584rem;
     max-width: 20%;
   }
   .u-container_fraction-1of5-fixed {
-    min-width: 18.4rem;
-    max-width: 18.4rem;
+    min-width: 18.584rem;
+    max-width: 18.584rem;
   }
   .u-container_fraction-1of5-full {
-    min-width: 20rem;
+    min-width: 20.2rem;
   }
   .u-container_fraction-1of6 {
-    min-width: 15.33333333rem;
+    min-width: 15.48666667rem;
     max-width: 16.6%;
   }
   .u-container_fraction-1of6-fixed {
-    min-width: 15.33333333rem;
-    max-width: 15.33333333rem;
+    min-width: 15.48666667rem;
+    max-width: 15.48666667rem;
   }
   .u-container_fraction-1of6-full {
-    min-width: 16.66666667rem;
+    min-width: 16.83333333rem;
   }
   .u-container_fraction-1of7 {
-    min-width: 13.14285714rem;
+    min-width: 13.27428571rem;
     max-width: 14.2%;
   }
   .u-container_fraction-1of7-fixed {
-    min-width: 13.14285714rem;
-    max-width: 13.14285714rem;
+    min-width: 13.27428571rem;
+    max-width: 13.27428571rem;
   }
   .u-container_fraction-1of7-full {
-    min-width: 14.28571429rem;
+    min-width: 14.42857143rem;
   }
   .u-container_fraction-1of8 {
-    min-width: 11.5rem;
+    min-width: 11.615rem;
     max-width: 12.5%;
   }
   .u-container_fraction-1of8-fixed {
-    min-width: 11.5rem;
-    max-width: 11.5rem;
+    min-width: 11.615rem;
+    max-width: 11.615rem;
   }
   .u-container_fraction-1of8-full {
-    min-width: 12.5rem;
+    min-width: 12.625rem;
   }
   .u-container_fraction-1of9 {
-    min-width: 10.22222222rem;
+    min-width: 10.32444444rem;
     max-width: 11.1%;
   }
   .u-container_fraction-1of9-fixed {
-    min-width: 10.22222222rem;
-    max-width: 10.22222222rem;
+    min-width: 10.32444444rem;
+    max-width: 10.32444444rem;
   }
   .u-container_fraction-1of9-full {
-    min-width: 11.11111111rem;
+    min-width: 11.22222222rem;
   }
   .u-container_fraction-1of10 {
-    min-width: 9.2rem;
+    min-width: 9.292rem;
     max-width: 10%;
   }
   .u-container_fraction-1of10-fixed {
-    min-width: 9.2rem;
-    max-width: 9.2rem;
+    min-width: 9.292rem;
+    max-width: 9.292rem;
   }
   .u-container_fraction-1of10-full {
-    min-width: 10rem;
+    min-width: 10.1rem;
   }
   .u-container_fraction-1of11 {
-    min-width: 8.36363636rem;
+    min-width: 8.44727273rem;
     max-width: 9%;
   }
   .u-container_fraction-1of11-fixed {
-    min-width: 8.36363636rem;
-    max-width: 8.36363636rem;
+    min-width: 8.44727273rem;
+    max-width: 8.44727273rem;
   }
   .u-container_fraction-1of11-full {
-    min-width: 9.09090909rem;
+    min-width: 9.18181818rem;
   }
   .u-container_fraction-1of12 {
-    min-width: 7.66666667rem;
+    min-width: 7.74333333rem;
     max-width: 8.3%;
   }
   .u-container_fraction-1of12-fixed {
-    min-width: 7.66666667rem;
-    max-width: 7.66666667rem;
+    min-width: 7.74333333rem;
+    max-width: 7.74333333rem;
   }
   .u-container_fraction-1of12-full {
-    min-width: 8.33333333rem;
+    min-width: 8.41666667rem;
   }
   .u-container_fraction-2of3 {
-    min-width: 61.33333333rem;
+    min-width: 61.94666667rem;
     max-width: 66.6%;
   }
   .u-container_fraction-2of3-fixed {
-    min-width: 61.33333333rem;
-    max-width: 61.33333333rem;
+    min-width: 61.94666667rem;
+    max-width: 61.94666667rem;
   }
   .u-container_fraction-2of3-full {
-    min-width: 66.66666667rem;
+    min-width: 67.33333333rem;
   }
   .u-container_fraction-2of5 {
-    min-width: 36.8rem;
+    min-width: 37.168rem;
     max-width: 40%;
   }
   .u-container_fraction-2of5-fixed {
-    min-width: 36.8rem;
-    max-width: 36.8rem;
+    min-width: 37.168rem;
+    max-width: 37.168rem;
   }
   .u-container_fraction-2of5-full {
-    min-width: 40rem;
+    min-width: 40.4rem;
   }
   .u-container_fraction-2of7 {
-    min-width: 26.28571429rem;
+    min-width: 26.54857143rem;
     max-width: 28.5%;
   }
   .u-container_fraction-2of7-fixed {
-    min-width: 26.28571429rem;
-    max-width: 26.28571429rem;
+    min-width: 26.54857143rem;
+    max-width: 26.54857143rem;
   }
   .u-container_fraction-2of7-full {
-    min-width: 28.57142857rem;
+    min-width: 28.85714286rem;
   }
   .u-container_fraction-2of9 {
-    min-width: 20.44444444rem;
+    min-width: 20.64888889rem;
     max-width: 22.2%;
   }
   .u-container_fraction-2of9-fixed {
-    min-width: 20.44444444rem;
-    max-width: 20.44444444rem;
+    min-width: 20.64888889rem;
+    max-width: 20.64888889rem;
   }
   .u-container_fraction-2of9-full {
-    min-width: 22.22222222rem;
+    min-width: 22.44444444rem;
   }
   .u-container_fraction-2of11 {
-    min-width: 16.72727273rem;
+    min-width: 16.89454545rem;
     max-width: 18.1%;
   }
   .u-container_fraction-2of11-fixed {
-    min-width: 16.72727273rem;
-    max-width: 16.72727273rem;
+    min-width: 16.89454545rem;
+    max-width: 16.89454545rem;
   }
   .u-container_fraction-2of11-full {
-    min-width: 18.18181818rem;
+    min-width: 18.36363636rem;
   }
   .u-container_fraction-3of4 {
-    min-width: 69rem;
+    min-width: 69.69rem;
     max-width: 75%;
   }
   .u-container_fraction-3of4-fixed {
-    min-width: 69rem;
-    max-width: 69rem;
+    min-width: 69.69rem;
+    max-width: 69.69rem;
   }
   .u-container_fraction-3of4-full {
-    min-width: 75rem;
+    min-width: 75.75rem;
   }
   .u-container_fraction-3of5 {
-    min-width: 55.2rem;
+    min-width: 55.752rem;
     max-width: 60%;
   }
   .u-container_fraction-3of5-fixed {
-    min-width: 55.2rem;
-    max-width: 55.2rem;
+    min-width: 55.752rem;
+    max-width: 55.752rem;
   }
   .u-container_fraction-3of5-full {
-    min-width: 60rem;
+    min-width: 60.6rem;
   }
   .u-container_fraction-3of7 {
-    min-width: 39.42857143rem;
+    min-width: 39.82285714rem;
     max-width: 42.8%;
   }
   .u-container_fraction-3of7-fixed {
-    min-width: 39.42857143rem;
-    max-width: 39.42857143rem;
+    min-width: 39.82285714rem;
+    max-width: 39.82285714rem;
   }
   .u-container_fraction-3of7-full {
-    min-width: 42.85714286rem;
+    min-width: 43.28571429rem;
   }
   .u-container_fraction-3of8 {
-    min-width: 34.5rem;
+    min-width: 34.845rem;
     max-width: 37.5%;
   }
   .u-container_fraction-3of8-fixed {
-    min-width: 34.5rem;
-    max-width: 34.5rem;
+    min-width: 34.845rem;
+    max-width: 34.845rem;
   }
   .u-container_fraction-3of8-full {
-    min-width: 37.5rem;
+    min-width: 37.875rem;
   }
   .u-container_fraction-3of10 {
-    min-width: 27.6rem;
+    min-width: 27.876rem;
     max-width: 30%;
   }
   .u-container_fraction-3of10-fixed {
-    min-width: 27.6rem;
-    max-width: 27.6rem;
+    min-width: 27.876rem;
+    max-width: 27.876rem;
   }
   .u-container_fraction-3of10-full {
-    min-width: 30rem;
+    min-width: 30.3rem;
   }
   .u-container_fraction-3of11 {
-    min-width: 25.09090909rem;
+    min-width: 25.34181818rem;
     max-width: 27.2%;
   }
   .u-container_fraction-3of11-fixed {
-    min-width: 25.09090909rem;
-    max-width: 25.09090909rem;
+    min-width: 25.34181818rem;
+    max-width: 25.34181818rem;
   }
   .u-container_fraction-3of11-full {
-    min-width: 27.27272727rem;
+    min-width: 27.54545455rem;
   }
   .u-container_fraction-4of5 {
-    min-width: 73.6rem;
+    min-width: 74.336rem;
     max-width: 80%;
   }
   .u-container_fraction-4of5-fixed {
-    min-width: 73.6rem;
-    max-width: 73.6rem;
+    min-width: 74.336rem;
+    max-width: 74.336rem;
   }
   .u-container_fraction-4of5-full {
-    min-width: 100rem;
+    min-width: 101rem;
   }
   .u-container_fraction-4of7 {
-    min-width: 52.57142857rem;
+    min-width: 53.09714286rem;
     max-width: 57.1%;
   }
   .u-container_fraction-4of7-fixed {
-    min-width: 52.57142857rem;
-    max-width: 52.57142857rem;
+    min-width: 53.09714286rem;
+    max-width: 53.09714286rem;
   }
   .u-container_fraction-4of7-full {
-    min-width: 57.14285714rem;
+    min-width: 57.71428571rem;
   }
   .u-container_fraction-4of9 {
-    min-width: 40.88888889rem;
+    min-width: 41.29777778rem;
     max-width: 44.4%;
   }
   .u-container_fraction-4of9-fixed {
-    min-width: 40.88888889rem;
-    max-width: 40.88888889rem;
+    min-width: 41.29777778rem;
+    max-width: 41.29777778rem;
   }
   .u-container_fraction-4of9-full {
-    min-width: 44.44444444rem;
+    min-width: 44.88888889rem;
   }
   .u-container_fraction-4of10 {
-    min-width: 36.8rem;
+    min-width: 37.168rem;
     max-width: 40%;
   }
   .u-container_fraction-4of10-fixed {
-    min-width: 36.8rem;
-    max-width: 36.8rem;
+    min-width: 37.168rem;
+    max-width: 37.168rem;
   }
   .u-container_fraction-4of10-full {
-    min-width: 40rem;
+    min-width: 40.4rem;
   }
   .u-container_fraction-4of11 {
-    min-width: 33.45454545rem;
+    min-width: 33.78909091rem;
     max-width: 36.3%;
   }
   .u-container_fraction-4of11-fixed {
-    min-width: 33.45454545rem;
-    max-width: 33.45454545rem;
+    min-width: 33.78909091rem;
+    max-width: 33.78909091rem;
   }
   .u-container_fraction-4of11-full {
-    min-width: 36.36363636rem;
+    min-width: 36.72727273rem;
   }
   .u-container_fraction-5of6 {
-    min-width: 76.66666667rem;
+    min-width: 77.43333333rem;
     max-width: 83.3%;
   }
   .u-container_fraction-5of6-fixed {
-    min-width: 76.66666667rem;
-    max-width: 76.66666667rem;
+    min-width: 77.43333333rem;
+    max-width: 77.43333333rem;
   }
   .u-container_fraction-5of6-full {
-    min-width: 83.33333333rem;
+    min-width: 84.16666667rem;
   }
   .u-container_fraction-5of7 {
-    min-width: 65.71428571rem;
+    min-width: 66.37142857rem;
     max-width: 71.4%;
   }
   .u-container_fraction-5of7-fixed {
-    min-width: 65.71428571rem;
-    max-width: 65.71428571rem;
+    min-width: 66.37142857rem;
+    max-width: 66.37142857rem;
   }
   .u-container_fraction-5of7-full {
-    min-width: 71.42857143rem;
+    min-width: 72.14285714rem;
   }
   .u-container_fraction-5of8 {
-    min-width: 57.5rem;
+    min-width: 58.075rem;
     max-width: 62.5%;
   }
   .u-container_fraction-5of8-fixed {
-    min-width: 57.5rem;
-    max-width: 57.5rem;
+    min-width: 58.075rem;
+    max-width: 58.075rem;
   }
   .u-container_fraction-5of8-full {
-    min-width: 62.5rem;
+    min-width: 63.125rem;
   }
   .u-container_fraction-5of9 {
-    min-width: 51.11111111rem;
+    min-width: 51.62222222rem;
     max-width: 55.5%;
   }
   .u-container_fraction-5of9-fixed {
-    min-width: 51.11111111rem;
-    max-width: 51.11111111rem;
+    min-width: 51.62222222rem;
+    max-width: 51.62222222rem;
   }
   .u-container_fraction-5of9-full {
-    min-width: 55.55555556rem;
+    min-width: 56.11111111rem;
   }
   .u-container_fraction-5of11 {
-    min-width: 41.81818182rem;
+    min-width: 42.23636364rem;
     max-width: 45.4%;
   }
   .u-container_fraction-5of11-fixed {
-    min-width: 41.81818182rem;
-    max-width: 41.81818182rem;
+    min-width: 42.23636364rem;
+    max-width: 42.23636364rem;
   }
   .u-container_fraction-5of11-full {
-    min-width: 45.45454545rem;
+    min-width: 45.90909091rem;
   }
   .u-container_fraction-5of12 {
-    min-width: 38.33333333rem;
+    min-width: 38.71666667rem;
     max-width: 41.6%;
   }
   .u-container_fraction-5of12-fixed {
-    min-width: 38.33333333rem;
-    max-width: 38.33333333rem;
+    min-width: 38.71666667rem;
+    max-width: 38.71666667rem;
   }
   .u-container_fraction-5of12-full {
-    min-width: 41.66666667rem;
+    min-width: 42.08333333rem;
   }
   .u-container_fraction-6of7 {
-    min-width: 78.85714286rem;
+    min-width: 79.64571429rem;
     max-width: 85.7%;
   }
   .u-container_fraction-6of7-fixed {
-    min-width: 78.85714286rem;
-    max-width: 78.85714286rem;
+    min-width: 79.64571429rem;
+    max-width: 79.64571429rem;
   }
   .u-container_fraction-6of7-full {
-    min-width: 85.71428571rem;
+    min-width: 86.57142857rem;
   }
   .u-container_fraction-6of11 {
-    min-width: 50.18181818rem;
+    min-width: 50.68363636rem;
     max-width: 54.4%;
   }
   .u-container_fraction-6of11-fixed {
-    min-width: 50.18181818rem;
-    max-width: 50.18181818rem;
+    min-width: 50.68363636rem;
+    max-width: 50.68363636rem;
   }
   .u-container_fraction-6of11-full {
-    min-width: 54.54545455rem;
+    min-width: 55.09090909rem;
   }
   .u-container_fraction-7of8 {
-    min-width: 80.5rem;
+    min-width: 81.305rem;
     max-width: 87.5%;
   }
   .u-container_fraction-7of8-fixed {
-    min-width: 80.5rem;
-    max-width: 80.5rem;
+    min-width: 81.305rem;
+    max-width: 81.305rem;
   }
   .u-container_fraction-7of8-full {
-    min-width: 87.5rem;
+    min-width: 88.375rem;
   }
   .u-container_fraction-7of9 {
-    min-width: 71.55555556rem;
+    min-width: 72.27111111rem;
     max-width: 77.7%;
   }
   .u-container_fraction-7of9-fixed {
-    min-width: 71.55555556rem;
-    max-width: 71.55555556rem;
+    min-width: 72.27111111rem;
+    max-width: 72.27111111rem;
   }
   .u-container_fraction-7of9-full {
-    min-width: 77.77777778rem;
+    min-width: 78.55555556rem;
   }
   .u-container_fraction-7of10 {
-    min-width: 64.4rem;
+    min-width: 65.044rem;
     max-width: 70%;
   }
   .u-container_fraction-7of10-fixed {
-    min-width: 64.4rem;
-    max-width: 64.4rem;
+    min-width: 65.044rem;
+    max-width: 65.044rem;
   }
   .u-container_fraction-7of10-full {
-    min-width: 70rem;
+    min-width: 70.7rem;
   }
   .u-container_fraction-7of11 {
-    min-width: 58.54545455rem;
+    min-width: 59.13090909rem;
     max-width: 63.6%;
   }
   .u-container_fraction-7of11-fixed {
-    min-width: 58.54545455rem;
-    max-width: 58.54545455rem;
+    min-width: 59.13090909rem;
+    max-width: 59.13090909rem;
   }
   .u-container_fraction-7of11-full {
-    min-width: 63.63636364rem;
+    min-width: 64.27272727rem;
   }
   .u-container_fraction-7of12 {
-    min-width: 53.66666667rem;
+    min-width: 54.20333333rem;
     max-width: 58.3%;
   }
   .u-container_fraction-7of12-fixed {
-    min-width: 53.66666667rem;
-    max-width: 53.66666667rem;
+    min-width: 54.20333333rem;
+    max-width: 54.20333333rem;
   }
   .u-container_fraction-7of12-full {
-    min-width: 58.33333333rem;
+    min-width: 58.91666667rem;
   }
   .u-container_fraction-8of9 {
-    min-width: 81.77777778rem;
+    min-width: 82.59555556rem;
     max-width: 88.8%;
   }
   .u-container_fraction-8of9-fixed {
-    min-width: 81.77777778rem;
-    max-width: 81.77777778rem;
+    min-width: 82.59555556rem;
+    max-width: 82.59555556rem;
   }
   .u-container_fraction-8of9-full {
-    min-width: 88.88888889rem;
+    min-width: 89.77777778rem;
   }
   .u-container_fraction-8of11 {
-    min-width: 66.90909091rem;
+    min-width: 67.57818182rem;
     max-width: 72.7%;
   }
   .u-container_fraction-8of11-fixed {
-    min-width: 66.90909091rem;
-    max-width: 66.90909091rem;
+    min-width: 67.57818182rem;
+    max-width: 67.57818182rem;
   }
   .u-container_fraction-8of11-full {
-    min-width: 72.72727273rem;
+    min-width: 73.45454545rem;
   }
   .u-container_fraction-9of10 {
-    min-width: 82.8rem;
+    min-width: 83.628rem;
     max-width: 90%;
   }
   .u-container_fraction-9of10-fixed {
-    min-width: 82.8rem;
-    max-width: 82.8rem;
+    min-width: 83.628rem;
+    max-width: 83.628rem;
   }
   .u-container_fraction-9of10-full {
-    min-width: 90rem;
+    min-width: 90.9rem;
   }
   .u-container_fraction-9of11 {
-    min-width: 75.27272727rem;
+    min-width: 76.02545455rem;
     max-width: 81.8%;
   }
   .u-container_fraction-9of11-fixed {
-    min-width: 75.27272727rem;
-    max-width: 75.27272727rem;
+    min-width: 76.02545455rem;
+    max-width: 76.02545455rem;
   }
   .u-container_fraction-9of11-full {
-    min-width: 81.81818182rem;
+    min-width: 82.63636364rem;
   }
   .u-container_fraction-10of11 {
-    min-width: 83.63636364rem;
+    min-width: 84.47272727rem;
     max-width: 90.9%;
   }
   .u-container_fraction-10of11-fixed {
-    min-width: 83.63636364rem;
-    max-width: 83.63636364rem;
+    min-width: 84.47272727rem;
+    max-width: 84.47272727rem;
   }
   .u-container_fraction-10of11-full {
-    min-width: 90.90909091rem;
+    min-width: 91.81818182rem;
   }
   .u-container_fraction-11of12 {
-    min-width: 84.33333333rem;
+    min-width: 85.17666667rem;
     max-width: 91.6%;
   }
   .u-container_fraction-11of12-fixed {
-    min-width: 84.33333333rem;
-    max-width: 84.33333333rem;
+    min-width: 85.17666667rem;
+    max-width: 85.17666667rem;
   }
   .u-container_fraction-11of12-full {
-    min-width: 91.66666667rem;
+    min-width: 92.58333333rem;
   }
 }
 .u-color_ct-black {
