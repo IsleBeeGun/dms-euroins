@@ -27,6 +27,114 @@
   </head>
 
   <body>
+    <div class="b-modal" id="sl-1">
+      <div class="b-modal__container b-modal__container_image">
+        <span class="b-modal__exit">&times;</span>
+        <div class="b-modal__image sl-1">
+          &nbsp;
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector("#sl-1 .b-modal__exit").onclick = () => {
+            document
+              .querySelector("#sl-1")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
+    <div class="b-modal" id="sl-2">
+      <div class="b-modal__container">
+        <span class="b-modal__exit">&times;</span>
+        <p class="b-modal__single u-color_ct-blue">
+          тут картинка
+        </p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector("#sl-2 .b-modal__exit").onclick = () => {
+            document
+              .querySelector("#sl-2")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
+    <div class="b-modal" id="si-1">
+      <div class="b-modal__container">
+        <span class="b-modal__exit">&times;</span>
+        <p class="b-modal__single u-color_ct-blue">
+          тут картинка
+        </p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector("#si-1 .b-modal__exit").onclick = () => {
+            document
+              .querySelector("#si-1")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
+    <div class="b-modal" id="si-2">
+      <div class="b-modal__container">
+        <span class="b-modal__exit">&times;</span>
+        <p class="b-modal__single u-color_ct-blue">
+          тут картинка
+        </p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector("#si-2 .b-modal__exit").onclick = () => {
+            document
+              .querySelector("#si-2")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
+    <div class="b-modal" id="os-1">
+      <div class="b-modal__container">
+        <span class="b-modal__exit">&times;</span>
+        <p class="b-modal__single u-color_ct-blue">
+          тут картинка
+        </p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector("#os-1 .b-modal__exit").onclick = () => {
+            document
+              .querySelector("#os-1")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
+    <div class="b-modal" id="os-2">
+      <div class="b-modal__container">
+        <span class="b-modal__exit">&times;</span>
+        <p class="b-modal__single u-color_ct-blue">
+          тут картинка
+        </p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector("#os-2 .b-modal__exit").onclick = () => {
+            document
+              .querySelector("#os-2")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
     <div class="b-burger">
       <div class="b-burger__menu-toggle">
         <input type="checkbox" class="b-burger__toggle-input" />
@@ -484,7 +592,26 @@
                 Лицензия СЛ No3954 <br />
                 от 07 июля 2015 года
               </p>
-              <div class="b-notice__icon-container bg-1"></div>
+              <div
+                class="b-notice__icon-container b-notice__icon-container_licenses"
+              >
+                <div
+                  class="b-notice__image sl-1"
+                  onclick='document
+                .getElementById("sl-1")
+                .setAttribute("style", "visibility:visible; opacity: 1;")'
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="b-notice__image sl-2"
+                  onclick='document
+                .getElementById("sl-2")
+                .setAttribute("style", "visibility:visible; opacity: 1;")'
+                >
+                  &nbsp;
+                </div>
+              </div>
               <p class="b-notice__text u-text_fs-sm">
                 Лицензия на осуществление добровольного личного страхования, за
                 исключением добровольного страхования жизни
@@ -495,7 +622,26 @@
                 Лицензия СИ No3954 <br />
                 от 07 июля 2015 года
               </p>
-              <div class="b-notice__icon-container bg-2"></div>
+              <div
+                class="b-notice__icon-container b-notice__icon-container_licenses"
+              >
+                <div
+                  class="b-notice__image si-1"
+                  onclick='document
+            .getElementById("si-1")
+            .setAttribute("style", "visibility:visible; opacity: 1;")'
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="b-notice__image si-2"
+                  onclick='document
+            .getElementById("si-2")
+            .setAttribute("style", "visibility:visible; opacity: 1;")'
+                >
+                  &nbsp;
+                </div>
+              </div>
               <p class="b-notice__text u-text_fs-sm">
                 Лицензия на осуществление добровольного медицинского страхования
               </p>
@@ -504,7 +650,26 @@
               <p class="b-notice__text u-text_fs-md u-color_ct-blue">
                 Лицензия ОС No3954-03 <br />от 07 июля 2015 года
               </p>
-              <div class="b-notice__icon-container bg-3"></div>
+              <div
+                class="b-notice__icon-container b-notice__icon-container_licenses"
+              >
+                <div
+                  class="b-notice__image os-1"
+                  onclick='document
+        .getElementById("os-1")
+        .setAttribute("style", "visibility:visible; opacity: 1;")'
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="b-notice__image os-2"
+                  onclick='document
+        .getElementById("os-2")
+        .setAttribute("style", "visibility:visible; opacity: 1;")'
+                >
+                  &nbsp;
+                </div>
+              </div>
               <p class="b-notice__text u-text_fs-sm">
                 Лицензия на осуществление обязательного страхования гражданской
                 ответственности владельцев транспортных средств
@@ -512,7 +677,8 @@
             </div>
           </div>
           <div
-            class="u-container_fraction-1of1 u-container_padding-top u-container_justify-center"
+            class="u-container_fraction-1of1 u-container_justify-center"
+            style="padding-top: 2rem"
           >
             <p
               class="u-container_fraction-1of2 u-text_ta-center u-text_fs-sm u-container_padding-left u-container_padding-right"

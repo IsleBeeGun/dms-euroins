@@ -33,14 +33,23 @@
       width: 100vw;
       height: 100vh;
     }
+    &_image {
+      width: 100vw;
+      height: 100vh;
+    }
   }
   &__exit {
+    text-align: center;
+    height: @fs-lg;
+    width: @fs-lg;
+    padding-bottom: @fs-lg / 2;
     cursor: pointer;
     position: absolute;
     top: 3px;
     right: @padding;
     font-weight: bold;
     font-size: @fs-lg;
+    background-color: @theme-color-5;
   }
   &__single {
     margin-top: 22vh;
@@ -48,6 +57,10 @@
     font-size: @fs-sm;
     padding-left: @padding;
     padding-right: @padding;
+  }
+  &__image {
+    width: 100%;
+    padding-bottom: 120vh;
   }
 }
 
@@ -59,6 +72,10 @@
       height: 50vh;
       &_form {
         width: 92vw;
+        height: 80vh;
+      }
+      &_image {
+        width: 80vw;
         height: 80vh;
       }
     }
@@ -78,6 +95,10 @@
         width: @screen-lg;
         height: 80vh;
       }
+      &_image {
+        width: 54vw;
+        height: 80vh;
+      }
     }
   }
 }
@@ -86,12 +107,18 @@
 @media screen and (min-width: @screen-xl) {
   .b-modal {
     &__exit {
+      height: @fs-xl;
+      width: @fs-xl;
       right: 2 * @padding;
       font-size: @fs-xl;
     }
     &__container {
       &_form {
         width: @screen-xl;
+        height: 80vh;
+      }
+      &_image {
+        width: 40vw;
         height: 80vh;
       }
     }

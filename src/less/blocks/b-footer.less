@@ -1,10 +1,12 @@
 @import "../variables.less";
 
 .b-footer {
+  border-top: 1px solid lightgray;
   display: flex;
   flex-flow: row wrap;
-  width: 100% - @ratio-nav-p;
+  width: 100%;
   padding-left: @padding;
+  padding-top: 2 * @padding;
   &__left-container {
     box-sizing: border-box;
     padding-left: @padding;
@@ -85,6 +87,7 @@
 /* Laptop */
 @media screen and (min-width: @screen-lg) {
   .b-footer {
+    padding-top: 3*@padding;
     &__left-container {
       padding-left: 4 * @padding;
       padding-bottom: 4 * @padding;
