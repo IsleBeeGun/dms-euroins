@@ -121,3 +121,22 @@
     }
   }
 }
+
+/* 4k */
+@media screen and (min-width: @screen-4k) {
+  .b-modal {
+    &__exit {
+      right: 2 * 1vw;
+      font-size: 2vw;
+    }
+    &__container {
+      &_form {
+        width: @screen-4k;
+        height: 80vh;
+      }
+      &_image {
+        width: 38vw;
+      }
+    }
+  }
+}

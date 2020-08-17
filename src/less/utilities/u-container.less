@@ -2107,3 +2107,568 @@
     }
   }
 }
+
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .u-container {
+    &_padding {
+      &-top {
+        padding-top: 6 * @padding;
+        &-no {
+          padding-top: 0;
+        }
+      }
+      &-right {
+        padding-right: 6 * @padding;
+      }
+      &-bottom {
+        padding-bottom: 6 * @padding;
+      }
+      &-left {
+        padding-left: 6 * @padding;
+      }
+      &-all {
+        padding: 6 * @padding;
+      }
+    }
+    &_margin {
+      &-top {
+        margin-top: 6 * @padding;
+        &-no {
+          margin-top: 0;
+        }
+      }
+      &-right {
+        margin-right: 6 * @padding;
+      }
+      &-bottom {
+        margin-bottom: 6 * @padding;
+      }
+      &-left {
+        margin-left: 6 * @padding;
+      }
+      &-all {
+        margin: 6 * @padding;
+      }
+    }
+    &_fraction {
+      &-1of1 {
+        min-width: @screen-4k * (1-@ratio-nav);
+        max-width: 100%;
+        &-fixed {
+          min-width: @screen-4k * (1-@ratio-nav);
+          max-width: @screen-4k * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k ;
+        }
+      }
+      &-1of2 {
+        min-width: @screen-4k / 2 * (1-@ratio-nav);
+        max-width: 50%;
+        &-fixed {
+          min-width: @screen-4k / 2 * (1-@ratio-nav);
+          max-width: @screen-4k / 2 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 2 ;
+        }
+      }
+      &-1of3 {
+        min-width: @screen-4k / 3 * (1-@ratio-nav);
+        max-width: 33.3%;
+        &-fixed {
+          min-width: @screen-4k / 3 * (1-@ratio-nav);
+          max-width: @screen-4k / 3 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 3 ;
+        }
+      }
+      &-1of4 {
+        min-width: @screen-4k / 4 * (1-@ratio-nav);
+        max-width: 25%;
+        &-fixed {
+          min-width: @screen-4k / 4 * (1-@ratio-nav);
+          max-width: @screen-4k / 4 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 4 ;
+        }
+      }
+      &-1of5 {
+        min-width: @screen-4k / 5 * (1-@ratio-nav);
+        max-width: 20%;
+        &-fixed {
+          min-width: @screen-4k / 5 * (1-@ratio-nav);
+          max-width: @screen-4k / 5 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 5 ;
+        }
+      }
+      &-1of6 {
+        min-width: @screen-4k / 6 * (1-@ratio-nav);
+        max-width: 16.6%;
+        &-fixed {
+          min-width: @screen-4k / 6 * (1-@ratio-nav);
+          max-width: @screen-4k / 6 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 6 ;
+        }
+      }
+      &-1of7 {
+        min-width: @screen-4k / 7 * (1-@ratio-nav);
+        max-width: 14.2%;
+        &-fixed {
+          min-width: @screen-4k / 7 * (1-@ratio-nav);
+          max-width: @screen-4k / 7 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 7 ;
+        }
+      }
+      &-1of8 {
+        min-width: @screen-4k / 8 * (1-@ratio-nav);
+        max-width: 12.5%;
+        &-fixed {
+          min-width: @screen-4k / 8 * (1-@ratio-nav);
+          max-width: @screen-4k / 8 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 8 ;
+        }
+      }
+      &-1of9 {
+        min-width: @screen-4k / 9 * (1-@ratio-nav);
+        max-width: 11.1%;
+        &-fixed {
+          min-width: @screen-4k / 9 * (1-@ratio-nav);
+          max-width: @screen-4k / 9 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 9 ;
+        }
+      }
+      &-1of10 {
+        min-width: @screen-4k / 10 * (1-@ratio-nav);
+        max-width: 10%;
+        &-fixed {
+          min-width: @screen-4k / 10 * (1-@ratio-nav);
+          max-width: @screen-4k / 10 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 10 ;
+        }
+      }
+      &-1of11 {
+        min-width: @screen-4k / 11 * (1-@ratio-nav);
+        max-width: 9%;
+        &-fixed {
+          min-width: @screen-4k / 11 * (1-@ratio-nav);
+          max-width: @screen-4k / 11 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 11 ;
+        }
+      }
+      &-1of12 {
+        min-width: @screen-4k / 12 * (1-@ratio-nav);
+        max-width: 8.3%;
+        &-fixed {
+          min-width: @screen-4k / 12 * (1-@ratio-nav);
+          max-width: @screen-4k / 12 * (1-@ratio-nav);
+        }
+        &-full {
+          min-width: @screen-4k / 12 ;
+        }
+      }
+      &-2of3 {
+        min-width: @screen-4k / 3 * (1-@ratio-nav) * 2 ;
+        max-width: 66.6%;
+        &-fixed {
+          min-width: @screen-4k / 3 * (1-@ratio-nav) * 2 ;
+          max-width: @screen-4k / 3 * (1-@ratio-nav) * 2 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 3) * 2 ;
+        }
+      }
+      &-2of5 {
+        min-width: @screen-4k / 5 * (1-@ratio-nav) * 2 ;
+        max-width: 40%;
+        &-fixed {
+          min-width: @screen-4k / 5 * (1-@ratio-nav) * 2 ;
+          max-width: @screen-4k / 5 * (1-@ratio-nav) * 2 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 5) * 2 ;
+        }
+      }
+      &-2of7 {
+        min-width: @screen-4k / 7 * (1-@ratio-nav) * 2 ;
+        max-width: 28.5%;
+        &-fixed {
+          min-width: @screen-4k / 7 * (1-@ratio-nav) * 2 ;
+          max-width: @screen-4k / 7 * (1-@ratio-nav) * 2 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 7) * 2;
+        }
+      }
+      &-2of9 {
+        min-width: @screen-4k / 9 * (1-@ratio-nav) * 2 ;
+        max-width: 22.2%;
+        &-fixed {
+          min-width: @screen-4k / 9 * (1-@ratio-nav) * 2 ;
+          max-width: @screen-4k / 9 * (1-@ratio-nav) * 2 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 9) * 2 ;
+        }
+      }
+      &-2of11 {
+        min-width: @screen-4k / 11 * (1-@ratio-nav) * 2 ;
+        max-width: 18.1%;
+        &-fixed {
+          min-width: @screen-4k / 11 * (1-@ratio-nav) * 2 ;
+          max-width: @screen-4k / 11 * (1-@ratio-nav) * 2 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 11) * 2 ;
+        }
+      }
+      &-3of4 {
+        min-width: @screen-4k / 4 * (1-@ratio-nav) * 3 ;
+        max-width: 75%;
+        &-fixed {
+          min-width: @screen-4k / 4 * (1-@ratio-nav) * 3 ;
+          max-width: @screen-4k / 4 * (1-@ratio-nav) * 3 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 4) * 3 ;
+        }
+      }
+      &-3of5 {
+        min-width: @screen-4k / 5 * (1-@ratio-nav) * 3 ;
+        max-width: 60%;
+        &-fixed {
+          min-width: @screen-4k / 5 * (1-@ratio-nav) * 3 ;
+          max-width: @screen-4k / 5 * (1-@ratio-nav) * 3 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 5) * 3 ;
+        }
+      }
+      &-3of7 {
+        min-width: @screen-4k / 7 * (1-@ratio-nav) * 3 ;
+        max-width: 42.8%;
+        &-fixed {
+          min-width: @screen-4k / 7 * (1-@ratio-nav) * 3 ;
+          max-width: @screen-4k / 7 * (1-@ratio-nav) * 3 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 7) * 3 ;
+        }
+      }
+      &-3of8 {
+        min-width: @screen-4k / 8 * (1-@ratio-nav) * 3 ;
+        max-width: 37.5%;
+        &-fixed {
+          min-width: @screen-4k / 8 * (1-@ratio-nav) * 3 ;
+          max-width: @screen-4k / 8 * (1-@ratio-nav) * 3 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 8) * 3 ;
+        }
+      }
+      &-3of10 {
+        min-width: @screen-4k / 10 * (1-@ratio-nav) * 3 ;
+        max-width: 30%;
+        &-fixed {
+          min-width: @screen-4k / 10 * (1-@ratio-nav) * 3 ;
+          max-width: @screen-4k / 10 * (1-@ratio-nav) * 3 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 10) * 3 ;
+        }
+      }
+      &-3of11 {
+        min-width: @screen-4k / 11 * (1-@ratio-nav) * 3 ;
+        max-width: 27.2%;
+        &-fixed {
+          min-width: @screen-4k / 11 * (1-@ratio-nav) * 3 ;
+          max-width: @screen-4k / 11 * (1-@ratio-nav) * 3 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 11) * 3 ;
+        }
+      }
+      &-4of5 {
+        min-width: @screen-4k / 5 * (1-@ratio-nav) * 4 ;
+        max-width: 80%;
+        &-fixed {
+          min-width: @screen-4k / 5 * (1-@ratio-nav) * 4 ;
+          max-width: @screen-4k / 5 * (1-@ratio-nav) * 4 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 5) * 5 ;
+        }
+      }
+      &-4of7 {
+        min-width: @screen-4k / 7 * (1-@ratio-nav) * 4 ;
+        max-width: 57.1%;
+        &-fixed {
+          min-width: @screen-4k / 7 * (1-@ratio-nav) * 4 ;
+          max-width: @screen-4k / 7 * (1-@ratio-nav) * 4 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 7) * 4 ;
+        }
+      }
+      &-4of9 {
+        min-width: @screen-4k / 9 * (1-@ratio-nav) * 4 ;
+        max-width: 44.4%;
+        &-fixed {
+          min-width: @screen-4k / 9 * (1-@ratio-nav) * 4 ;
+          max-width: @screen-4k / 9 * (1-@ratio-nav) * 4 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 9) * 4 ;
+        }
+      }
+      &-4of10 {
+        min-width: @screen-4k / 10 * (1-@ratio-nav) * 4 ;
+        max-width: 40%;
+        &-fixed {
+          min-width: @screen-4k / 10 * (1-@ratio-nav) * 4 ;
+          max-width: @screen-4k / 10 * (1-@ratio-nav) * 4 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 10) * 4 ;
+        }
+      }
+      &-4of11 {
+        min-width: @screen-4k / 11 * (1-@ratio-nav) * 4 ;
+        max-width: 36.3%;
+        &-fixed {
+          min-width: @screen-4k / 11 * (1-@ratio-nav) * 4 ;
+          max-width: @screen-4k / 11 * (1-@ratio-nav) * 4 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 11) * 4 ;
+        }
+      }
+      &-5of6 {
+        min-width: @screen-4k / 6 * (1-@ratio-nav) * 5 ;
+        max-width: 83.3%;
+        &-fixed {
+          min-width: @screen-4k / 6 * (1-@ratio-nav) * 5 ;
+          max-width: @screen-4k / 6 * (1-@ratio-nav) * 5 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 6) * 5 ;
+        }
+      }
+      &-5of7 {
+        min-width: @screen-4k / 7 * (1-@ratio-nav) * 5 ;
+        max-width: 71.4%;
+        &-fixed {
+          min-width: @screen-4k / 7 * (1-@ratio-nav) * 5 ;
+          max-width: @screen-4k / 7 * (1-@ratio-nav) * 5 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 7) * 5 ;
+        }
+      }
+      &-5of8 {
+        min-width: @screen-4k / 8 * (1-@ratio-nav) * 5 ;
+        max-width: 62.5%;
+        &-fixed {
+          min-width: @screen-4k / 8 * (1-@ratio-nav) * 5 ;
+          max-width: @screen-4k / 8 * (1-@ratio-nav) * 5 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 8) * 5 ;
+        }
+      }
+      &-5of9 {
+        min-width: @screen-4k / 9 * (1-@ratio-nav) * 5 ;
+        max-width: 55.5%;
+        &-fixed {
+          min-width: @screen-4k / 9 * (1-@ratio-nav) * 5 ;
+          max-width: @screen-4k / 9 * (1-@ratio-nav) * 5 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 9) * 5 ;
+        }
+      }
+      &-5of11 {
+        min-width: @screen-4k / 11 * (1-@ratio-nav) * 5 ;
+        max-width: 45.4%;
+        &-fixed {
+          min-width: @screen-4k / 11 * (1-@ratio-nav) * 5 ;
+          max-width: @screen-4k / 11 * (1-@ratio-nav) * 5 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 11) * 5 ;
+        }
+      }
+      &-5of12 {
+        min-width: @screen-4k / 12 * (1-@ratio-nav) * 5 ;
+        max-width: 41.6%;
+        &-fixed {
+          min-width: @screen-4k / 12 * (1-@ratio-nav) * 5 ;
+          max-width: @screen-4k / 12 * (1-@ratio-nav) * 5 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 12) * 5 ;
+        }
+      }
+      &-6of7 {
+        min-width: @screen-4k / 7 * (1-@ratio-nav) * 6 ;
+        max-width: 85.7%;
+        &-fixed {
+          min-width: @screen-4k / 7 * (1-@ratio-nav) * 6 ;
+          max-width: @screen-4k / 7 * (1-@ratio-nav) * 6 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 7) * 6 ;
+        }
+      }
+      &-6of11 {
+        min-width: @screen-4k / 11 * (1-@ratio-nav) * 6 ;
+        max-width: 54.4%;
+        &-fixed {
+          min-width: @screen-4k / 11 * (1-@ratio-nav) * 6 ;
+          max-width: @screen-4k / 11 * (1-@ratio-nav) * 6 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 11) * 6 ;
+        }
+      }
+      &-7of8 {
+        min-width: @screen-4k / 8 * (1-@ratio-nav) * 7 ;
+        max-width: 87.5%;
+        &-fixed {
+          min-width: @screen-4k / 8 * (1-@ratio-nav) * 7 ;
+          max-width: @screen-4k / 8 * (1-@ratio-nav) * 7 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 8) * 7 ;
+        }
+      }
+      &-7of9 {
+        min-width: @screen-4k / 9 * (1-@ratio-nav) * 7 ;
+        max-width: 77.7%;
+        &-fixed {
+          min-width: @screen-4k / 9 * (1-@ratio-nav) * 7 ;
+          max-width: @screen-4k / 9 * (1-@ratio-nav) * 7 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 9) * 7 ;
+        }
+      }
+      &-7of10 {
+        min-width: @screen-4k / 10 * (1-@ratio-nav) * 7 ;
+        max-width: 70%;
+        &-fixed {
+          min-width: @screen-4k / 10 * (1-@ratio-nav) * 7 ;
+          max-width: @screen-4k / 10 * (1-@ratio-nav) * 7 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 10) * 7 ;
+        }
+      }
+      &-7of11 {
+        min-width: @screen-4k / 11 * (1-@ratio-nav) * 7 ;
+        max-width: 63.6%;
+        &-fixed {
+          min-width: @screen-4k / 11 * (1-@ratio-nav) * 7 ;
+          max-width: @screen-4k / 11 * (1-@ratio-nav) * 7 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 11) * 7 ;
+        }
+      }
+      &-7of12 {
+        min-width: @screen-4k / 12 * (1-@ratio-nav) * 7 ;
+        max-width: 58.3%;
+        &-fixed {
+          min-width: @screen-4k / 12 * (1-@ratio-nav) * 7 ;
+          max-width: @screen-4k / 12 * (1-@ratio-nav) * 7 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 12) * 7 ;
+        }
+      }
+      &-8of9 {
+        min-width: @screen-4k / 9 * (1-@ratio-nav) * 8 ;
+        max-width: 88.8%;
+        &-fixed {
+          min-width: @screen-4k / 9 * (1-@ratio-nav) * 8 ;
+          max-width: @screen-4k / 9 * (1-@ratio-nav) * 8 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 9) * 8 ;
+        }
+      }
+      &-8of11 {
+        min-width: @screen-4k / 11 * (1-@ratio-nav) * 8 ;
+        max-width: 72.7%;
+        &-fixed {
+          min-width: @screen-4k / 11 * (1-@ratio-nav) * 8 ;
+          max-width: @screen-4k / 11 * (1-@ratio-nav) * 8 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 11) * 8 ;
+        }
+      }
+      &-9of10 {
+        min-width: @screen-4k / 10 * (1-@ratio-nav) * 9 ;
+        max-width: 90%;
+        &-fixed {
+          min-width: @screen-4k / 10 * (1-@ratio-nav) * 9 ;
+          max-width: @screen-4k / 10 * (1-@ratio-nav) * 9 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 10) * 9 ;
+        }
+      }
+      &-9of11 {
+        min-width: @screen-4k / 11 * (1-@ratio-nav) * 9 ;
+        max-width: 81.8%;
+        &-fixed {
+          min-width: @screen-4k / 11 * (1-@ratio-nav) * 9 ;
+          max-width: @screen-4k / 11 * (1-@ratio-nav) * 9 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 11) * 9 ;
+        }
+      }
+      &-10of11 {
+        min-width: @screen-4k / 11 * (1-@ratio-nav) * 10 ;
+        max-width: 90.9%;
+        &-fixed {
+          min-width: @screen-4k / 11 * (1-@ratio-nav) * 10 ;
+          max-width: @screen-4k / 11 * (1-@ratio-nav) * 10 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 11) * 10 ;
+        }
+      }
+      &-11of12 {
+        min-width: @screen-4k / 12 * (1-@ratio-nav) * 11 ;
+        max-width: 91.6%;
+        &-fixed {
+          min-width: @screen-4k / 12 * (1-@ratio-nav) * 11 ;
+          max-width: @screen-4k / 12 * (1-@ratio-nav) * 11 ;
+        }
+        &-full {
+          min-width: (@screen-4k / 12) * 11 ;
+        }
+      }
+    }
+  }
+}

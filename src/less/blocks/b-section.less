@@ -142,3 +142,33 @@
     }
   }
 }
+
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .b-section {
+    padding-bottom: 3 * @padding;
+    margin-top: 3 * @padding; // !!!!!!!!!!!!
+    &__title {
+      padding-top: 6 * @padding;
+      padding-left: 6 * @padding;
+      padding-right: 6 * @padding;
+      // Default (can be overriden with .u-text)
+      font-size: 2vw;
+      line-height: 2vw + 2vw / 10;
+      letter-spacing: 2vw / 32;
+      color: @theme-color-1;
+    }
+    &__subtitle {
+      padding-top: 6 * @padding;
+      padding-left: 6 * @padding;
+      padding-right: 6 * @padding;
+      // Default (can be overriden with .u-text)
+      font-size: 1.2vw;
+      line-height: 1.2vw + 1.2vw / 10;
+      letter-spacing: 1.2vw / 32;
+    }
+    &__container {
+      margin-top: @padding;
+    }
+  }
+}
