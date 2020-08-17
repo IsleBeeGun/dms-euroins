@@ -33,6 +33,213 @@
   </head>
 
   <body>
+
+    <div class="b-modal" id="sendFormModalOk">
+      <div class="b-modal__container">
+        <span class="b-modal__exit">&times;</span>
+        <p class="b-modal__single u-color_ct-blue">
+          Спасибо. <br />
+          Заявка успешно отправлена.
+        </p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector(
+            "#sendFormModalOk .b-modal__exit"
+          ).onclick = () => {
+            document
+              .querySelector("#sendFormModalOk")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
+    <div class="b-modal" id="sendFormModalError">
+      <div class="b-modal__container">
+        <span class="b-modal__exit">&times;</span>
+        <p class="b-modal__single u-color_ct-pink">
+          При отправлении произошла ошибка!
+        </p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector(
+            "#sendFormModalError .b-modal__exit"
+          ).onclick = () => {
+            document
+              .querySelector("#sendFormModalError")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
+    <div class="b-modal" id="callFormModal">
+      <div class="b-modal__container b-modal__container_form">
+        <span class="b-modal__exit">&times;</span>
+        <h2
+          class="u-text_fs-lg u-text_fw-bold u-color_ct-blue u-container_margin-top"
+        >
+          Заказ обратного звонка
+        </h2>
+        <form
+          class="b-form u-container_margin-top-no u-container_padding-right"
+          id="callForm"
+        >
+          <div
+            class="u-container_fraction-1of1-fixed"
+            style="
+              display: inline-flex;
+              flex-flow: row wrap;
+              justify-content: flex-start;
+            "
+          >
+            <div class="u-container_fraction-3of5 u-container_align-start">
+              <div class="b-form__choice-row b-form__choice-row_special">
+                <span
+                  class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
+                  >Ваше имя*:</span
+                >
+                <div class="u-container_fraction-2of5 u-container_padding-left">
+                  <input
+                    class="b-form__choice-field u-text_fs-sm"
+                    type="text"
+                    name="name"
+                    id="callForm_name"
+                    placeholder="Ваша Фамилия, Имя, Отчество"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="b-form__choice-row b-form__choice-row_special">
+                <span
+                  class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
+                  >Ваш  регион*:</span
+                >
+                <div class="u-container_fraction-2of5 u-container_padding-left">
+                  <select
+                    name="region"
+                    class="b-form__choice-field b-form__choice-field_selector u-text_fs-sm"
+                    id="region-selector-call"
+                  >
+                  </select>
+                </div>
+              </div>
+              <div class="b-form__choice-row b-form__choice-row_special">
+                <span
+                  class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
+                  >Телефон*:</span
+                >
+                <div class="u-container_fraction-2of5 u-container_padding-left">
+                  <input
+                    class="b-form__choice-field u-text_fs-sm"
+                    type="tel"
+                    name="phone"
+                    id="callForm_phone"
+                    placeholder="Ваш номер телефона"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="b-form__choice-row b-form__choice-row_special u-container_fraction-2of5 u-container_justify-start"
+            >
+              <span
+                class="b-form__choice-title u-text_fs-sm u-container_padding-left u-container_fraction-2of5"
+                style="padding-bottom: 0.5rem; min-height: 3rem;"
+                >Время звонка<br />(с 10:00 до 18:00)</span
+              >
+              <span
+                class="b-form__choice-title u-text_fs-sm u-container_padding-left u-container_fraction-2of5"
+                style="padding-bottom: 0.5rem; min-height: 1rem;"
+                >Со скольки можно звонить:</span
+              >
+              <input
+                class="b-form__choice-field u-text_fs-sm u-container_margin-left u-container_margin-right u-container_fraction-1of4 u-container_fraction-1of4-fixed"
+                type="time"
+                name="timeFrom"
+                id="callForm_timeFrom"
+                placeholder="Ваша электронная почта"
+                required
+              />
+              <span
+                class="b-form__choice-title u-text_fs-sm u-container_padding-left u-container_fraction-2of5"
+                style="padding-bottom: 0.5rem; min-height: 1rem;"
+                >До скольки можно звонить:</span
+              >
+              <input
+                class="b-form__choice-field u-text_fs-sm u-container_margin-left u-container_margin-right u-container_fraction-1of4 u-container_fraction-1of4-fixed"
+                type="time"
+                name="timeTo"
+                id="callForm_timeTo"
+                placeholder="Ваша электронная почта"
+                required
+              />
+            </div>
+          </div>
+          <div
+            class="b-form__choice-row b-form__choice-row_special u-container_fraction-1of1"
+          >
+            <span
+              class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5"
+              >&nbsp;</span
+            >
+            <label
+              class="b-form__choice-option b-form__choice-option_special u-text_fs-sm u-container_padding-left u-container_fraction-3of5 u-container_fraction-3of5-fixed u-text_ta-justify"
+            >
+              <input
+                class="b-form__choice-checkbox-hidden"
+                type="checkbox"
+                name="agreement"
+                id="callForm_agreement"
+                value="Условия приняты"
+                required
+              />
+              <div class="b-form__choice-checkbox"></div>
+              <p>
+                C
+                <a
+                  href="https://www.euro-ins.ru/wp-content/uploads/pictures/%d0%9f%d0%be%d0%bb%d0%b8%d1%82%d0%b8%d0%ba%d0%b0-%d0%9e%d0%9e%d0%9e-%d0%a0%d0%a1%d0%9e-%d0%95%d0%92%d0%a0%d0%9e%d0%98%d0%9d%d0%a1-%d0%b2-%d0%be%d1%82%d0%bd%d0%be%d1%88%d0%b5%d0%bd%d0%b8%d0%b8-%d0%be%d0%b1%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d0%b8-%d0%b8-%d0%b7%d0%b0%d1%89%d0%b8%d1%82%d1%8b-%d0%bf%d0%b5%d1%80%d1%81%d0%be%d0%bd%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d1%85-%d0%b4%d0%b0%d0%bd%d0%bd%d1%8b%d1%85.pdf"
+                  >политикой обработки и защиты персональных данных</a
+                >
+                ознакомлен. <br />
+                В соответствии с законом «О персональных данных» от 27.07.2006.
+                N 152-ФЗ даю свое согласие на их обработку, включая все операции
+                с персональными данными, предусмотренные п.З ст.З указанного
+                закона.
+              </p></label
+            >
+          </div>
+          <div class="u-container_justify-center" style="width: 100%;">
+            <input
+              class="b-button b-button_pink u-container_margin-left u-container_margin-bottom"
+              type="submit"
+              value="Отправить заявку"
+            />
+          </div>
+        </form>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          setTimeout(() => {
+            document
+              .getElementById("callFormModal")
+              .setAttribute("style", "visibility:visible; opacity: 1;");
+          }, 6000);
+
+          document.querySelector(
+            "#callFormModal .b-modal__exit"
+          ).onclick = () => {
+            document
+              .querySelector("#callFormModal")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
     <div class="b-burger">
       <div class="b-burger__menu-toggle">
         <input type="checkbox" class="b-burger__toggle-input" />
@@ -647,12 +854,10 @@
               * звёздочкой обозначены обязательные для заполнения поля
             </p>
           </header>
+
           <form
             class="b-form u-container_margin-top u-container_padding-right"
-            action="sendmail.php?com=order&ref="
-            method="POST"
-            enctype="application/x-www-form-urlencoded"
-            accept-charset="utf-8"
+            id="orderForm"
           >
             <div
               class="b-form__choice-row u-container_fraction-1of1 u-container_align-start"
@@ -667,6 +872,7 @@
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
                   name="programs[]"
+                  id="orderForm_programs_1"
                   value="Поликлиника"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -678,6 +884,7 @@
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
                   name="programs[]"
+                  id="orderForm_programs_2"
                   value="Помощь на дому"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -689,6 +896,7 @@
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
                   name="programs[]"
+                  id="orderForm_programs_3"
                   value="Стоматология"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -700,6 +908,7 @@
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
                   name="programs[]"
+                  id="orderForm_programs_4"
                   value="Скорая помощь"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -718,7 +927,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="genders[]"
+                  name="insured[]"
+                  id="orderForm_insured_1"
                   value="Мужчина"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -729,7 +939,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="genders[]"
+                  name="insured[]"
+                  id="orderForm_insured_2"
                   value="Женщина"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -740,7 +951,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="genders[]"
+                  name="insured[]"
+                  id="orderForm_insured_3"
                   value="Ребёнок"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -759,7 +971,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="prices[]"
+                  name="levels[]"
+                  id="orderForm_levels_1"
                   value="Эконом"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -770,7 +983,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="prices[]"
+                  name="levels[]"
+                  id="orderForm_levels_2"
                   value="Бизнес"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -781,7 +995,8 @@
                 ><input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="prices[]"
+                  name="levels[]"
+                  id="orderForm_levels_3"
                   value="VIP"
                 />
                 <div class="b-form__choice-checkbox"></div>
@@ -809,9 +1024,26 @@
                       class="b-form__choice-field u-text_fs-sm"
                       type="text"
                       name="name"
-                      placeholder="Укажите Вашу фамилию, имя, отчество"
+                      id="orderForm_name"
+                      placeholder="Ваша Фамилия, Имя, Отчество"
                       required
                     />
+                  </div>
+                </div>
+                <div class="b-form__choice-row b-form__choice-row_special">
+                  <span
+                    class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
+                    >Ваш  регион*:</span
+                  >
+                  <div
+                    class="u-container_fraction-2of5 u-container_padding-left"
+                  >
+                    <select
+                      name="region"
+                      class="b-form__choice-field b-form__choice-field_selector u-text_fs-sm"
+                      id="region-selector"
+                    >
+                    </select>
                   </div>
                 </div>
                 <div class="b-form__choice-row b-form__choice-row_special">
@@ -825,8 +1057,9 @@
                     <input
                       class="b-form__choice-field u-text_fs-sm"
                       type="tel"
-                      name="tel"
-                      placeholder="Укажите Ваш номер телефона"
+                      name="phone"
+                      id="orderForm_phone"
+                      placeholder="Ваш номер телефона"
                       required
                     />
                   </div>
@@ -843,7 +1076,8 @@
                       class="b-form__choice-field u-text_fs-sm"
                       type="email"
                       name="email"
-                      placeholder="Укажите Вашу электронную почту"
+                      id="orderForm_email"
+                      placeholder="Ваша электронная почта"
                       required
                     />
                   </div>
@@ -859,9 +1093,10 @@
                 <textarea
                   spellcheck
                   class="b-form__choice-field u-container_margin-left u-text_fs-sm"
-                  placeholder="Оставьте дополнительные пожелания к Вашей заявке"
-                  name="info"
-                  style="min-height: 4.7rem !important;"
+                  placeholder="Дополнительная информация к Вашей заявке"
+                  name="comment"
+                  id="orderForm_comment"
+                  style="min-height: 9rem !important;"
                 ></textarea>
               </div>
             </div>
@@ -878,7 +1113,8 @@
                 <input
                   class="b-form__choice-checkbox-hidden"
                   type="checkbox"
-                  name="gdpr"
+                  name="agreement"
+                  id="orderForm_agreement"
                   value="Условия приняты"
                   required
                 />
@@ -1200,5 +1436,139 @@
     </div>
     <link rel="stylesheet" href="styles.bundle.css" />
     <script src="js/index.bundle.js"></script>
+    <script>
+      function sendHttpRequest(method, url, data) {
+        const promise = new Promise((resolve, reject) => {
+          const xhr = new XMLHttpRequest();
+          xhr.open(method, url);
+          xhr.setRequestHeader("Content-Type", "application/json");
+          xhr.responseType = "json";
+          xhr.onload = function () {
+            if ((xhr.status >= 200) & (xhr.status < 300)) {
+              resolve(xhr.response);
+            } else {
+              reject(new Error("Проблема с сервером"));
+            }
+          };
+          xhr.onerror = function () {
+            reject(new Error("Проблема с интренет-соединением"));
+          };
+          xhr.send(JSON.stringify(data));
+        });
+        return promise;
+      }
+      function sendOrder() {
+        let programs = [];
+        document.getElementById("orderForm_programs_1").checked
+          ? programs.push(document.getElementById("orderForm_programs_1").value)
+          : null;
+        document.getElementById("orderForm_programs_2").checked
+          ? programs.push(document.getElementById("orderForm_programs_2").value)
+          : null;
+        document.getElementById("orderForm_programs_3").checked
+          ? programs.push(document.getElementById("orderForm_programs_3").value)
+          : null;
+        document.getElementById("orderForm_programs_4").checked
+          ? programs.push(document.getElementById("orderForm_programs_4").value)
+          : null;
+        let insured = [];
+        document.getElementById("orderForm_insured_1").checked
+          ? insured.push(document.getElementById("orderForm_insured_1").value)
+          : null;
+        document.getElementById("orderForm_insured_2").checked
+          ? insured.push(document.getElementById("orderForm_insured_2").value)
+          : null;
+        document.getElementById("orderForm_insured_3").checked
+          ? insured.push(document.getElementById("orderForm_insured_3").value)
+          : null;
+        let levels = [];
+        document.getElementById("orderForm_levels_1").checked
+          ? levels.push(document.getElementById("orderForm_levels_1").value)
+          : null;
+        document.getElementById("orderForm_levels_2").checked
+          ? levels.push(document.getElementById("orderForm_levels_2").value)
+          : null;
+        document.getElementById("orderForm_levels_3").checked
+          ? levels.push(document.getElementById("orderForm_levels_3").value)
+          : null;
+
+        let orderData = {
+          source: "dms.euro-ins.ru",
+          name: document.getElementById("orderForm_name").value,
+          phone: document.getElementById("orderForm_phone").value,
+          email: document.getElementById("orderForm_email").value,
+          comment: document.getElementById("orderForm_comment").value,
+          region: document.getElementById("region-selector").value,
+          agreement: document.getElementById("orderForm_agreement").checked,
+          programs,
+          insured,
+          levels,
+        };
+
+        sendHttpRequest(
+          "POST",
+          "https://jsonplaceholder.typicode.com/posts",
+          orderData
+        )
+          .then((res) => {
+            console.log(res);
+            document
+              .getElementById("sendFormModalOk")
+              .setAttribute("style", "visibility:visible; opacity: 1;");
+          })
+          .catch((rej) => {
+            console.log(rej);
+            document
+              .getElementById("sendFormModalError")
+              .setAttribute("style", "visibility:visible; opacity: 1;");
+          });
+      }
+
+      document.getElementById("orderForm").onsubmit = async (event) => {
+        event.preventDefault();
+        sendOrder();
+      };
+
+      function sendCall() {
+        let callData = {
+          source: "dms.euro-ins.ru",
+          name: document.getElementById("callForm_name").value,
+          phone: document.getElementById("callForm_phone").value,
+          region: document.getElementById("region-selector-call").value,
+          agreement: document.getElementById("callForm_agreement").checked,
+          timeFrom: document.getElementById("callForm_timeFrom").value,
+          timeTo: document.getElementById("callForm_timeTo").value,
+        };
+
+        sendHttpRequest(
+          "POST",
+          "https://jsonplaceholder.typicode.com/posts",
+          callData
+        )
+          .then((res) => {
+            console.log(res);
+            document
+              .querySelector("#callFormModal")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+            document
+              .getElementById("sendFormModalOk")
+              .setAttribute("style", "visibility:visible; opacity: 1;");
+          })
+          .catch((rej) => {
+            console.log(rej);
+            document
+              .querySelector("#callFormModal")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+            document
+              .getElementById("sendFormModalError")
+              .setAttribute("style", "visibility:visible; opacity: 1;");
+          });
+      }
+
+      document.getElementById("callForm").onsubmit = async (event) => {
+        event.preventDefault();
+        sendCall();
+      };
+    </script>
   </body>
 </html>
