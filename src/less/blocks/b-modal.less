@@ -39,17 +39,12 @@
     }
   }
   &__exit {
-    text-align: center;
-    height: @fs-lg;
-    width: @fs-lg;
-    padding-bottom: @fs-lg / 2;
     cursor: pointer;
     position: absolute;
     top: 3px;
     right: @padding;
     font-weight: bold;
     font-size: @fs-lg;
-    background-color: @theme-color-5;
   }
   &__single {
     margin-top: 22vh;
@@ -60,13 +55,19 @@
   }
   &__image {
     width: 100%;
-    padding-bottom: 120vh;
+    padding-bottom: 75vh;
+    margin-top: 10vh;
   }
 }
 
 /* Tablet */
 @media screen and (min-width: @screen-md) {
   .b-modal {
+    &__image {
+      margin-top: 0;
+      width: 100%;
+      padding-bottom: 80vh;
+    }
     &__container {
       width: 50vw;
       height: 50vh;
@@ -75,8 +76,8 @@
         height: 80vh;
       }
       &_image {
-        width: 80vw;
-        height: 80vh;
+        width: 60vw;
+        height: 82vh;
       }
     }
     &__single {
@@ -96,8 +97,7 @@
         height: 80vh;
       }
       &_image {
-        width: 54vw;
-        height: 80vh;
+        width: 50vw;
       }
     }
   }
@@ -107,8 +107,6 @@
 @media screen and (min-width: @screen-xl) {
   .b-modal {
     &__exit {
-      height: @fs-xl;
-      width: @fs-xl;
       right: 2 * @padding;
       font-size: @fs-xl;
     }
@@ -118,8 +116,7 @@
         height: 80vh;
       }
       &_image {
-        width: 40vw;
-        height: 80vh;
+        width: 38vw;
       }
     }
   }

@@ -5,11 +5,9 @@
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  padding-left: @padding;
   padding-top: 2 * @padding;
   &__left-container {
     box-sizing: border-box;
-    padding-left: @padding;
     padding-bottom: @padding;
     min-width: 100%;
     max-width: 100%;
@@ -21,6 +19,7 @@
   }
   &__logo {
     width: 224px;
+    margin-top: @padding;
   }
   &__logo-container {
     text-align: center;
@@ -58,7 +57,7 @@
       text-align: left;
     }
     &__left-container {
-      padding-left: 2 * @padding;
+      // padding-left: 2 * @padding;
       padding-bottom: 2 * @padding;
       min-width: 30%;
       max-width: 30%;
@@ -78,7 +77,7 @@
   .b-footer {
     padding-left: @ratio-nav-p;
     &__left-container {
-      padding-left: 3 * @padding;
+      // padding-left: 3 * @padding;
       padding-bottom: 3 * @padding;
     }
   }
@@ -89,7 +88,7 @@
   .b-footer {
     padding-top: 3*@padding;
     &__left-container {
-      padding-left: 4 * @padding;
+      // padding-left: 4 * @padding;
       padding-bottom: 4 * @padding;
     }
   }
@@ -99,7 +98,7 @@
 @media screen and (min-width: @screen-xl) {
   .b-footer {
     &__left-container {
-      padding-left: 5 * @padding;
+      // padding-left: 5 * @padding;
       padding-bottom: 5 * @padding;
     }
   }

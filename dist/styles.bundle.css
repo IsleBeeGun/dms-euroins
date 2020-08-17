@@ -556,32 +556,32 @@
 .sl-1 {
   background: url(img/sl-1.jpg) no-repeat center center !important;
   background-origin: border-box !important;
-  background-size: cover !important;
+  background-size: contain !important;
 }
 .sl-2 {
   background: url(img/sl-2.jpg) no-repeat center center !important;
   background-origin: border-box !important;
-  background-size: cover !important;
+  background-size: contain !important;
 }
 .si-1 {
   background: url(img/si-1.jpg) no-repeat center center !important;
   background-origin: border-box !important;
-  background-size: cover !important;
+  background-size: contain !important;
 }
 .si-2 {
   background: url(img/si-2.jpg) no-repeat center center !important;
   background-origin: border-box !important;
-  background-size: cover !important;
+  background-size: contain !important;
 }
 .os-1 {
   background: url(img/os-1.jpg) no-repeat center center !important;
   background-origin: border-box !important;
-  background-size: cover !important;
+  background-size: contain !important;
 }
 .os-2 {
   background: url(img/os-2.jpg) no-repeat center center !important;
   background-origin: border-box !important;
-  background-size: cover !important;
+  background-size: contain !important;
 }
 /* Mobile */
 @media screen and (min-width: 28rem) {
@@ -789,17 +789,12 @@
   height: 100vh;
 }
 .b-modal__exit {
-  text-align: center;
-  height: 2.1rem;
-  width: 2.1rem;
-  padding-bottom: 1.05rem;
   cursor: pointer;
   position: absolute;
   top: 3px;
   right: 1rem;
   font-weight: bold;
   font-size: 2.1rem;
-  background-color: #ffffff;
 }
 .b-modal__single {
   margin-top: 22vh;
@@ -810,10 +805,16 @@
 }
 .b-modal__image {
   width: 100%;
-  padding-bottom: 120vh;
+  padding-bottom: 75vh;
+  margin-top: 10vh;
 }
 /* Tablet */
 @media screen and (min-width: 44rem) {
+  .b-modal__image {
+    margin-top: 0;
+    width: 100%;
+    padding-bottom: 80vh;
+  }
   .b-modal__container {
     width: 50vw;
     height: 50vh;
@@ -823,8 +824,8 @@
     height: 80vh;
   }
   .b-modal__container_image {
-    width: 80vw;
-    height: 80vh;
+    width: 60vw;
+    height: 82vh;
   }
   .b-modal__single {
     font-size: 1.3rem;
@@ -839,15 +840,12 @@
     height: 80vh;
   }
   .b-modal__container_image {
-    width: 54vw;
-    height: 80vh;
+    width: 50vw;
   }
 }
 /* Desktop */
 @media screen and (min-width: 101rem) {
   .b-modal__exit {
-    height: 3.2rem;
-    width: 3.2rem;
     right: 2rem;
     font-size: 3.2rem;
   }
@@ -856,8 +854,7 @@
     height: 80vh;
   }
   .b-modal__container_image {
-    width: 40vw;
-    height: 80vh;
+    width: 38vw;
   }
 }
 .ul-visible {
@@ -1770,7 +1767,7 @@
           transform: translateY(50%);
   margin: 5px;
   width: 50%;
-  padding-bottom: 65%;
+  padding-bottom: 40%;
 }
 .b-notice__index-container {
   display: -webkit-inline-box;
@@ -1857,6 +1854,9 @@
   .b-notice__index {
     font-size: 0.8rem;
   }
+  .b-notice__image {
+    padding-bottom: 45%;
+  }
   .b-notice__text {
     font-size: 1rem;
     line-height: 1.1rem;
@@ -1893,6 +1893,9 @@
   }
   .b-notice__index {
     font-size: 1rem;
+  }
+  .b-notice__image {
+    padding-bottom: 55%;
   }
   .b-notice__text_extrawide {
     min-width: 190%;
@@ -2413,13 +2416,11 @@
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   width: 100%;
-  padding-left: 1rem;
   padding-top: 2rem;
 }
 .b-footer__left-container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 1rem;
   padding-bottom: 1rem;
   min-width: 100%;
   max-width: 100%;
@@ -2432,6 +2433,7 @@
 }
 .b-footer__logo {
   width: 224px;
+  margin-top: 1rem;
 }
 .b-footer__logo-container {
   text-align: center;
@@ -2468,7 +2470,6 @@
     text-align: left;
   }
   .b-footer__left-container {
-    padding-left: 2rem;
     padding-bottom: 2rem;
     min-width: 30%;
     max-width: 30%;
@@ -2487,7 +2488,6 @@
     padding-left: 8%;
   }
   .b-footer__left-container {
-    padding-left: 3rem;
     padding-bottom: 3rem;
   }
 }
@@ -2497,14 +2497,12 @@
     padding-top: 3rem;
   }
   .b-footer__left-container {
-    padding-left: 4rem;
     padding-bottom: 4rem;
   }
 }
 /* Desktop */
 @media screen and (min-width: 101rem) {
   .b-footer__left-container {
-    padding-left: 5rem;
     padding-bottom: 5rem;
   }
 }
