@@ -697,6 +697,111 @@
     min-height: 400px;
   }
 }
+.b-modal {
+  visibility: hidden;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  background-color: rgba(39, 36, 116, 0.75);
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: visibility 0.1s ease-in, opacity 0.2s ease-in;
+  -o-transition: visibility 0.1s ease-in, opacity 0.2s ease-in;
+  transition: visibility 0.1s ease-in, opacity 0.2s ease-in;
+}
+.b-modal__container {
+  overflow-y: auto;
+  min-height: auto;
+  font-family: Lato, sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #ffffff;
+  width: 80vw;
+  height: 80vh;
+  border: 1px solid #272474;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px #272474;
+          box-shadow: 0 0 10px #272474;
+}
+.b-modal__container_form {
+  width: 100vw;
+  height: 100vh;
+}
+.b-modal__exit {
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  right: 1rem;
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+.b-modal__single {
+  text-align: center;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* Tablet */
+@media screen and (min-width: 44rem) {
+  .b-modal__container {
+    width: 50vw;
+    height: 50vh;
+  }
+  .b-modal__container_form {
+    width: 44rem;
+    height: 80vh;
+  }
+  .b-modal__single {
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/* Laptop */
+@media screen and (min-width: 67rem) {
+  .b-modal__container_form {
+    width: 67rem;
+    height: 80vh;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 101rem) {
+  .b-modal__exit {
+    right: 2rem;
+    font-size: 3.2rem;
+  }
+  .b-modal__container_form {
+    width: 101rem;
+    height: 80vh;
+  }
+}
 .ul-visible {
   display: block;
   position: relative;
@@ -1880,6 +1985,9 @@
   padding-top: 0;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.b-form__choice-field_selector .ss-single-selected .placeholder {
+  color: rgba(0, 0, 0, 0.75);
 }
 .b-form__choice-field_selector .ss-content {
   border-color: #272474;

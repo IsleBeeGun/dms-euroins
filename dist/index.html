@@ -30,6 +30,212 @@
   </head>
 
   <body>
+    <div class="b-modal" id="sendFormModalOk">
+      <div class="b-modal__container">
+        <span class="b-modal__exit">&times;</span>
+        <p class="b-modal__single u-color_ct-blue">
+          Спасибо. <br />
+          Заявка на страхование отправлена
+        </p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector(
+            "#sendFormModalOk .b-modal__exit"
+          ).onclick = () => {
+            document
+              .querySelector("#sendFormModalOk")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
+    <div class="b-modal" id="sendFormModalError">
+      <div class="b-modal__container">
+        <span class="b-modal__exit">&times;</span>
+        <p class="b-modal__single u-color_ct-pink">
+          При отправлении произошла ошибка!
+        </p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector(
+            "#sendFormModalError .b-modal__exit"
+          ).onclick = () => {
+            document
+              .querySelector("#sendFormModalError")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
+    <div class="b-modal" id="callFormModal">
+      <div class="b-modal__container b-modal__container_form">
+        <span class="b-modal__exit">&times;</span>
+        <h2
+          class="u-text_fs-lg u-text_fw-bold u-color_ct-blue u-container_margin-top"
+        >
+          Заказ обратного звонка
+        </h2>
+        <form
+          class="b-form u-container_margin-top-no u-container_padding-right"
+          id="callForm"
+        >
+          <div
+            class="u-container_fraction-1of1-fixed"
+            style="
+              display: inline-flex;
+              flex-flow: row wrap;
+              justify-content: flex-start;
+            "
+          >
+            <div class="u-container_fraction-3of5 u-container_align-start">
+              <div class="b-form__choice-row b-form__choice-row_special">
+                <span
+                  class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
+                  >Ваше имя*:</span
+                >
+                <div class="u-container_fraction-2of5 u-container_padding-left">
+                  <input
+                    class="b-form__choice-field u-text_fs-sm"
+                    type="text"
+                    name="name"
+                    id="callForm_name"
+                    placeholder="Ваша Фамилия, Имя, Отчество"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="b-form__choice-row b-form__choice-row_special">
+                <span
+                  class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
+                  >Ваш  регион*:</span
+                >
+                <div class="u-container_fraction-2of5 u-container_padding-left">
+                  <select
+                    name="region"
+                    class="b-form__choice-field b-form__choice-field_selector u-text_fs-sm"
+                    id="region-selector-call"
+                  >
+                  </select>
+                </div>
+              </div>
+              <div class="b-form__choice-row b-form__choice-row_special">
+                <span
+                  class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5 u-container_padding-left"
+                  >Телефон*:</span
+                >
+                <div class="u-container_fraction-2of5 u-container_padding-left">
+                  <input
+                    class="b-form__choice-field u-text_fs-sm"
+                    type="tel"
+                    name="phone"
+                    id="callForm_phone"
+                    placeholder="Ваш номер телефона"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="b-form__choice-row b-form__choice-row_special u-container_fraction-2of5 u-container_justify-start"
+            >
+              <span
+                class="b-form__choice-title u-text_fs-sm u-container_padding-left u-container_fraction-1of2"
+                style="padding-bottom: 0.5rem; min-height: 3rem;"
+                >Время звонка<br />(с 10:00 до 18:00)</span
+              >
+              <span
+                class="b-form__choice-title u-text_fs-sm u-container_padding-left u-container_fraction-1of2"
+                style="padding-bottom: 0.5rem; min-height: 1rem;"
+                >Со скольки можно звонить:</span
+              >
+              <input
+                class="b-form__choice-field u-text_fs-sm u-container_margin-left u-container_margin-right u-container_fraction-1of4 u-container_fraction-1of4-fixed"
+                type="time"
+                name="timeFrom"
+                id="callForm_timeFrom"
+                placeholder="Ваша электронная почта"
+                required
+              />
+              <span
+                class="b-form__choice-title u-text_fs-sm u-container_padding-left u-container_fraction-1of2"
+                style="padding-bottom: 0.5rem; min-height: 1rem;"
+                >До скольки можно звонить:</span
+              >
+              <input
+                class="b-form__choice-field u-text_fs-sm u-container_margin-left u-container_margin-right u-container_fraction-1of4 u-container_fraction-1of4-fixed"
+                type="time"
+                name="timeTo"
+                id="callForm_timeTo"
+                placeholder="Ваша электронная почта"
+                required
+              />
+            </div>
+          </div>
+          <div
+            class="b-form__choice-row b-form__choice-row_special u-container_fraction-1of1"
+          >
+            <span
+              class="b-form__choice-title u-text_fs-sm u-container_fraction-1of5"
+              >&nbsp;</span
+            >
+            <label
+              class="b-form__choice-option b-form__choice-option_special u-text_fs-sm u-container_padding-left u-container_fraction-3of5 u-container_fraction-3of5-fixed u-text_ta-justify"
+            >
+              <input
+                class="b-form__choice-checkbox-hidden"
+                type="checkbox"
+                name="agreement"
+                id="callForm_agreement"
+                value="Условия приняты"
+                required
+              />
+              <div class="b-form__choice-checkbox"></div>
+              <p>
+                C
+                <a
+                  href="https://www.euro-ins.ru/wp-content/uploads/pictures/%d0%9f%d0%be%d0%bb%d0%b8%d1%82%d0%b8%d0%ba%d0%b0-%d0%9e%d0%9e%d0%9e-%d0%a0%d0%a1%d0%9e-%d0%95%d0%92%d0%a0%d0%9e%d0%98%d0%9d%d0%a1-%d0%b2-%d0%be%d1%82%d0%bd%d0%be%d1%88%d0%b5%d0%bd%d0%b8%d0%b8-%d0%be%d0%b1%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d0%b8-%d0%b8-%d0%b7%d0%b0%d1%89%d0%b8%d1%82%d1%8b-%d0%bf%d0%b5%d1%80%d1%81%d0%be%d0%bd%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d1%85-%d0%b4%d0%b0%d0%bd%d0%bd%d1%8b%d1%85.pdf"
+                  >политикой обработки и защиты персональных данных</a
+                >
+                ознакомлен. <br />
+                В соответствии с законом «О персональных данных» от 27.07.2006.
+                N 152-ФЗ даю свое согласие на их обработку, включая все операции
+                с персональными данными, предусмотренные п.З ст.З указанного
+                закона.
+              </p></label
+            >
+          </div>
+          <div class="u-container_justify-center" style="width: 100%;">
+            <input
+              class="b-button b-button_pink u-container_margin-left u-container_margin-bottom"
+              type="submit"
+              value="Отправить заявку"
+            />
+          </div>
+        </form>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          setTimeout(() => {
+            document
+              .getElementById("callFormModal")
+              .setAttribute("style", "visibility:visible; opacity: 1;");
+          }, 2000);
+
+          document.querySelector(
+            "#callFormModal .b-modal__exit"
+          ).onclick = () => {
+            document
+              .querySelector("#callFormModal")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+          };
+        });
+      </script>
+    </div>
+
     <div class="b-burger">
       <div class="b-burger__menu-toggle">
         <input type="checkbox" class="b-burger__toggle-input" />
@@ -604,7 +810,7 @@
           </div>
         </section>
 
-        <section class="b-section bg-feedback" id="orderForm">
+        <section class="b-section bg-feedback">
           <header class="b-section__header">
             <h2 class="b-section__title">
               Заполнить и отправить заявку на медицинское страхование
@@ -614,7 +820,10 @@
             </p>
           </header>
 
-          <form class="b-form u-container_margin-top u-container_padding-right">
+          <form
+            class="b-form u-container_margin-top u-container_padding-right"
+            id="orderForm"
+          >
             <div
               class="b-form__choice-row u-container_fraction-1of1 u-container_align-start"
             >
@@ -1552,16 +1761,62 @@
         )
           .then((res) => {
             console.log(res);
-            console.log("Modal for OK appears");
+            document
+              .getElementById("sendFormModalOk")
+              .setAttribute("style", "visibility:visible; opacity: 1;");
           })
           .catch((rej) => {
             console.log(rej);
-            console.log("Modal for ERROR appears");
+            document
+              .getElementById("sendFormModalError")
+              .setAttribute("style", "visibility:visible; opacity: 1;");
           });
       }
+
       document.getElementById("orderForm").onsubmit = async (event) => {
         event.preventDefault();
         sendOrder();
+      };
+
+      function sendCall() {
+        let callData = {
+          source: "dms.euro-ins.ru",
+          name: document.getElementById("callForm_name").value,
+          phone: document.getElementById("callForm_phone").value,
+          region: document.getElementById("region-selector-call").value,
+          agreement: document.getElementById("callForm_agreement").checked,
+          timeFrom: document.getElementById("callForm_timeFrom").value,
+          timeTo: document.getElementById("callForm_timeTo").value,
+        };
+
+        sendHttpRequest(
+          "POST",
+          "https://jsonplaceholder.typicode.com/posts",
+          callData
+        )
+          .then((res) => {
+            console.log(res);
+            document
+              .querySelector("#callFormModal")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+            document
+              .getElementById("sendFormModalOk")
+              .setAttribute("style", "visibility:visible; opacity: 1;");
+          })
+          .catch((rej) => {
+            console.log(rej);
+            document
+              .querySelector("#callFormModal")
+              .setAttribute("style", "visibility:hidden; opacity: 0;");
+            document
+              .getElementById("sendFormModalError")
+              .setAttribute("style", "visibility:visible; opacity: 1;");
+          });
+      }
+
+      document.getElementById("callForm").onsubmit = async (event) => {
+        event.preventDefault();
+        sendCall();
       };
     </script>
   </body>

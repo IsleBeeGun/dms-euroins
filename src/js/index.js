@@ -133,3 +133,16 @@ if (document.getElementById("region-selector")) {
     data: regions,
   });
 }
+
+if (document.getElementById("region-selector-call")) {
+  // Applying & configuring SlimSelect
+  var regionSelectorCall = new SlimSelect({
+    select: "#region-selector-call",
+    placeholder: "Выберите регион",
+    searchPlaceholder: "Поиск",
+    searchText: "Нет результатов",
+    searchFocus: false,
+    showContent: "down",
+    data: regions,
+  });
+}

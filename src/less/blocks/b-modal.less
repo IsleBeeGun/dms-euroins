@@ -1,0 +1,98 @@
+@import "../variables.less";
+
+.b-modal {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  z-index: 1000;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: fadeout(@theme-color-1, 25%);
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.1s ease-in, opacity 0.2s ease-in;
+  &__container {
+    overflow-y: auto;
+    min-height: auto;
+    font-family: @ff;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    background-color: @theme-color-5;
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid @theme-color-1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px @theme-color-1;
+    &_form {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+  &__exit {
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    right: @padding;
+    font-weight: bold;
+    font-size: @fs-lg;
+  }
+  &__single {
+    text-align: center;
+    font-size: @fs-sm;
+    padding-left: @padding;
+    padding-right: @padding;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: @screen-md) {
+  .b-modal {
+    &__container {
+      width: 50vw;
+      height: 50vh;
+      &_form {
+        width: @screen-md;
+        height: 80vh;
+      }
+    }
+    &__single {
+      font-size: @fs-md;
+      padding-left: 2 * @padding;
+      padding-right: 2 * @padding;
+    }
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: @screen-lg) {
+  .b-modal {
+    &__container {
+      &_form {
+        width: @screen-lg;
+        height: 80vh;
+      }
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: @screen-xl) {
+  .b-modal {
+    &__exit {
+      right: 2 * @padding;
+      font-size: @fs-xl;
+    }
+    &__container {
+      &_form {
+        width: @screen-xl;
+        height: 80vh;
+      }
+    }
+  }
+}
