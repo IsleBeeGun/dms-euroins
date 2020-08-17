@@ -41,11 +41,6 @@
   }
 }
 
-/* Mobile */
-@media screen and (min-width: @screen-xs) {
-  //
-}
-
 /* Large Mobile */
 @media screen and (min-width: @screen-sm) {
   .b-footer {
@@ -57,7 +52,6 @@
       text-align: left;
     }
     &__left-container {
-      // padding-left: 2 * @padding;
       padding-bottom: 2 * @padding;
       min-width: 30%;
       max-width: 30%;
@@ -75,9 +69,8 @@
 /* Tablet */
 @media screen and (min-width: @screen-md) {
   .b-footer {
-    padding-left: @ratio-nav-p;
+    padding-left: 3 * @padding;
     &__left-container {
-      // padding-left: 3 * @padding;
       padding-bottom: 3 * @padding;
     }
   }
@@ -86,9 +79,10 @@
 /* Laptop */
 @media screen and (min-width: @screen-lg) {
   .b-footer {
+    padding-left: @ratio-nav-p;
     padding-top: 3*@padding;
     &__left-container {
-      // padding-left: 4 * @padding;
+      padding-left: 4 * @padding; //
       padding-bottom: 4 * @padding;
     }
   }
@@ -98,7 +92,7 @@
 @media screen and (min-width: @screen-xl) {
   .b-footer {
     &__left-container {
-      // padding-left: 5 * @padding;
+      padding-left: 5 * @padding; //
       padding-bottom: 5 * @padding;
     }
   }

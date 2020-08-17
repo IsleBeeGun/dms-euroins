@@ -2455,9 +2455,6 @@
   background-color: #e00b6c;
   border-color: #e00b6c;
 }
-/* Mobile */
-@media screen and (min-width: 28rem) {
-}
 /* Large Mobile */
 @media screen and (min-width: 32.25rem) {
   .b-footer {
@@ -2485,7 +2482,7 @@
 /* Tablet */
 @media screen and (min-width: 44rem) {
   .b-footer {
-    padding-left: 8%;
+    padding-left: 3rem;
   }
   .b-footer__left-container {
     padding-bottom: 3rem;
@@ -2494,15 +2491,18 @@
 /* Laptop */
 @media screen and (min-width: 67rem) {
   .b-footer {
+    padding-left: 8%;
     padding-top: 3rem;
   }
   .b-footer__left-container {
+    padding-left: 4rem;
     padding-bottom: 4rem;
   }
 }
 /* Desktop */
 @media screen and (min-width: 101rem) {
   .b-footer__left-container {
+    padding-left: 5rem;
     padding-bottom: 5rem;
   }
 }
