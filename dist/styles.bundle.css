@@ -1385,41 +1385,6 @@
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
-/* Mobile-landscape (and larger) */
-@media screen and (min-width: 28rem) {
-  .b-page {
-    min-width: 100%;
-    max-width: 100%;
-  }
-}
-/* Tablet-portrait (and larger) */
-@media screen and (min-width: 32.25rem) {
-  .b-page {
-    min-width: 100%;
-    max-width: 100%;
-  }
-}
-/* Tablet-landscape (and larger) */
-@media screen and (min-width: 44rem) {
-  .b-page {
-    min-width: 100%;
-    max-width: 100%;
-  }
-}
-/* Laptops (and langer) */
-@media screen and (min-width: 67rem) {
-  .b-page {
-    min-width: 92%;
-    max-width: 92%;
-  }
-}
-/* Desktops (and langer) */
-@media screen and (min-width: 101rem) {
-  .b-page {
-    min-width: 92%;
-    max-width: 92%;
-  }
-}
 .b-section {
   width: 100%;
   display: -webkit-inline-box;
@@ -1527,6 +1492,7 @@
 /* Laptop */
 @media screen and (min-width: 67rem) {
   .b-section {
+    padding-left: 8%;
     padding-bottom: 3rem;
     margin-top: 5rem;
   }
@@ -2033,6 +1999,9 @@
 }
 /* 4K */
 @media screen and (min-width: 178rem) {
+  .b-notice {
+    padding-top: 9rem;
+  }
   .b-notice__index-container {
     top: 15%;
     right: 24%;
@@ -2328,6 +2297,14 @@
     border-radius: 60px;
     padding: 0px 57px 20px 57px;
     width: 79%;
+  }
+}
+/* 4K */
+@media screen and (min-width: 178rem) {
+  .b-calc {
+    border-radius: 60px;
+    padding: 0px 57px 20px 57px;
+    width: 50%;
   }
 }
 .b-metapage {

@@ -1,7 +1,6 @@
 @import "../variables.less";
 
 .b-calc {
-  // height: 400px;
   display: inline-block;
   border-radius: 0px;
   padding-right: @padding;
@@ -43,5 +42,14 @@
     border-radius: 60px;
     padding: 0px 57px 20px 57px;
     width: 79%;
+  }
+}
+
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .b-calc {
+    border-radius: 60px;
+    padding: 0px 57px 20px 57px;
+    width: 50%;
   }
 }
