@@ -185,3 +185,48 @@
     }
   }
 }
+
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .b-nav {
+    &__menu-L0 {
+      & li {
+        margin-bottom: 1vw;
+        box-shadow: 0 0 30px rgba(128, 128, 128, 0.6);;
+        & a {
+          font-size: 1vw;
+          position: relative;
+          border: 4px solid @theme-color-5;
+          width: 100%;
+          height: 100%;
+          & span {
+            padding-top: 0.6vw;
+            font-weight: bold;
+            font-size: 1.1vw;
+            letter-spacing: 0.05vw;
+          }
+        }
+        &:hover {
+          background-color: @theme-color-3; // initial level highligted
+          color: @theme-color-1;
+          & .b-nav__menu-L1 {
+            & li {
+              height: 2rem; // modified height
+              min-height: 8rem;
+              width: 700px; // !!!!! SET WIDTH HERE
+              &:hover {
+                & .b-nav__menu-L2 {
+                  .ul-visible;
+                  & li {
+                    min-height: 8rem;
+                    width: 700px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -210,3 +210,14 @@
     }
   }
 }
+
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .b-form {
+    &__choice-option {
+      & .b-form__choice-checkbox:after {
+        left: 6 * @padding + 0.6rem;
+      }
+    }
+  }
+}

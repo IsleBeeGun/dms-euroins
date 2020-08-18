@@ -61,3 +61,45 @@
     }
   }
 }
+
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .b-clinics-selector {
+    width: 50%;
+    & .ss-content.ss-open {
+      height: 30vh;
+      & .ss-search {
+        font-size: 1vw ;
+        height: 2vw;
+        margin: @padding 2 * @padding @padding 2 * @padding;
+        & input {
+          height: 1.6vw;
+          padding-left: 2 * @padding;
+        }
+      }
+      & .ss-list {
+        font-size: 1vw ;
+        max-height: 24vh;     
+        & .ss-option {
+          padding-left: 2 * @padding;
+        }
+      }
+    }
+    & .ss-main {
+      & .ss-single-selected {
+        & .ss-arrow span {
+          width: 30px;
+          border-width: 0 10px 10px 0 !important;
+          padding: 9px;
+        }
+        & .placeholder {
+          line-height: 2vw;
+          font-size: 1vw;
+          letter-spacing: 0.1rem;
+        }
+        padding: @padding 2 * @padding;
+        border-radius: 10px;
+      }
+    }
+  }
+}

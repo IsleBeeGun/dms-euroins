@@ -69,3 +69,32 @@
     padding: 5 * @padding;
   }
 }
+
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .b-text {
+    padding: 6 * @padding 6 * @padding;
+    &__title {
+      padding-top: @padding;
+      color: @theme-color-1;
+      font-size: 1.2vw;
+      line-height: 1.2vw + 1.2vw / 10;
+      letter-spacing: 1.2vw / 32;
+      width: 100%;
+    }
+    & p {
+      padding-top: 2 * @padding;
+      text-align: left;
+      margin: 0;
+      font-size: 1vw;
+      line-height: 1vw + 1vw / 10;
+    }
+    &__paragraph {
+      padding-top: 2 * @padding;
+      text-align: justify;
+      margin: 0;
+      font-size: 1vw;
+      line-height: 1vw + 1vw / 10;
+    }
+  }
+}

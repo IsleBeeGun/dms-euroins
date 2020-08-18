@@ -60,7 +60,7 @@
   &__image {
     cursor: pointer;
     box-shadow: @light-shadow;
-    transform: translateY( 50%);
+    transform: translateY(50%);
     margin: 5px;
     width: 50%;
     padding-bottom: 40%;
@@ -202,7 +202,6 @@
         min-width: 190%;
         max-width: 190%;
       }
-      
     }
   }
 }
@@ -221,6 +220,37 @@
       font-size: @fs-md;
       line-height: @fs-md + @fs-md / 10;
       letter-spacing: @fs-md / 32;
+    }
+  }
+}
+
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .b-notice {
+    &__index-container {
+      top: 15%;
+      right: 24%;
+    }
+    &__index {
+      font-size: 1vw;
+    }
+    &__image {
+      margin: 0.5vw;
+    }
+    &__text {
+      padding-top: 1vw;
+      font-size: 1vw;
+      line-height: 1vw + 1vw / 10;
+      letter-spacing: 1vw / 32;
+    }
+    &__icon-container {
+      &_texticon {
+        font-size: 2vw;
+      }
+      &_licenses {
+        margin-top: 5 * @padding;
+        padding-bottom: 50%;
+      }
     }
   }
 }
