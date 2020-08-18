@@ -1429,7 +1429,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1rem;
-  line-height: 1.1rem;
+  line-height: 1.3rem;
   color: rgba(0, 0, 0, 0.75);
   text-align: left;
   font-family: Lato, sans-serif;
@@ -1475,7 +1475,6 @@
     padding-left: 23%;
     padding-right: 23%;
     font-size: 1rem;
-    line-height: 1.1rem;
     color: rgba(0, 0, 0, 0.75);
     text-align: center;
     font-family: Lato, sans-serif;
@@ -1505,7 +1504,7 @@
     padding-left: 23%;
     padding-right: 23%;
     font-size: 1.3rem;
-    line-height: 1.43rem;
+    line-height: 2rem;
     color: rgba(0, 0, 0, 0.75);
     text-align: center;
     font-family: Lato, sans-serif;
