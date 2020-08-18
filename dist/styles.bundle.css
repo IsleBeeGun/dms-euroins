@@ -2067,7 +2067,7 @@
   min-height: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.25rem;
+  padding-top: 1rem;
 }
 .b-form__choice-checkbox-hidden {
   position: absolute;
@@ -2140,7 +2140,6 @@
   }
   .b-form__choice-row_special textarea {
     min-height: 8rem !important;
-    padding-top: 0.5rem !important;
   }
   .b-form__choice-field {
     margin-top: 1rem;
