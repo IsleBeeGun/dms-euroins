@@ -1,6 +1,6 @@
 @import "../variables.less";
 
-@blink-duration: 2s;
+@blink-duration: 7s;
 
 .u-animation {
   &_sheen {
@@ -15,7 +15,6 @@
     background-color: @theme-color-5; // doesn't matter, just in case
 
     box-shadow: 2px 2px 5px lightgray initial, -2px -2px 5px lightyellow inset;  // color of blur around
-
     animation-name: sheen;
     animation-duration: @blink-duration;
     animation-iteration-count: infinite;
@@ -27,14 +26,14 @@
         left: -50%;
         background-color: @theme-color-5; // at start
       }
-      30% {
+      85% {
         left: -50%;
         background-color: @theme-color-2;
       }
-      50% {
+      90% {
         background-color: lighten(@theme-color-2, 50%); // color of first half
       }
-      70% {
+      95% {
         left: 110%;
         background-color: @theme-color-5; // color of second half
       }

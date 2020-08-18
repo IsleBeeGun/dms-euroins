@@ -5475,8 +5475,8 @@
           box-shadow: 2px 2px 5px lightgray initial, -2px -2px 5px lightyellow inset;
   -webkit-animation-name: sheen;
           animation-name: sheen;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in;
@@ -5487,14 +5487,14 @@
     left: -50%;
     background-color: #ffffff;
   }
-  30% {
+  85% {
     left: -50%;
     background-color: #e00b6c;
   }
-  50% {
+  90% {
     background-color: #feecf4;
   }
-  70% {
+  95% {
     left: 110%;
     background-color: #ffffff;
   }
@@ -5508,14 +5508,14 @@
     left: -50%;
     background-color: #ffffff;
   }
-  30% {
+  85% {
     left: -50%;
     background-color: #e00b6c;
   }
-  50% {
+  90% {
     background-color: #feecf4;
   }
-  70% {
+  95% {
     left: 110%;
     background-color: #ffffff;
   }
