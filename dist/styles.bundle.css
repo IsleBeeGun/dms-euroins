@@ -436,15 +436,15 @@
   background-position: left center;
 }
 .bg-prosto {
-  background: url(img/prosto.jpg) no-repeat;
+  background: url(img/prosto.jpg) no-repeat right 10% top;
   background-size: cover !important;
 }
 .bg-reglament_1 {
-  background: url(img/reglament_1.jpg) no-repeat;
+  background: url(img/reglament_1.jpg) no-repeat right 10% top;
   background-size: cover !important;
 }
 .bg-reglament_2 {
-  background: url(img/reglament_2.jpg) no-repeat;
+  background: url(img/reglament_2.jpg) no-repeat right 10% top;
   background-size: cover !important;
 }
 .bg-feedback {
@@ -1886,8 +1886,8 @@
   line-height: 1.1rem;
 }
 .b-notice__text_extrawide {
-  min-width: 90%;
-  max-width: 90%;
+  min-width: 110%;
+  max-width: 110%;
 }
 .b-notice__text_wider {
   min-width: 110%;
