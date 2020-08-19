@@ -98,3 +98,43 @@
     padding: 3 * @padding 3 * @padding 3 * @padding 2 * @padding;
   }
 }
+
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .b-card {
+    padding: 10 * @padding 4 * @padding;
+    margin: 3 * @padding  3 * @padding;
+    border-radius: 60px;
+    &::after {
+        width: 100px;
+        height: 100px;
+    }
+    &__spacer {
+      padding-left: 2 * @padding;
+      padding-right: @padding;
+      padding-top: 0px;
+      border-bottom: 10px solid @theme-color-2;
+    }
+    &__title {
+      padding-top: 3 * @padding;
+      margin: 0;
+      width: 100%;
+      & h2 {
+        font-size: 1.2vw;
+        line-height: 1.2vw + 1.2vw / 10;
+        letter-spacing: 1.2vw / 32;
+        padding-bottom: 2 * @padding;
+      }
+    }
+    & p {
+      padding-top: 3 * @padding;
+      font-size: 1vw;
+      line-height: 1vw + 1vw / 5;
+    }
+    &__paragraph {
+      padding-top: 3 * @padding;
+      font-size: 1vw;
+      line-height: 1vw + 1vw / 5;
+    }
+  }
+}

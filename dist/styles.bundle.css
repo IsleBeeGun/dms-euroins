@@ -537,7 +537,7 @@
   background-size: cover !important;
 }
 .bg-22 {
-  background: url(img/container_students.jpg) no-repeat left center !important;
+  background: url(img/container_students.jpg) no-repeat right 50% center !important;
   background-origin: border-box !important;
   background-size: cover !important;
 }
@@ -1753,6 +1753,45 @@
 @media screen and (min-width: 101rem) {
   .b-card {
     padding: 3rem 3rem 3rem 2rem;
+  }
+}
+/* 4K */
+@media screen and (min-width: 178rem) {
+  .b-card {
+    padding: 10rem 4rem;
+    margin: 3rem 3rem;
+    border-radius: 60px;
+  }
+  .b-card::after {
+    width: 100px;
+    height: 100px;
+  }
+  .b-card__spacer {
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 0px;
+    border-bottom: 10px solid #e00b6c;
+  }
+  .b-card__title {
+    padding-top: 3rem;
+    margin: 0;
+    width: 100%;
+  }
+  .b-card__title h2 {
+    font-size: 1.2vw;
+    line-height: 1.32vw;
+    letter-spacing: 0.0375vw;
+    padding-bottom: 2rem;
+  }
+  .b-card p {
+    padding-top: 3rem;
+    font-size: 1vw;
+    line-height: 1.2vw;
+  }
+  .b-card__paragraph {
+    padding-top: 3rem;
+    font-size: 1vw;
+    line-height: 1.2vw;
   }
 }
 .b-notice {
