@@ -2163,7 +2163,7 @@
           align-items: stretch;
 }
 .b-form__choice-row_special span {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 .b-form__choice-row_special textarea {
   width: 100%;
@@ -2210,12 +2210,14 @@
 .b-form__choice-field_selector .ss-single-selected {
   width: 100%;
   min-height: 3rem;
-  padding-top: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
 }
 .b-form__choice-field_selector .ss-single-selected .placeholder {
+  padding-top: 0;
   color: rgba(0, 0, 0, 0.75);
+}
+.b-form__choice-field_selector .ss-single-selected .ss-arrow {
+  padding-top: 0;
 }
 .b-form__choice-field_selector .ss-content {
   border-color: #272474;
@@ -2268,7 +2270,7 @@
     max-width: 100% !important;
   }
   .b-form__choice-row_special textarea {
-    min-height: 8rem !important;
+    min-height: 9rem !important;
   }
   .b-form__choice-field {
     margin-top: 1rem;
@@ -2296,9 +2298,14 @@
   .b-form__choice-option .b-form__choice-checkbox:after {
     left: 3.6rem;
   }
+  .b-form__choice-row_special textarea {
+    min-height: 10rem;
+  }
+  /* Laptop */
+  /* Desktop */
+  /* 4K */
 }
-/* Laptop */
-@media screen and (min-width: 67rem) {
+@media screen and (min-width: 44rem) and screen and (min-width: 67rem) {
   .b-form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2311,14 +2318,12 @@
     left: 4.6rem;
   }
 }
-/* Desktop */
-@media screen and (min-width: 101rem) {
+@media screen and (min-width: 44rem) and screen and (min-width: 101rem) {
   .b-form__choice-option .b-form__choice-checkbox:after {
     left: 5.6rem;
   }
 }
-/* 4K */
-@media screen and (min-width: 178rem) {
+@media screen and (min-width: 44rem) and screen and (min-width: 178rem) {
   .b-form__choice-option .b-form__choice-checkbox:after {
     left: 6.6rem;
   }
