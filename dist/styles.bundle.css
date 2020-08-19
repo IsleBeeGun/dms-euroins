@@ -2326,9 +2326,6 @@
 .b-calc .calc-check {
   background-color: #f2f8f8;
 }
-.b-calc .ant-affix {
-  position: static !important;
-}
 /* Mobile */
 @media screen and (min-width: 28rem) {
   .b-calc {
