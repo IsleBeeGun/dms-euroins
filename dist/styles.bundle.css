@@ -1563,11 +1563,19 @@
 .b-text__title {
   padding-top: 1rem;
   margin: 0;
+  width: 100%;
+}
+.b-text__title h1,
+.b-text__title h2,
+.b-text__title h3,
+.b-text__title h4,
+.b-text__title h5,
+.b-text__title h6 {
+  margin: 0;
   color: #272474;
   font-size: 1.3rem;
   line-height: 1.43rem;
   letter-spacing: 0.040625rem;
-  width: 100%;
 }
 .b-text p {
   padding-top: 1rem;
@@ -1624,11 +1632,17 @@
   }
   .b-text__title {
     padding-top: 3rem;
-    color: #272474;
+    width: 100%;
+  }
+  .b-text__title h1,
+  .b-text__title h2,
+  .b-text__title h3,
+  .b-text__title h4,
+  .b-text__title h5,
+  .b-text__title h6 {
     font-size: 1.2vw;
     line-height: 1.32vw;
     letter-spacing: 0.0375vw;
-    width: 100%;
   }
   .b-text p {
     padding-top: 2rem;
@@ -2608,7 +2622,6 @@
 }
 .b-footer__logo {
   width: 224px;
-  margin-top: 1rem;
 }
 .b-footer__logo-container {
   text-align: center;

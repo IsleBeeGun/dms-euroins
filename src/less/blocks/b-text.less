@@ -9,11 +9,19 @@
   &__title {
     padding-top: @padding;
     margin: 0;
-    color: @theme-color-1;
-    font-size: @fs-md;
-    line-height: @fs-md + @fs-md / 10;
-    letter-spacing: @fs-md / 32;
     width: 100%;
+    & h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      color: @theme-color-1;
+      font-size: @fs-md;
+      line-height: @fs-md + @fs-md / 10;
+      letter-spacing: @fs-md / 32;
+    }
   }
   & p {
     padding-top: @padding;
@@ -76,11 +84,17 @@
     padding: 6 * @padding 6 * @padding;
     &__title {
       padding-top: 3 * @padding;
-      color: @theme-color-1;
-      font-size: 1.2vw;
-      line-height: 1.2vw + 1.2vw / 10;
-      letter-spacing: 1.2vw / 32;
       width: 100%;
+      & h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 1.2vw;
+        line-height: 1.2vw + 1.2vw / 10;
+        letter-spacing: 1.2vw / 32;
+      }
     }
     & p {
       padding-top: 2 * @padding;
