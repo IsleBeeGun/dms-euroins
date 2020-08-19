@@ -2301,16 +2301,9 @@
   .b-form__choice-row_special textarea {
     min-height: 10rem;
   }
-  /* Laptop */
-  /* Desktop */
-  /* 4K */
 }
-@media screen and (min-width: 44rem) and screen and (min-width: 67rem) {
-  .b-form {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+/* Laptop */
+@media screen and (min-width: 67rem) {
   .b-form__choice-checkbox {
     margin-right: 1rem;
   }
@@ -2318,12 +2311,14 @@
     left: 4.6rem;
   }
 }
-@media screen and (min-width: 44rem) and screen and (min-width: 101rem) {
+/* Desktop */
+@media screen and (min-width: 101rem) {
   .b-form__choice-option .b-form__choice-checkbox:after {
     left: 5.6rem;
   }
 }
-@media screen and (min-width: 44rem) and screen and (min-width: 178rem) {
+/* 4K */
+@media screen and (min-width: 178rem) {
   .b-form__choice-option .b-form__choice-checkbox:after {
     left: 6.6rem;
   }

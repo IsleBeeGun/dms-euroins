@@ -215,40 +215,39 @@
       }
     }
   }
+}
 
-  /* Laptop */
-  @media screen and (min-width: @screen-lg) {
-    .b-form {
-      &__choice-checkbox {
-        margin-right: 1rem;
-      }
-      justify-content: center;
-      &__choice-option {
-        & .b-form__choice-checkbox:after {
-          left: 4 * @padding + 0.6rem;
-        }
+/* Laptop */
+@media screen and (min-width: @screen-lg) {
+  .b-form {
+    &__choice-checkbox {
+      margin-right: 1rem;
+    }
+    &__choice-option {
+      & .b-form__choice-checkbox:after {
+        left: 4 * @padding + 0.6rem;
       }
     }
   }
+}
 
-  /* Desktop */
-  @media screen and (min-width: @screen-xl) {
-    .b-form {
-      &__choice-option {
-        & .b-form__choice-checkbox:after {
-          left: 5 * @padding + 0.6rem;
-        }
+/* Desktop */
+@media screen and (min-width: @screen-xl) {
+  .b-form {
+    &__choice-option {
+      & .b-form__choice-checkbox:after {
+        left: 5 * @padding + 0.6rem;
       }
     }
   }
+}
 
-  /* 4K */
-  @media screen and (min-width: @screen-4k) {
-    .b-form {
-      &__choice-option {
-        & .b-form__choice-checkbox:after {
-          left: 6 * @padding + 0.6rem;
-        }
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .b-form {
+    &__choice-option {
+      & .b-form__choice-checkbox:after {
+        left: 6 * @padding + 0.6rem;
       }
     }
   }
