@@ -5604,8 +5604,8 @@
       -ms-transform: rotate(20deg);
           transform: rotate(20deg);
   background-color: #ffffff;
-  -webkit-box-shadow: 2px 2px 5px lightgray initial, -2px -2px 5px lightyellow inset;
-          box-shadow: 2px 2px 5px lightgray initial, -2px -2px 5px lightyellow inset;
+  -webkit-box-shadow: 2px 2px 4px lightgray, -2px -2px 4px lightyellow;
+          box-shadow: 2px 2px 4px lightgray, -2px -2px 4px lightyellow;
   -webkit-animation-name: sheen;
           animation-name: sheen;
   -webkit-animation-duration: 7s;
@@ -5617,17 +5617,17 @@
 }
 @-webkit-keyframes sheen {
   0% {
-    left: -50%;
+    left: -60%;
     background-color: #ffffff;
   }
-  85% {
+  88% {
     left: -50%;
     background-color: #e00b6c;
   }
-  90% {
+  92% {
     background-color: #feecf4;
   }
-  95% {
+  96% {
     left: 110%;
     background-color: #ffffff;
   }
@@ -5638,17 +5638,17 @@
 }
 @keyframes sheen {
   0% {
-    left: -50%;
+    left: -60%;
     background-color: #ffffff;
   }
-  85% {
+  88% {
     left: -50%;
     background-color: #e00b6c;
   }
-  90% {
+  92% {
     background-color: #feecf4;
   }
-  95% {
+  96% {
     left: 110%;
     background-color: #ffffff;
   }
@@ -5657,12 +5657,18 @@
     background-color: #ffffff;
   }
 }
+/* Laptop */
+@media screen and (min-width: 67rem) {
+  .u-animation_sheen {
+    width: 40px;
+  }
+}
 /* 4K */
 @media screen and (min-width: 178rem) {
   .u-animation_sheen {
-    width: 50px;
-    -webkit-box-shadow: 6px 6px 10px lightgray initial, -6px -6px 10px lightyellow inset;
-            box-shadow: 6px 6px 10px lightgray initial, -6px -6px 10px lightyellow inset;
+    width: 80px;
+    -webkit-box-shadow: 6px 6px 10px lightgray, -6px -6px 10px lightyellow;
+            box-shadow: 6px 6px 10px lightgray, -6px -6px 10px lightyellow;
   }
 }
 html {
