@@ -4,16 +4,37 @@
 .b-clinics-selector {
   width: 80%;
   text-align: center;
+
+  & .ss-content.ss-open {
+    box-shadow: @normal-shadow;
+    & .ss-search {
+
+      & input {
+        padding-left: @padding;
+        min-height: 3rem;
+        font-family: @ff;
+        border: 1px solid @theme-color-1;
+        &:focus {
+          box-shadow: none;
+          outline: none; 
+          border: 2px solid @theme-color-2;
+          background-color: @theme-color-3;
+        }
+      }
+    }
+  }
+
   & .ss-content {
-    & .ss-list .ss-option:hover, & .ss-list .ss-option.ss-highlighted {
+    & .ss-list .ss-option:hover,
+    & .ss-list .ss-option.ss-highlighted {
       background-color: @theme-color-1;
       color: @theme-color-5;
     }
-    & .ss-search input  {
+    & .ss-search input {
       background-color: @theme-color-3;
     }
   }
-  
+
   & .ss-main {
     & .ss-single-selected {
       & .ss-arrow span {
@@ -28,7 +49,7 @@
         letter-spacing: 0.1rem;
         text-transform: uppercase;
         font-weight: bold;
-        justify-content: center ;
+        justify-content: center;
       }
       height: auto;
       padding: @padding 2 * @padding;
@@ -69,7 +90,7 @@
     & .ss-content.ss-open {
       height: 30vh;
       & .ss-search {
-        font-size: 1vw ;
+        font-size: 1vw;
         height: 2vw;
         margin: @padding 2 * @padding @padding 2 * @padding;
         & input {
@@ -78,8 +99,8 @@
         }
       }
       & .ss-list {
-        font-size: 1vw ;
-        max-height: 24vh;     
+        font-size: 1vw;
+        max-height: 24vh;
         & .ss-option {
           padding-left: 2 * @padding;
         }

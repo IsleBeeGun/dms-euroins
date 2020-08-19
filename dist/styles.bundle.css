@@ -2223,6 +2223,28 @@
   margin-left: -2px;
   border-radius: 5px;
 }
+.b-form__choice-field_selector .ss-content .ss-list .ss-option:hover,
+.b-form__choice-field_selector .ss-content .ss-list .ss-option.ss-highlighted {
+  background-color: #272474;
+  color: #ffffff;
+}
+.b-form__choice-field_selector .ss-content.ss-open {
+  -webkit-box-shadow: 0 0 10px rgba(128, 128, 128, 0.6);
+          box-shadow: 0 0 10px rgba(128, 128, 128, 0.6);
+}
+.b-form__choice-field_selector .ss-content.ss-open .ss-search input {
+  min-height: 3rem;
+  padding-left: 1rem;
+  font-family: Lato, sans-serif;
+  border: 1px solid #272474;
+}
+.b-form__choice-field_selector .ss-content.ss-open .ss-search input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: 2px solid #e00b6c;
+  background-color: #f2f8f8;
+}
 /* Large Mobile */
 @media screen and (min-width: 32.25rem) {
   .b-form__choice-option .b-form__choice-checkbox:after {
@@ -2749,6 +2771,23 @@
   width: 80%;
   text-align: center;
 }
+.b-clinics-selector .ss-content.ss-open {
+  -webkit-box-shadow: 0 0 10px rgba(128, 128, 128, 0.6);
+          box-shadow: 0 0 10px rgba(128, 128, 128, 0.6);
+}
+.b-clinics-selector .ss-content.ss-open .ss-search input {
+  padding-left: 1rem;
+  min-height: 3rem;
+  font-family: Lato, sans-serif;
+  border: 1px solid #272474;
+}
+.b-clinics-selector .ss-content.ss-open .ss-search input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: 2px solid #e00b6c;
+  background-color: #f2f8f8;
+}
 .b-clinics-selector .ss-content .ss-list .ss-option:hover,
 .b-clinics-selector .ss-content .ss-list .ss-option.ss-highlighted {
   background-color: #272474;
@@ -2780,9 +2819,9 @@
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-weight: bold;
-  -webkit-box-pack: center ;
-      -ms-flex-pack: center ;
-          justify-content: center ;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .b-clinics-selector .ss-main .ss-single-selected:hover {
   color: #ffffff;
@@ -2811,7 +2850,7 @@
     height: 30vh;
   }
   .b-clinics-selector .ss-content.ss-open .ss-search {
-    font-size: 1vw ;
+    font-size: 1vw;
     height: 2vw;
     margin: 1rem 2rem 1rem 2rem;
   }
@@ -2820,7 +2859,7 @@
     padding-left: 2rem;
   }
   .b-clinics-selector .ss-content.ss-open .ss-list {
-    font-size: 1vw ;
+    font-size: 1vw;
     max-height: 24vh;
   }
   .b-clinics-selector .ss-content.ss-open .ss-list .ss-option {
