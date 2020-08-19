@@ -14,12 +14,11 @@
 
     background-color: @theme-color-5; // doesn't matter, just in case
 
-    box-shadow: 2px 2px 5px lightgray initial, -2px -2px 5px lightyellow inset;  // color of blur around
+    box-shadow: 2px 2px 5px lightgray initial, -2px -2px 5px lightyellow inset; // color of blur around
     animation-name: sheen;
     animation-duration: @blink-duration;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-
 
     @keyframes sheen {
       0% {
@@ -41,6 +40,16 @@
         left: 110%;
         background-color: @theme-color-5;
       }
+    }
+  }
+}
+
+/* 4K */
+@media screen and (min-width: @screen-4k) {
+  .u-animation {
+    &_sheen {
+      width: 50px;
+      box-shadow: 6px 6px 10px lightgray initial, -6px -6px 10px lightyellow inset; // color of blur around
     }
   }
 }

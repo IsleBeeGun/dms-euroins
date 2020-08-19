@@ -652,16 +652,16 @@
     background-position: right -400px center;
   }
   .bg-prosto {
-    background-size: contain !important;
-    background-position: center bottom;
+    background-size: cover !important;
+    background-position: center top;
   }
   .bg-reglament_1 {
-    background-size: contain !important;
-    background-position: center bottom;
+    background-size: cover !important;
+    background-position: center top;
   }
   .bg-reglament_2 {
-    background-size: contain !important;
-    background-position: center bottom;
+    background-size: cover !important;
+    background-position: center top;
   }
   .bg-21 {
     background-position: center center !important;
@@ -5655,6 +5655,14 @@
   100% {
     left: 110%;
     background-color: #ffffff;
+  }
+}
+/* 4K */
+@media screen and (min-width: 178rem) {
+  .u-animation_sheen {
+    width: 50px;
+    -webkit-box-shadow: 6px 6px 10px lightgray initial, -6px -6px 10px lightyellow inset;
+            box-shadow: 6px 6px 10px lightgray initial, -6px -6px 10px lightyellow inset;
   }
 }
 html {
