@@ -1,4 +1,4 @@
-var modalWait = 1000;
+var modalWait = 24000;
 
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {

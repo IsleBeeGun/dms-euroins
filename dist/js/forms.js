@@ -1,5 +1,3 @@
-var modalWait = 1000;
-
 function sendHttpRequest(method, url, data) {
   const promise = new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
@@ -10,7 +8,8 @@ function sendHttpRequest(method, url, data) {
       if ((xhr.status >= 200) & (xhr.status < 300)) {
         resolve(xhr.response);
       } else {
-        reject(new Error("Проблема с сервером"));
+        // new Error("Проблема с сервером")
+        reject(xhr.response);
       }
     };
     xhr.onerror = function () {
@@ -73,13 +72,25 @@ function sendOrder() {
     orderData
   )
     .then((res) => {
-      console.log(res);
       document
         .getElementById("sendFormModalOk")
         .setAttribute("style", "visibility:visible; opacity: 1;");
     })
     .catch((rej) => {
-      console.log(rej);
+      if (rej.errors) {
+        const listOfErrors = [];
+        let listOfErrorsHTML = "";
+        for (const key in rej.errors) {
+          listOfErrors.push(rej.errors[key]);
+        }
+        for (const error of listOfErrors) {
+          listOfErrorsHTML += `<li>${error}</li>`;
+        }
+        const errorMessageHTML = `При отправке заявки произошли ошибки: <ul>${listOfErrorsHTML}</ul>`;
+        document.querySelector(
+          "#sendFormModalError .b-modal__single"
+        ).innerHTML = errorMessageHTML;
+      }
       document
         .getElementById("sendFormModalError")
         .setAttribute("style", "visibility:visible; opacity: 1;");
@@ -104,11 +115,10 @@ function sendCall() {
 
   sendHttpRequest(
     "POST",
-    "https://jsonplaceholder.typicode.com/posts",
+    "http://testapi.euro-ins.ru/claim/submit/callback",
     callData
   )
     .then((res) => {
-      console.log(res);
       document
         .querySelector("#callFormModal")
         .setAttribute("style", "visibility:hidden; opacity: 0;");
@@ -117,7 +127,20 @@ function sendCall() {
         .setAttribute("style", "visibility:visible; opacity: 1;");
     })
     .catch((rej) => {
-      console.log(rej);
+      if (rej.errors) {
+        const listOfErrors = [];
+        let listOfErrorsHTML = "";
+        for (const key in rej.errors) {
+          listOfErrors.push(rej.errors[key]);
+        }
+        for (const error of listOfErrors) {
+          listOfErrorsHTML += `<li>${error}</li>`;
+        }
+        const errorMessageHTML = `При отправке заявки произошли ошибки: <ul>${listOfErrorsHTML}</ul>`;
+        document.querySelector(
+          "#sendFormModalError .b-modal__single"
+        ).innerHTML = errorMessageHTML;
+      }
       document
         .querySelector("#callFormModal")
         .setAttribute("style", "visibility:hidden; opacity: 0;");
