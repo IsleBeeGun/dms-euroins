@@ -1,3 +1,5 @@
+var modalWait = 1000;
+
 function sendHttpRequest(method, url, data) {
   const promise = new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();

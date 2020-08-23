@@ -37,17 +37,7 @@
           Заявка успешно отправлена.
         </p>
       </div>
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          document.querySelector(
-            "#sendFormModalOk .b-modal__exit"
-          ).onclick = () => {
-            document
-              .querySelector("#sendFormModalOk")
-              .setAttribute("style", "visibility:hidden; opacity: 0;");
-          };
-        });
-      </script>
+      <script src="js/modalOk.js"></script>
     </div>
 
     <div class="b-modal" id="sendFormModalError">
@@ -57,17 +47,7 @@
           При отправлении произошла ошибка!
         </p>
       </div>
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          document.querySelector(
-            "#sendFormModalError .b-modal__exit"
-          ).onclick = () => {
-            document
-              .querySelector("#sendFormModalError")
-              .setAttribute("style", "visibility:hidden; opacity: 0;");
-          };
-        });
-      </script>
+      <script src="js/modalError.js"></script>
     </div>
 
     <div class="b-modal" id="callFormModal">
@@ -222,23 +202,7 @@
           </div>
         </form>
       </div>
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          setTimeout(() => {
-            document
-              .getElementById("callFormModal")
-              .setAttribute("style", "visibility:visible; opacity: 1;");
-          }, 6000);
-
-          document.querySelector(
-            "#callFormModal .b-modal__exit"
-          ).onclick = () => {
-            document
-              .querySelector("#callFormModal")
-              .setAttribute("style", "visibility:hidden; opacity: 0;");
-          };
-        });
-      </script>
+      <script src="js/modalForm.js"></script>
     </div>
 
     <div class="b-burger">
